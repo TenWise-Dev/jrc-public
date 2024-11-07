@@ -9,7 +9,5 @@ doc2vec.model
 tfidf-2.joblib
 tfidf-3.joblib
 ignore/
-adaboost.pkl
-gradientboost.pkl
-logistic_regression.pkl
-randomforest.pkl
+classifier_models/
+embedding_models/

@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Predicting immunotherapy response in melanoma using a novel tumor immunological phenotype-related gene index</title>
+				<funder>
+					<orgName type="full">Gene Expression Omnibus (GEO) database, Cancer Genome Atlas (TCGA)</orgName>
+				</funder>
+				<funder ref="#_P9zyCzV">
+					<orgName type="full">Xiamen Municipal Bureau of Science and Technology</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">International Cancer Genome Consortium</orgName>
+					<orgName type="abbreviated">ICGC</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-03-20">20 March 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Shaoluan</forename><surname>Zheng</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Plastic and Reconstructive Surgery</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital (Xiamen)</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Xiamen</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Anqi</forename><surname>He</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Chenxi</forename><surname>Chen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Plastic and Reconstructive Surgery</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital (Xiamen)</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Xiamen</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jianying</forename><surname>Gu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Plastic and Reconstructive Surgery</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital (Xiamen)</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Xiamen</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Plastic and Reconstructive Surgery</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="laboratory">Artificial Intelligence Center for Plastic Surgery and Cutaneous Soft Tissue Cancers</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chuanyuan</forename><surname>Wei</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Plastic and Reconstructive Surgery</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zhiwei</forename><surname>Chen</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Big Data and Artificial Intelligence Center</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Jiaqi</forename><surname>Liu</surname></persName>
+							<email>liu.jiaqi@zs-hospital.sh.cn</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Plastic and Reconstructive Surgery</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="laboratory">Artificial Intelligence Center for Plastic Surgery and Cutaneous Soft Tissue Cancers</orgName>
+								<orgName type="institution" key="instit1">Zhongshan Hospital</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kevin</forename><forename type="middle">Charles</forename><surname>Conlon</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Aleksandrovich</forename><surname>Dmitry</surname></persName>
+						</author>
+						<author>
+							<persName><surname>Zinovkin</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="department">Clinical Center (NIH)</orgName>
+								<address>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<orgName type="institution">Gomel State Medical University</orgName>
+								<address>
+									<settlement>Lei Yang</settlement>
+									<country key="BY">Belarus</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff6">
+								<orgName type="institution">Harbin Medical University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Predicting immunotherapy response in melanoma using a novel tumor immunological phenotype-related gene index</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-03-20">20 March 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8199232773C5C9B94EDD7D35351C20C5</idno>
+					<idno type="DOI">10.3389/fimmu.2024.1343425</idno>
+					<note type="submission">RECEIVED 23 November 2023 ACCEPTED 29 February 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-04-19T12:36+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>melanoma</term>
+					<term>bioinformatics</term>
+					<term>prognosis</term>
+					<term>immunotherapy response</term>
+					<term>tumor microenvironment</term>
+					<term>molecular docking</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Introduction: Melanoma is a highly aggressive and recurrent form of skin cancer, posing challenges in prognosis and therapy prediction.</p><p>Methods: In this study, we developed a novel TIPRGPI consisting of 20 genes using Univariate Cox regression and the LASSO algorithm. The high and low-risk groups based on TIPRGPI exhibited distinct mutation profiles, hallmark pathways, and immune cell infiltration in the tumor microenvironment.</p><p>Results: Notably, significant differences in tumor immunogenicity and TIDE were observed between the risk groups, suggesting a better response to immune checkpoint blockade therapy in the low-TIPRGPI group. Additionally, molecular docking predicted 10 potential drugs that bind to the core target, PTPRC, of the TIPRGPI signature.</p><p>Discussion: Our findings highlight the reliability of TIPRGPI as a prognostic signature and its potential application in risk classification, immunotherapy response prediction, and drug candidate identification for melanoma treatment. The "TIP genes" guided strategy presented in this study may have implications beyond melanoma and could be applied to other cancer types.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Melanoma is a type of skin cancer that arise from melanocytes, the pigment-producing cells found in the epidermis, hair follicles, and iris, among other tissues <ref type="bibr" target="#b0">(1)</ref>. Melanoma only accounts for only 1% of skin cancers, but it is the most aggressive and dangerous one and accounts for 90% of all skin cancer deaths, melanoma patients with distant metastases show a 5-year survival rate of 23% <ref type="bibr" target="#b1">(2,</ref><ref type="bibr" target="#b2">3)</ref>.</p><p>Melanoma is one of the most immunological malignancies <ref type="bibr" target="#b3">(4,</ref><ref type="bibr" target="#b4">5)</ref>., immunotherapy is one of the most effective therapeutic strategies in melanoma due to the high immunogenicity of this tumor <ref type="bibr" target="#b5">(6)</ref>. Immune checkpoint blockade (ICB) immunotherapy, which reverses the inactivation of immune cells to eliminate tumor cells, has emerged as a promising therapy for melanoma <ref type="bibr" target="#b6">(7)</ref>. In recent years, the immunologic origin of melanoma has led to the discovery of antibodies directed against specific targets such as anti-programmed cell death 1 (PD-1) and anti-cytotoxic Tlymphocyte-associated protein 4 (CTLA-4) <ref type="bibr" target="#b7">(8)</ref>. Since then, additional agents targeting novel immune checkpoints, such as Tcell immunoglobulin and mucin domain containing 3 (TIM-3), lymphocyte activation gene-3 (LAG-3), and ITIM domain (TIGIT), are being investigated to expand the scope of immunotherapy for melanoma <ref type="bibr" target="#b9">(9)</ref><ref type="bibr" target="#b10">(10)</ref><ref type="bibr" target="#b11">(11)</ref>.</p><p>Overall, these blockades have dramatically increased and prolonged overall survival (OS) in advanced melanoma. However, even in the most optimal scenarios with a combination ICB, approximately half of the patients do not achieve a long-term benefit <ref type="bibr" target="#b12">(12)</ref>. While elevated tumor PD-L1 expression and TMB have been shown to correlate with clinical response to ICB in melanoma, these biomarkers may not accurately predict outcome in all cases <ref type="bibr" target="#b13">(13)</ref>. This highlights the need for better predictive biomarkers of response and new rational targets for more effective combination therapies to overcome immune resistance. How to choose available and suitable targets for personalized therapy is still a challenging question.</p><p>Tumor microenvironment (TME) encompasses a wide range of stromal, vascular, and immune cell types that are impacted by therapy. The TME is considered one of the primary indicators of treatment response in cancer due to its high level of heterogeneity <ref type="bibr" target="#b14">(14)</ref>. Tumor immune phenotype (TIP) is an emerging concept to evaluate immunologic heterogeneity depending on the relative infiltration of immune cells, and tumors are generally classified into two TIPs: "hot" (inflamed) and "cold" (non-inflamed), respectively (15). Oncogenic genetic and epigenetic pathways simultaneously define TIPs, influence tumor progression, and alter spontaneous and therapy-induced tumor-specific T cell immunity. Manipulation of these tumor intrinsic pathways can promote T cell infiltration into tumors, alter the tumor immune phenotype and ultimately lead to tumor regression. Thus, these "TIP genes" offer significant potential for clinical application, particularly in the areas of postoperative risk stratification and identification of immunotherapeutic predictors in cancers. The immunotherapy prediction model established based on TIP has been validated in hepatocellular carcinoma <ref type="bibr" target="#b16">(16)</ref>, but has not been investigated in melanoma.</p><p>To fill the gap between TIP-based prediction model and immunotherapy response in melanoma, in this study, a "TIP genes" guided strategy was utilized with various statistical algorithms to create a TIP-related gene prognostic index (TIPRGPI), which is a novel melanoma signature. It is predicted that individuals in the low-risk TIPRGPI group will respond more favorably to immunotherapies, as compared to those in the high-risk TIPRGPI group. Furthermore, based on our molecular docking analysis, we have identified 10 potential drugs that successfully bind to the core target of TIPRGPI. The workflow for this study is shown in Figure <ref type="figure" target="#fig_1">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data source</head><p>Download RNA sequencing, phenotype, and survival data for skin melanoma (SKCM) from the TCGA database at https:// xenabrowser.net/datapages/. Obtain skin melanoma gene expression RNA sequencing and survival information data from GSE65904 at https://www.ncbi.nlm.nih.gov/geo/query/ acc.cgi?acc=GSE65904, and melanoma gene expression RNA sequencing, survival, and immunotherapy information data from GSE91061 at https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi? acc=GSE91061. Hot and cold tumor genes were acquired  The workflow for this study. Correlations of TIP score with prognosis and TME of melanoma 1. TIP score was calculated as previously reported <ref type="bibr" target="#b17">(17)</ref>. The study analyzed the expression levels of genes associated with hot tumors (CXCR3, CXCR4, CXCL9, CXCL10, CXCL11, CCL5, CD3E, CD4, CD8A, CD8B, CD274, and PDCD1) and cold tumors (CXCL1, CXCL2, and CCL20). Each gene's zvalue was calculated in its respective dimension, and all zvalues were summed up in the sample dimension, resulting in the TIP score for each sample. Subsequently, the samples were grouped into high and low TIP score categories, with the median acting as the dividing line.   package, version 1.69, screened for key modules that were significantly associated with TIP score, using TCGA-SKCM expression profiles (RsquaredCut=0.8, power=6, MM&gt;0.5, GS&gt;0.05). The resulting set of concatenated genes was then taken as the key module genes for subsequent analysis. 2. Gene Ontology (GO) enrichment and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis were performed on the most significant module using the "clusterProfiler" R package. Plotting using the ggplot2 package (v3.3.5) and the enrichplot software (v1.14.2).</p><p>3. Survival package was utilized in performing Cox regression analysis on critical modular genes to identify genes related to prognosis. Additionally, glmnet package (version 4.1-1) was utilized in the LASSO regression analysis of prognosisassociated genes to eliminate redundant genes and to model them. Then, utilizing the survival package, K-M survival curves were generated for the modeled genes.</p><p>TIPRGPI and outcome analysis</p><formula xml:id="formula_0">1.</formula><p>The clinical outcome in this study was overall survival (OS). The OS-predictive effectiveness of TIPRGPI was assessed in both the training set and an independent external dataset. Based on the median TIPRGPI in the training and validation sets, the samples were divided into two categories: high TIPRGPI and how TIPRGPI. Scatter plots depicting the variation in survival/death based on TIPRGPI score were generated utilizing the ggplot2 package, while heat maps illustrating the modeled gene expression differences between high and low TIPRGPI groups were generated utilizing the pheatmap package (version 1.0). 12) We generated survival curves for the high and low TIPRGPI groups using the survival package. Additionally, we plotted 1-3 years modeled ROC curves for these groups using the time-ROC (version 0.4) package. 2. To examine the predictive potential of TIPRGPI characteristics among various clinicopathological subgroups, survival variation diagrams comparing high and low TIPRGPI groups were generated for different age groups (&lt;60 years, ≥60 years), genders, and stages (stage 0/I/II, stage III/IV) using the survival package. 3. Based on TCGA data, immune cell infiltration was determined using three algorithms, namely CIBERSORT, XCELL, and SSGSEA. The CIBERSORT (https:// cibersortx.stanford.edu/), SSGSEA, and XCELL algorithms were utilized to assess the differences in cellular infiltration within the immune microenvironment and graphed using the ggplot2 package to compare the variances in cellular infiltration among various pyroptosis subtypes. 4. Heatmap displaying the variation in immune checkpoint expression among distinct pyroptosis subtypes, using the "pheatmap" software package.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIPRGPI-integrated predictive nomogram</head><p>1. The differences in the distribution of clinical variables such as age (&lt;60 years, ≥60 years), gender, stage, TNM staging, TCGA molecular typing, primary/metastasis, and Clark level between high and low TIPRGPI groups were  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Potential molecular mechanisms for TIPRGPI</head><p>1. Mutated gene analysis is performed to display co-mutation patterns in both high and low TIPRGPI groups. The maftools package (version 2.6.0) is utilized to generate SNV waterfall maps for both groups. The Hmisc package (version 4.4-2) calculates the top differential gene autocorrelation, and a heatmap is produced using the pheatmap package. Lastly, the maftools package is used to create differential gene lollipop plots.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">CNV Differences Between High and Low TIPRGPI Groups,</head><p>The CNV profiles of the samples in the high and low TIPRGPI groups were calculated on each chromosome using GISTIC from https://cloud.genepattern.org and plotted using the ggpubr package. Comparison of CNV differential genes between the groups was obtained and plotted using the ggplot2 package. Differences in the expression of CNV differential genes were compared and plotted using the ggpubr package, across CNV status, including amplification, normal, and deletion. The results were visualized in a violin plot.</p><p>3. Enrichment scores of hallmark pathways (h.all.v7.5.symbols) were computed for samples belonging to the high and low TIPRGPI groups employing the GSVA (version 1.38.0) and GSEABase (version 1.52.1) software packages. Differential genes were compared between the high and low TIPRGPI groups using the limma package. These genes were included in the GSEA analysis to obtain differentially enriched hallmark pathways, and the resulting pathways were compared with the GSVA results to obtain concordant result pathways. Finally, GSEA enrichment plots were plotted using the enrichplot package. The samples were categorized into high and low score groups based on the GSVA score of each consistent result pathway. Subsequently, survival curves were plotted for each pathway by using the survival package.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Exploration of immune infiltration</head><p>1. Differences in tumor microenvironment cellular infiltration between high and low TIPRGPI groups. The infiltration scores of 24 cell types in the tumor microenvironment for samples from the high and low TIPRGPI groups were calculated using the ssGSEA algorithm and compared and plotted using the ggpubr package and the ggplot2 package. 2. The Hmisc package was used to calculate the differential correlation between TME cells and TIPRGPI.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">TIPRGPI screening of cells most associated with TME.</head><p>TME cells significantly associated with prognosis were screened. The ggvenn package (version 0.1.9) was used to plot Wayne plots of significant cells in the analysis of variance, correlation, and survival, and the cells that were significant in all 3 were taken as the cells most associated with TME by TIPRGPI. The number of cells in the 3 analyses was plotted using the ggplot2 package for bar graph display. 4. Correlations between the 20 model genes and the 21 most relevant TME cells were calculated using the Hmisc package, and heat maps were generated using the pheatmap package.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Differences in the expression of several immune gene sets</head><p>were analyzed between the high and low TIPRGPI groups.</p><p>Enrichment scores for samples in the high and low TIPRGPI groups on the immune-related 7 gene set were calculated using GSVA, and differences between groups were compared. Heatmaps of gene expression in the 7 gene sets were generated using pheatmap.</p><p>Estimating TIPRGPI to predict immunotherapeutic response</p><p>1. According to previous publications, the correlations between TIPRGPI and potential immunotherapeutic markers including IFN-gamma pathway markers, m6A regulators, Immunophenoscore (IPS) scores and Tumor Immune Dysfunction and Exclusion (TIDE) values were explored. Differential box plots of expression differences of immune checkpoints, IFN-gamma pathway marker genes, and m6A regulators between high and low TIPRGPI groups were compared and plotted using the ggplot2 and ggpubr packages. TCGA-SKCM sample data were downloaded from https://tcia.at/patients using the ggdist (version 3.2.0), gghalves (version 0.1.3), ggsci (version 2.9), ggplot2, and ggplubr packages to plot various IPS differences between high and low TIPRGPI groups in the IPS subgroups in a cloud rain plot. TIDE values were calculated for the TCGA-SKCM samples using the TIDE algorithm (http://tide.dfci.harvard.edu/), and TIDE differences between the high and low TIPRGPI groups were compared and plotted using the ggplot2 and ggpubr packages. 2. TIPRGPI differences between groups were compared and plotted using the ggplot2 and ggpubr packages. ROC curves were plotted with the time-ROC package.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIPRGPI-related core target identification and candidate molecule prediction</head><p>To identify the core target of the TIPRGPI signature, all genes were uploaded to the online database of the Search Tool for the Retrieval of Interacting Genes (STRING) (version 11.0; http://string-db.org/) for protein-protein interaction (PPI) network construction with default settings (interaction score ≥0.4). Cytoscape (version 3.2.1; http:// www.cytoscape.org) was used for visualization. Next, we calculated the topological parameters using the Network Analyzer plugin and obtained the degrees of all nodes in the network. The core target was identified as the node with the highest degree.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Molecular docking</head><p>The structural information of the corresponding compounds was downloaded from the DrugBank database and screened according to Lipinski's rule (hydrogen bond acceptor≤ 10, hydrogen bond donor ≤ 5, rotatable bond ≤ 10, logarithmic value of lipid-water partition coefficient ≤ 5, molecular weights of 180-480, and polar surface area ≤ 140), and finally 5462 small molecule compounds were obtained. Retrieve the spatial structure information of the key gene-encoded proteins in the PDB database, find the corresponding data from protein tyrosine phosphatase receptor type C (PTPRC), and download the corresponding PDB files.5FN7. Determine the approximate docking box range and set the other relevant parameters of autodock-vina, and dock with small molecule compounds using autodock-vina, and perform interaction force analysis using Pymol and Ligplus for interaction force analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical analysis</head><p>All analyses and plotting in this study were conducted using R version 4.2.1. In detail, the R script can be downloaded from the GitHub (https://github.com/Myth1313/Melanoma-immunotherpyprediction-model-based-on-TIP-.git). A significance level of P&lt;0.05 was employed, with two-tailed Wilcoxon rank-sum tests for between-group differences comparisons, chi-square tests for frequency differences comparisons among multiple groups, and log2 fold change≥1.5 as the criteria for differential gene selection in Gene Set Enrichment Analysis (GSEA). COX survival analysis was performed using the R packages survival and survminer, with survival curves plotted using the Kaplan-Meier (K-M) method. LASSO analysis was employed to identify the most advantageous gene combinations for constructing TIPRGPI to present K-M curves. The receiver operating characteristic (ROC) curve was used and a larger area under the ROC curve (AUC) indicated a better predictive performance. An AUC of 0.9-1.0 is considered excellent, 0.8-0.9 very good, 0.7-0.8 good, 0.6-0.7 sufficient, 0.5-0.6 bad, and less than 0.5 considered not useful. (ns: p&gt;0.05; *: p&lt;=0.05; **: p&lt;=0.01; ***: p&lt;=0.001; ****: p&lt;=0.0001).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIP score was associated with the prognosis and the immune state of melanoma</head><p>To determine whether TIP score is effective in melanoma, we performed a series of survival analyses using Kaplan-Meier (K-M) survival curves and log-rank tests to examine the discrepancy between low and high TIP score groups. High and low TIP score groups were formed based on the median TIP score (median = -1.304159) with 229 samples in the high TIP score group and 228 samples in the low TIP score group (TIP score and grouping detailed in Supplementary Table <ref type="table" target="#tab_2">1</ref>). As shown in Figure <ref type="figure" target="#fig_2">2</ref>, melanoma patients with higher TIP scores had a better prognosis. We then analyzed the correlations among TIP score, immune score, stromal score, estimate score, and tumor purity. The TIP score correlated positively with immune, stromal, and estimation scores, but negatively with tumor purity. Additionally, as effective T cells -including activated CD4 and CD8 T cells -are crucial in the tumor microenvironment, we computed their positive correlations with the TIP score. Furthermore, since PD-1 or CTLA-4 serve as essential immune checkpoints, we confirmed their positive correlation with the TIP score. The TIP score had strong linear correlations with Immunity score, ESTIMATE score, tumor purity, CD8+ T cell, and PD-1 checkpoints. TIP score correlations with TMB and TIDE were all statistically significant but weak (Supplementary Figures <ref type="figure" target="#fig_1">1,</ref><ref type="figure" target="#fig_2">2</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Construction of TIPRGPI</head><p>WGCNA was used for the identification of the gene module associated with TIP scores. The resulting co-expression network revealed that genes were clustered into 13 modules, which we used to analyze the data (Figure <ref type="figure" target="#fig_3">3A</ref>). We analyzed the correlation and significance of each module eigengenes (ME) with TIP score, age, gender, and Breslow depth using Pearson correlation coefficient (Figure <ref type="figure" target="#fig_3">3B</ref>). We chose the blue, pink, and brown modules that exhibit the strongest and most significant correlation with TIP score. The scatter plots for the GS-MM of the three modules are shown in (Figures <ref type="figure" target="#fig_3">3C-E</ref>). The genes in the upper right red grids of the three plots were selected to create a concatenation set as the key module genes related to TIP score (934), which can be found in Supplementary Table <ref type="table" target="#tab_5">2</ref>. The genes in blue, pink, and brown modules are primarily involved in biological process (BP) of T cell activation, cellular component (CC) of mononuclear cell proliferation, and molecular function (MF) of immune receptor activity. KEGG analysis indicates a predominant involvement in the cytokine-cytokine receptor interaction pathway (Supplementary Figure <ref type="figure" target="#fig_3">3</ref>). The genes from the blue, pink, and brown modules were then inserted in a UniCox regression analysis and identified 641 significant genes (listed in Supplementary Table <ref type="table" target="#tab_4">3</ref>) with a P value lower than 0.05. We then performed LASSO regression using the 128 genes and obtained 20 robust genes. The penalty function for the LASSO algorithm was chosen as lambda.min=0.04591217 to eliminate extraneous genes. Figures <ref type="figure">4A,</ref><ref type="figure">B</ref> shown the process of removing redundant genes by LASSO to get the optimal combination of genes, and Figure <ref type="figure">4C</ref> shown the 20 genes and their coefficients in the model, which is modeled as. TIPRGPI = -0.0176318658536308×LAP3 + 0.181442498785852× NOTCH3-0.0160031827383823×PSME1 + 0.013328065983228×TU BB4A-0.0275390143073945×TSPAN13-0.126145101349642×CCL8 + 0.0414697345452162×COL1A1-0.063751548357349×PARP11-0.0 010811360894315×SOD2-0.134743050717298×DOK1-0.26 1361794333436×ADORA2A-0.247626113868466×KCNMB1-0.03 66480831303996×TXNDC11-0.0325307756953961×CLIC2-0.0227464875810033×UBE2L6-0.181697447499612×SSTR2-0.25 3663685898908×NXPH3-0.012429025784462×TRIM69-0.0365676747211779×KIR2DL4-0.026482536599118×CFB Figures <ref type="figure">4D-F</ref> shows the positive correlations of ADORA2A, CCL8 and CFB with OS, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation and validation of the TIPRGPI signature</head><p>The TIPRGPI score for each patient was calculated. Based on the median value from the training set, melanoma patients from Subsequently, Kaplan-Meier analysis revealed statistically significant differences in overall survival probability between the high-and low-TIPRGPI groups across the training (Figure <ref type="figure">5F</ref>) and validation (Figure <ref type="figure">5M</ref>) datasets. Further, we used a time-dependent receiver operating characteristic curve analysis to assess the precision of the TIPRGPI signature. On the TCGA-SKCM training dataset, the area under the ROC curve (AUC) was 0.728, 0.744, 0.714 in 1-year, 2-year, and 3-year survival, respectively (Figure <ref type="figure">5G</ref>). On the GSE65904 validation dataset, the AUC was 0.621, 0.668, 0.686 in 1-, 2-, and 3-year survival, respectively (Figure <ref type="figure">5N</ref>). A stratified analysis demonstrated that TIPRGPI has added predictive value within subgroups categorized by age, gender, and stage (Supplementary Figure <ref type="figure">4</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Establishment of the prognostic nomogram</head><p>Figure <ref type="figure">6</ref>; Supplementary Figure <ref type="figure">5</ref> showed the differences in TIPRGPI scores between different clinical subgroups, as evidenced by significant differences in TIPRGPI scores between stage, T stage, metastatic, Clark level, and Breslow depth subgroups. To further determine whether the TIPRGPI predictive model served as an independent prognostic indicator in melanoma, both univariate and multivariate analyses were conducted. The HR of the TIPRGPI risk level was 0.34 (95%CI: 0.26-0.45) and 0.36 (95%CI: 0.27-0.47) in the univariate and multivariate analysis, respectively (Figure <ref type="figure">7</ref>). Multivariate analysis shown TIPRGPI and age were independent prognostic factors in melanoma. To provide a quantitative instrument for physicians, a nomogram was built by age and TIPRGPI (Figure <ref type="figure">8A</ref>). The calibration plot, which compares observed and predicted rates of 1-, 2-and 3-year overall survival, demonstrates the nomogram's optimal consistency on OS in 2-year (Figure <ref type="figure">8B</ref>). The survival curves of the high and low TIPRGPI groups in the composite model exhibit significant differences after incorporating the age variables (Figure <ref type="figure">8C</ref>). Figure <ref type="figure">8D</ref> showed TIPRGPI-age integrated nomogram achieved a better net benefit than TIPRGPI nomogram and age nomogram in predicting melanoma OS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Potential molecular mechanisms of TIPRGPI</head><p>We downloaded the available somatic mutation profiles and analyzed the mutational landscape of high-and low-TIPRGPI patients from the TCGA-SKCM dataset to explore the potential mechanisms underlying the risk level defined by TIPRGPI in melanoma. The top 20 genes with mutations were presented in two distinct groups. TTN (69%) and MUC16 (61%) exhibited the greatest frequency of mutation in both high-and low-TIPRGPI groups (Figures <ref type="figure" target="#fig_6">9A,</ref><ref type="figure">B</ref>). The significant differentially mutated genes between the high-and low-TIPRGPI groups were detected by Fisher's exact test (Figure <ref type="figure" target="#fig_6">9C</ref>), and the TENM1 were found with a much higher mutation rate in the high-TIPRGPI group compared with the low-TIPRGPI group (P&lt;0.01). The mutation information summary with statistical calculations is presented in Supplementary Table <ref type="table" target="#tab_6">4</ref>. Meanwhile, the co-occurrence and exclusive associations of the top 20 mutated genes from the high-and low-TIPRGPI groups were also analyzed, where blue represents co-occurrence and red represents mutual exclusion (Figure <ref type="figure" target="#fig_6">9D</ref>). A Lollipop plot has been used to show the different mutation sites of TENM1 (Figure <ref type="figure" target="#fig_6">9E</ref>).</p><p>The CNV alteration landscapes of the high-and low-TIPRGPI groups were generated after removing the germline features</p><formula xml:id="formula_1">A B D E F C FIGURE 4</formula><p>The construction of TIPRGPI for melanoma. (Figures <ref type="figure" target="#fig_7">10A,</ref><ref type="figure">B</ref>). CLIC2, CFB and UBE2L6 were three genes that showed the positive correlations of gene expression in the high-TIPRGPI group (Figures <ref type="figure" target="#fig_7">10C-F</ref>). We performed GSVA in high-and low-TIPRGPI groups. According to the predefined cutoff, 36 hallmark pathways were significantly increased in the high-TIPRGPI group compared to the low-TIPRGPI group (Figure <ref type="figure" target="#fig_8">11A</ref>). GSEA confirmed that 2 of these genes were up-regulated in the high-TIPRGPI group of patients (Figure <ref type="figure" target="#fig_8">11B</ref>). Kaplan-Meier survival analysis was utilized to assess the prognostic significance of the elevated hallmark pathways. Between the high-and low-TIPRGPI groups for these pathways, varying OS probabilities were noted (Figures <ref type="figure" target="#fig_8">11C,</ref><ref type="figure">D</ref>). HALLMARK_ALLOGRAFT_REJECTION is a pathway that is linked to organ transplant rejection, patients who underwent immunosuppression at the time of transplantation rejection displayed a better response to anti-PD1 therapy <ref type="bibr" target="#b18">(18)</ref>. The HALLMARK_IL6_JAK_STAT3_SIGNALING can lead to tumor cell proliferation, invasion, and metastasis <ref type="bibr" target="#b19">(19)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIPRGPI was associated with melanoma TME</head><p>Figure <ref type="figure" target="#fig_9">12</ref> illustrates the variance in infiltration between the high and low TIPRGPI groups across 24 cell types. It is shown that there is a significant difference in infiltration between the 23 cell types except fibroblasts. Then, we investigated the potential correlation between TIPRGPI and the TME cell infiltration. The significant correlation between the TIPRGPI score and infiltration scores of 23 TME cells, except for endothelial cells, which show a negative correlation (Supplementary Figure <ref type="figure">6</ref>). The results of the one-way Cox regression demonstrate significant correlation between infiltration scores of 21 cells and survival, except for resting mast cells, endothelial cells, and fibroblasts. The 21 cells present in survival analysis were the most crucial factors in the correlation between TIPRGPI and TME cells (Supplementary Figure <ref type="figure">7</ref>). TIPRGPI constituent genes correlation with TME-associated cells between high-and low-TIPRGPI groups and revealed that the infiltration of most TME cell types including naive B cells, memory B cells, memory CD4 T cells, naïve CD4 T cells, CD8 T cells, follicular helper T cells, gamma delta T cells, and regulatory T cells (P&lt;0.05) were significantly associated with TIPRGPI (Supplementary Figure <ref type="figure">8</ref>). There was a significant difference in the immune cell recruitment、immune suppression、innate immunity、adaptive immunity、antigen presentation and processing、cytotoxicity/ killing of cancer cells、inflammation gene sets between the high and low TIPRGPI groups (Supplementary Figure <ref type="figure" target="#fig_6">9</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIPRGPI may be a sensitive predictor of immunotherapy</head><p>To evaluate the potential of TIPRGPI to predict how melanoma patients respond to immunotherapy, we first determined the expression of 61 immunomodulators in high-and low-TIPRGPI groups. Figure <ref type="figure" target="#fig_10">13A</ref> showed that the high-and low-TIPRGPI groups were significantly different in 58 of 61 immune checkpoints. Figure <ref type="figure" target="#fig_10">13B</ref> shows that the high-and low-TIPRGPI groups were significantly different in 11 of 12 interferon-g pathway marker genes. Figure <ref type="figure" target="#fig_10">13C</ref> shows that the high-and low-TIPRGPI groups were significantly different in 8 of 20 m6A regulators. Figures <ref type="figure" target="#fig_10">13D-G</ref> show the differences between the high-and low-TIPRGPI groups in the IPS subgroups, as shown by the significant differences in all 4 subgroups. Figure <ref type="figure" target="#fig_10">13H</ref> shows the TIDE-TIPRGPI correlation, which is significantly negatively correlated, with lower TIDE scores in the high-TIPRGPI group. We also predict the immunotherapeutic efficacy for immune checkpoint blockade in GSE91061, the high-TIPRGPI group had a better OS, and the AUC was 0.604,0.578,0.712 in 1-, 2-, and 3-year survival, respectively. (Figure <ref type="figure" target="#fig_1">14</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Core target identification and candidate molecules prediction</head><p>To identify the core target in relation to TIPRGPI, a PPI network was constructed using the STRING database (confidence score&gt;0.4). There were 87 differential genes between the high-and low-TIPRGP groups (Supplementary Table <ref type="table">5</ref>). The PPI interaction network constructed using the 87 differential genes, in which the protein tyrosine phosphatase receptor type C (PTPRC), which has the most connections to the other nodes, is shown as a core factor in red in the center of the figure (Supplementary Figure <ref type="figure" target="#fig_7">10</ref>). Thus, PTPRC was considered as core target. PTPRC is a member of the protein tyrosine phosphatase (PTP) family, which is mainly involved in the regulation of cell growth, differentiation, mitosis, and oncogenic transformation.</p><p>We also analyzed potential molecules that might interact with PTPRC through molecular docking. The corresponding compound structure information was downloaded from the DrugBank database and screened according to Lipinski's rule (hydrogen bond acceptor ≤10, hydrogen bond donor ≤ 5, rotatable bond≤ 10, logarithmic value of lipid-water partition coefficient≤ 5, molecular weight of 180-480, and polar surface area≤ 140), and finally 5462 small molecule compounds were obtained. The spatial structure information of the key gene-encoded proteins was searched in the PDB database to find the corresponding data of PTPRC, and the corresponding PDB (5FN7) file were downloaded. Docking with the small molecule compounds was performed using Autodock-Vina, and interaction force analysis was performed using Pymol and Ligplus, and the top 10 small molecule compounds that had the best scores for binding to the PTPRC are as showed in Table <ref type="table" target="#tab_6">4</ref>. Figure <ref type="figure" target="#fig_1">15</ref> showed the docking conformation and interaction of PTPRC with DB08676, DB05608, and DB12369.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The tumor immune-microenvironment is intricately linked to the tumorigenesis and the progression of cancer. The clinical success with ICB in melanoma has confirmed the therapeutic impact of reinvigorating the immune system to effectively target melanoma. However, even with combination ICB in optimal scenarios, approximately half of patients do not experience durable benefit.  The differences of 23 TME cells infiltration between high-and low-TIPRGPI groups.</p><p>Therefore, a effective prediction model for melanoma immunotherapy is important for the clinical management of this disease.</p><p>The TIP genes guided strategy, utilizing multiple statistical approaches, has resulted in the development of a novel and effective immune-relevant predictive model-TIPRGPI, which showed promising results for prognosis and immunotherapy in certain cancer <ref type="bibr" target="#b16">(16)</ref>. For the first time, we conducted WGCNA to uncover the gene expression pattern associated with TIP score in melanoma. We identified a melanoma TIPRGPI module which generated a 22-gene signature for predicting melanoma prognosis, and our results suggest that lower TIPRGPI indicates better prognosis.</p><p>In this study, there are 20 genes and their coefficients in the TIPRGPI model, offer valuable insights into the distribution of immune factors and potential immunotherapeutic biomarkers associated with melanoma. In 2018, a review concluded that Notch3 signaling may play an important role in oncogenesis, tumor maintenance, and resistance to chemotherapy (20). In 2022, Serge Fuchs and colleagues reported that targeting PARP11 may avert immunosuppression and improve CAR-T therapy in </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A B C</head><note type="other">FIGURE 14</note><p>Applying TIPRGPI to assess immunotherapy prognosis in the GSE91061 melanoma immunotherapy dataset. (A) Significant difference in survival between high-and low-TIPRGPI groups in the GSE91061 dataset; (B) Significant difference in TIPRGPI scores between immunotherapy CR, PR, SD and PD groups; (C) ROC curve.</p><p>solid tumors. In 2023, Yan Cao and colleagues reported that TUBB4A was enriched in pathways related to melanoma, and in vitro experiments indicated that TUBB4A promoted proliferation and migration of melanoma cells A375 and B16-F10 <ref type="bibr" target="#b20">(21)</ref>. In the same year, Hui-Min He and colleagues performed in vitro experiments and found that TRIM69 maybe a potential sensitizer to PD-1 blockers <ref type="bibr" target="#b21">(22)</ref>. In our study, the coefficient of TRIM69 was negative, implying that high TRIM69 expression, low TIPRGPI scores and good prognosis, consistent with the results of the in vitro study. The same negative coefficient was found for CLIC2, a dimorphic protein present in both soluble and membrane fractions. CLIC2 was found to be expressed at higher levels in benign tumors than in malignant tumors, most likely preventing tumor cell invasion into surrounding tissues. CLIC2 was also expressed in vascular endothelial cells of normal tissues and maintains their intercellular adhesive junctions, presumably suppressing hematogenous metastasis of malignant tumor cells <ref type="bibr" target="#b22">(23)</ref>. A significant difference was identified in the distribution of immune factors between the high-and low-TIPRGPI groups, suggesting that TIPRGPI may assist in the risk stratification of melanoma patients, providing further evidence of the heterogeneity of melanoma and its potential impact on treatment outcomes. Additionally, key gene modules associated with TIPRGPI were identified. Among these modules, the protein PTPRC was identified as a core target. The identification of PTPRC as a core target suggests its potential role in the development and progression of melanoma. PTPRC, belongs to the PTP family, also known as CD45, is a transmembrane glycoprotein, expressed on almost all  hematopoietic cells except for mature erythrocytes, and is an essential regulator of T and B cell antigen receptor-mediated activation.</p><p>Imbalance between the activity of protein tyrosine kinase and phosphatase, due to CD45 and other factors, can lead to immunodeficiency, autoimmunity, or malignancy <ref type="bibr" target="#b23">(24)</ref>. PTPRC participates in a range of cellular processes, including cell growth, differentiation, and oncogenic transformation. Our previous study demonstrated that PTP1B promotes the progression of melanoma cells in vitro and in vivo <ref type="bibr" target="#b24">(25)</ref>. In 2021, a pan-cancer study highlighted the significance of PARP1 alterations as cancer predictive biomarkers for immunotherapy, and its expression levels were correlated with the status of immunotherapy-associated signatures in several tumors <ref type="bibr" target="#b25">(26)</ref>. Further bioinformatics investigations have indicated the pivotal function of PTPRC in melanoma. In 2021, Thomas F Gajewski and colleagues reported that up to 90% of PTPRC+ cells produced CXCL10 transcripts, which played a critical role in recruiting effector CD8+ T cells to the tumor site <ref type="bibr" target="#b26">(27)</ref>. In 2022, Xiaobo Xia and colleagues reported that the OIP5-AS1-PTPRC/ IL7R/CD69 axis in ceRNA as a clinical prognostic model <ref type="bibr" target="#b27">(28)</ref>.</p><p>The study employed molecular docking analysis to identify potential small molecule compounds that may interact with PTPRC. This approach allows for the identification of potential therapeutic targets and the development of novel treatment strategies. The screening of small molecule compounds based on specific criteria, such as Lipinski's rule, ensures the selection of compounds with favorable drug-like properties.</p><p>The TIPRGPI model demonstrated significant differences in OS between the high and low groups in both the TCGA training set, the GSE65904 validation set, and the GSE91061 immunotherapy dataset, with no intersection of survival curves among subgroups. Our model also demonstrates a higher AUC than most previous studies aimed at developing effective risk classifiers for melanoma. For instance, in 2022, Song et al. reported a necroptosis-related gene signature in cutaneous melanoma that achieved a 2-year AUC of 0.700 in the training dataset and 0.634 in the validation dataset <ref type="bibr" target="#b28">(29)</ref>. In contrast, TIPRGPI model achieved a 2-year AUC of 0.744 in the training dataset and 0.668 in the validation dataset. Previously, our team presented a G protein-coupled receptor-based prediction model that predicted 1-, 3-, and 5-year overall survival with AUCs ranging from 0.672 to 0.703 <ref type="bibr" target="#b29">(30)</ref>. Chuang et al. reported an AUC of 0.623 on breast cancer outcome prediction <ref type="bibr" target="#b30">(31)</ref>. In 2023, a pan-cancer immunotherapy response study built a predictive model based on endothelial senescence and showed that the machine learning algorithm "KKNN" had the highest AUC for response at 0.75 in the anti-PD-1/PD-L1 treated melanoma cohort (PUCH SKCM, 2021), while in other melanoma immunotherapy cohorts the AUC decreased to around 0.5, and the AUC for OS was even lower <ref type="bibr" target="#b31">(32)</ref>. Generally, the AUC of existing OS prediction models ranges from 0.6 to 0.7, and our model demonstrates similar predictive performance compared to the existing models. Particularly, our TIPRGPI predicts the immunotherapeutic efficacy of immune checkpoint blockade in GSE91061, with an AUC of 0.712 for the 3-year survival rate, which is considered relatively high within existing prognostic models for melanoma.</p><p>Despite the improved AUC for OS of our model compared to previous models, we emphasize that it still needs improvement. The model demonstrates strong predictive capability on the training set, with all AUC values exceeding 0.7. Moreover, on the validation set, the AUC values for 2 and 3 years are both greater than 0.65, indicating a certain level of predictive ability. However, further improvement is still needed in predicting 1-year survival.</p><p>Although the recently studies reported better predictive validity of their models compared to ours, these were studies based on single-cell sequencing data <ref type="bibr" target="#b31">(32)</ref> or imaging data <ref type="bibr" target="#b32">(33)</ref>, whereas ours was based on bulk-seq. It is impossible to compare predictive validity between models based on different types of data. Meanwhile, these recently emerged technologies are not without flaws. Single-cell sequencing requires a trade-off between breadth (sequencing more cells) and depth (sequencing more transcripts per cell) and is subject to experimental cost pressures <ref type="bibr" target="#b33">(34)</ref>. Certain studies have introduced models employing deep learning (DL), a branch primarily applied in image recognition. Within the realm of medical image analysis, the task of label annotation poses persistent challenges during the development of DL models. The inherent opacity of DL algorithms often renders their inner workings inscrutable, colloquially termed as a "black box." In contrast, our models are primarily constructed using clustering trees and logistic regression. This approach ensures a higher level of interpretability and transparency, avoiding "black box".</p><p>Our study presents several advances over previous literature <ref type="bibr" target="#b34">(35)</ref>. Firstly, a series of related marker genes were clearly identified. Furthermore, the model constructed in this study has significance in predicting immunotherapy response and screening therapeutic drug candidates in addition to its prognostic significance.</p><p>This study is limited by its bioinformatics approach. Further research, such as flow cytometry and immunohistochemistry, is warranted to validate these findings and explore their clinical implication. Second, to enhance the robustness of our conclusions, we recommend utilizing an internal cohort that includes gene expression data, survival data, and immunotherapy response data to further assess the performance of the TIPRGPI in melanoma. The findings from this study contribute to our understanding of the molecular mechanisms underlying melanoma and provide insights into potential biomarkers and therapeutic targets. The identification of specific clinical factors, gene modules, and immune markers associated with TIPRGPI may aid in the development of personalized treatment strategies for melanoma patients.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>In conclusion, melanoma patients with lower TIPRGPI indicate better prognosis and better immunotherapy response. As the TIPRGPI increases, infiltration of almost all types of immune cells (21 types except endothelial cells) decreases, resulting in a poorer prognosis and a greater likelihood of progression even after immunotherapy. The analysis of high-and low-TIPRGPI groups provides valuable information regarding the distribution of clinical factors, gene modules, and immune markers associated with melanoma.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Abbreviations: TIPRGPI, tumor immunological phenotype-related gene index; LASSO, least absolute shrinkage and selection operator; TIDE, tumor immune dysfunction and exclusion; PTPRC, protein tyrosine phosphatase receptor type C; TME, Tumor microenvironment; TIP, tumor immune phenotype.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE 1</head><label>1</label><figDesc>FIGURE 1</figDesc><graphic coords="2,319.07,464.09,212.60,272.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>FIGURE 2 TIP</head><label>2</label><figDesc>FIGURE 2TIP score correlates with the prognosis and the immune state of melanoma. Kaplan-Meier survival plots of TIP score for OS.</figDesc><graphic coords="6,319.07,591.93,212.60,135.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>3</head><label>3</label><figDesc>FIGURE 3 WGCNA analysis. (A) Cluster dendrogram of MAD top 5000 genes. (B) Table cells show Pearson correlation coefficients and corresponding P-values between module eigengenes (ME) and the variables in 13 modules. (C) Scatter plot depicting the correlation between gene significance (GS) for TIP score and module membership (MM) in the blue module. (D) Scatter plot depicting the correlation between GS for TIP score and MM in the pink module. (E) Scatter plot depicting the correlation between GS for TIP score and MM in the brown module.</figDesc><graphic coords="7,100.59,491.68,396.88,218.08" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head></head><label></label><figDesc>(A) The penalty function for the LASSO algorithm was chosen as lambda.min = 0.04591217. (B) LASSO regression using the 128 genes. (C) Twenty robust genes were and their coefficients in the model. (D) ADORA2A positively correlated with OS. (E) CCL8 positively correlated with OS. (F) CFB positively correlated with OS.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FIGURE 7 8</head><label>78</label><figDesc>FIGURE 7Univariate and multivariate analyses of the clinical traits and TIPRGPI for the OS in melanoma.</figDesc><graphic coords="10,113.56,88.84,368.50,121.78" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>9</head><label>9</label><figDesc>FIGURE 9 Genetic variations of the high-and low-TIPRGPI groups. (A, B) Waterfall plots showing the mutation landscapes of the high-(A) and low-TIPRGPI (B) groups, TTN and MUC16 mutations were obtained; (C) Forest plot showing significantly different mutated genes between high-and low-TIPRGPI groups; (D) The coincident and exclusive associations across the top mutated genes in high-and low-TIPRGPI groups; (E) Lollipop plot indicating the distribution of mutation spots in the high-and low-TIPRGPI groups.</figDesc><graphic coords="11,122.40,92.47,354.40,359.26" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>10</head><label>10</label><figDesc>FIGURE 10 The distribution of CNV features across all chromosomes for the high-(A) and low-(B) TIPRGPI groups; (C) CLIC2, CFB and UBE2L6 showed significant differences at the CNV level; (D) Violin plots indicating the positive correlation of gene expression and copy number of CLIC2 in the high-TIPRGPI group; (E) Violin plots indicating the positive correlation of gene expression and copy number of CFB in the high-TIPRGPI group; (F) Violin plots indicating the positive correlation of gene expression and copy number of UBE2L6 in the high-TIPRGPI group.</figDesc><graphic coords="12,129.60,94.63,340.24,365.89" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>11</head><label>11</label><figDesc>FIGURE 11 Determination of the distinct hallmark pathways of the high-and low TIPRGPI groups. (A) Differences in cancer hallmark pathway activities between the between the high-and low-TIPRGPI groups as assessed by GSVA; (B) The GSEA results for the 2 overlapping upregulated hallmark pathways in terms of the TIPRGPI groups; (C) Kaplan-Meier survival plots showing the significant correlations between the OS and GSVA scores of HALLMARK_ALLOGRAFT_REJECTION; (D) Kaplan-Meier survival plots showing the significant correlations between the OS and GSVA scores of HALLMARK_IL6_JAK_STAT3_SIGNALING.</figDesc><graphic coords="13,128.97,94.63,341.65,283.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>FIGURE 12</head><label>12</label><figDesc>FIGURE 12    </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>13</head><label>13</label><figDesc>FIGURE 13 Application of the TIPRGPI model for immunotherapy prediction in melanoma. (A) The high-and low-TIPRGPI groups were significantly different in 58 out of 61 immune checkpoints; (B) The high-and low-TIPRGPI groups were significantly different in 11 of the 12 interferon-g pathway marker genes; (C) The high-and low-TIPRGPI groups were significantly different in 8 of the 20 m6A regulators; (D-G) The relationship between TIPRGPI and IPS, significant difference in all 4 subgroups; (H) TIDE correlated with TIPRGPI, which showed a significant negative correlation.</figDesc><graphic coords="14,87.27,94.63,425.26,265.30" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head></head><label></label><figDesc>Docking conformation and interaction force analysis. (A) Pymol 3D structures and binding modes showing the formed hydrogen bonds between the predicted pocket of PTPRC and DB08676 (A), DB05608 (B) and DB12369 (C); Ligplus interaction force analysis showing hydrogen bonds formed by DB08676 (D), DB05608 (E) and DB12369 (F) with amino acid residues of proteins.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="9,130.29,94.62,340.21,394.03" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>The Gencode annotation files were acquired from the EBI website ftp://ftp.ebi.ac.uk/pub/ databases/gencode/Gencode_human/release_38/gencode.v38.chr_ patch_hapl_scaff.annotation.gtf.gz. The gene set for the hallmark pathway, h.all.v7.5.symbols.gmt, was acquired from the MsigDB database found at http://www.gsea-msigdb.org/gsea/msigdb/. The TCGA and GEO datasets are shown in Tables1-3.</figDesc><table><row><cell>Zheng et al.</cell><cell>10.3389/fimmu.2024.1343425</cell></row><row><cell cols="2">Frontiers in Immunology frontiersin.org fromprevious literature (16).</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 1</head><label>1</label><figDesc>Clinical information on TCGA-SKCM.</figDesc><table><row><cell>Variable</cell><cell>Classic</cell><cell>No.</cell></row><row><cell></cell><cell>Metastatic</cell><cell>361</cell></row><row><cell>Sample type</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Primary Tumor</cell><cell>99</cell></row><row><cell></cell><cell>≥60</cell><cell>217</cell></row><row><cell>Age</cell><cell></cell><cell></cell></row><row><cell></cell><cell>&lt;60</cell><cell>246</cell></row><row><cell></cell><cell>Stage 0</cell><cell>6</cell></row><row><cell></cell><cell>Stage I</cell><cell>78</cell></row><row><cell>Stage</cell><cell>Stage II</cell><cell>136</cell></row><row><cell></cell><cell>Stage III</cell><cell>174</cell></row><row><cell></cell><cell>Stage IV</cell><cell>23</cell></row><row><cell></cell><cell>T0</cell><cell>23</cell></row><row><cell></cell><cell>T1</cell><cell>32</cell></row><row><cell></cell><cell>T2</cell><cell>77</cell></row><row><cell>Pathologic T</cell><cell>T3</cell><cell>91</cell></row><row><cell></cell><cell>T4</cell><cell>150</cell></row><row><cell></cell><cell>Tis</cell><cell>7</cell></row><row><cell></cell><cell>Tx</cell><cell>45</cell></row><row><cell></cell><cell>N0</cell><cell>227</cell></row><row><cell></cell><cell>N1</cell><cell>75</cell></row><row><cell>Pathologic N</cell><cell>N2</cell><cell>50</cell></row><row><cell></cell><cell>N3</cell><cell>57</cell></row><row><cell></cell><cell>Nx</cell><cell>34</cell></row><row><cell></cell><cell>M0</cell><cell>411</cell></row><row><cell>Pathologic M</cell><cell></cell><cell></cell></row><row><cell></cell><cell>M1</cell><cell>24</cell></row><row><cell></cell><cell>BRAF</cell><cell>147</cell></row><row><cell></cell><cell>NF1</cell><cell>27</cell></row><row><cell>Mutational Subtype</cell><cell></cell><cell></cell></row><row><cell></cell><cell>RAS</cell><cell>91</cell></row><row><cell></cell><cell>Triple Wild Type</cell><cell>48</cell></row><row><cell></cell><cell>Male</cell><cell>289</cell></row><row><cell>Gender</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Female</cell><cell>174</cell></row><row><cell></cell><cell>&lt;1.5</cell><cell>99</cell></row><row><cell>Breslow depth</cell><cell></cell><cell></cell></row><row><cell></cell><cell>1.5-3</cell><cell>68</cell></row><row><cell></cell><cell></cell><cell>(Continued)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 1 Continued</head><label>1</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Classic</cell><cell>No.</cell></row><row><cell></cell><cell>3-4.5</cell><cell>64</cell></row><row><cell></cell><cell>&gt;4.5</cell><cell>124</cell></row><row><cell></cell><cell>I</cell><cell>5</cell></row><row><cell></cell><cell>II</cell><cell>18</cell></row><row><cell>Melanoma clark level</cell><cell>III</cell><cell>77</cell></row><row><cell></cell><cell>IV</cell><cell>164</cell></row><row><cell></cell><cell>V</cell><cell>5 4</cell></row><row><cell></cell><cell>&lt;18.5</cell><cell>3</cell></row><row><cell>BMI* exposures</cell><cell>18.5-23.9</cell><cell>60</cell></row><row><cell></cell><cell>&gt;23.9</cell><cell>178</cell></row></table><note><p>*BMI, body mass index.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 3</head><label>3</label><figDesc>Clinical information on dataset GSE91061.</figDesc><table><row><cell>Variable</cell><cell>Classic</cell><cell>No.</cell></row><row><cell></cell><cell>BRAF</cell><cell>28</cell></row><row><cell></cell><cell>NF1</cell><cell>5</cell></row><row><cell>Mutational Subtype</cell><cell>RAS</cell><cell>18</cell></row><row><cell></cell><cell>Triple Wild Type</cell><cell>41</cell></row><row><cell></cell><cell>Default</cell><cell>17</cell></row><row><cell></cell><cell>M0</cell><cell>2</cell></row><row><cell></cell><cell>M1a</cell><cell>21</cell></row><row><cell>M Stage</cell><cell>M1b</cell><cell>17</cell></row><row><cell></cell><cell>M1c</cell><cell>44</cell></row><row><cell></cell><cell>Default</cell><cell>25</cell></row><row><cell></cell><cell>CR</cell><cell>6</cell></row><row><cell></cell><cell>NE</cell><cell>3</cell></row><row><cell></cell><cell>PD</cell><cell>44</cell></row><row><cell>Treatment Response</cell><cell></cell><cell></cell></row><row><cell></cell><cell>PR</cell><cell>14</cell></row><row><cell></cell><cell>SD</cell><cell>34</cell></row><row><cell></cell><cell>Default</cell><cell>8</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>TABLE 2</head><label>2</label><figDesc>Clinical information on dataset GSE65904.</figDesc><table><row><cell>Variable</cell><cell>Classic</cell><cell>No.</cell></row><row><cell></cell><cell>Male</cell><cell>124</cell></row><row><cell>Gender</cell><cell>Female</cell><cell>89</cell></row><row><cell></cell><cell>Default</cell><cell>1</cell></row><row><cell></cell><cell>≥60</cell><cell>130</cell></row><row><cell>Age</cell><cell>&lt;60</cell><cell>80</cell></row><row><cell></cell><cell>Default</cell><cell>4</cell></row><row><cell></cell><cell>Cutaneous</cell><cell>22</cell></row><row><cell></cell><cell>Lymph node</cell><cell>130</cell></row><row><cell></cell><cell>Subcutaneous</cell><cell>33</cell></row><row><cell>Tissue</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Visceral</cell><cell>10</cell></row><row><cell></cell><cell>Other</cell><cell>1</cell></row><row><cell></cell><cell>Default</cell><cell>18</cell></row></table><note><p>package (version 1.1) is employed to plot age grouping and TIPRGPI grouping column line plots, while the rms package (version 6.1-0) is utilized to plot calibration curves. The rmda package (version 1.6) is used to plot decision curves, categorizing samples into high-and lowrisk groups based on composite model scores. Finally, the survival package is deployed to compare and plot km curves between groups.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>TABLE 4</head><label>4</label><figDesc>Top 10  small molecule compounds had the best scores for binding to the PTPRC.</figDesc><table><row><cell>DrugBank ID</cell><cell>Hydrogen</cell><cell>Hydrogen</cell><cell>Rotatable</cell><cell>LogP</cell><cell>Molecular</cell><cell>TPSA</cell><cell>Affinity</cell></row><row><cell></cell><cell>Acceptors</cell><cell>Donors</cell><cell>Bonds</cell><cell></cell><cell>Weight</cell><cell></cell><cell>(kcal/mol)</cell></row><row><cell>DB08676</cell><cell>5</cell><cell>1</cell><cell>0</cell><cell>2.5</cell><cell>453.5</cell><cell>83.2</cell><cell>-8.2</cell></row><row><cell>DB05608</cell><cell>4</cell><cell>1</cell><cell>2</cell><cell>2.6</cell><cell>400.4</cell><cell>102</cell><cell>-8</cell></row><row><cell>DB12369</cell><cell>6</cell><cell>2</cell><cell>3</cell><cell>2.6</cell><cell>438.5</cell><cell>94.2</cell><cell>-7.9</cell></row><row><cell>DB14773</cell><cell>8</cell><cell>2</cell><cell>3</cell><cell>3.7</cell><cell>478.4</cell><cell>89.1</cell><cell>-7.9</cell></row><row><cell>DB15345</cell><cell>8</cell><cell>1</cell><cell>5</cell><cell>1.1</cell><cell>451.5</cell><cell>79.8</cell><cell>-7.9</cell></row><row><cell>DB12134</cell><cell>7</cell><cell>1</cell><cell>5</cell><cell>0.1</cell><cell>448.5</cell><cell>90.4</cell><cell>-7.8</cell></row><row><cell>DB01395</cell><cell>3</cell><cell>0</cell><cell>0</cell><cell>3.5</cell><cell>366.5</cell><cell>43.4</cell><cell>-7.7</cell></row><row><cell>DB15442</cell><cell>7</cell><cell>2</cell><cell>3</cell><cell>2.6</cell><cell>446.5</cell><cell>91.2</cell><cell>-7.7</cell></row><row><cell>DB12368</cell><cell>7</cell><cell>1</cell><cell>4</cell><cell>3.2</cell><cell>431.4</cell><cell>77</cell><cell>-7.7</cell></row><row><cell>DB12690</cell><cell>9</cell><cell>1</cell><cell>3</cell><cell>3.6</cell><cell>445.4</cell><cell>75.5</cell><cell>-7.7</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Frontiers in Immunology frontiersin.org</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Zheng et al. 10.3389/fimmu.2024.1343425 Frontiers in Immunology frontiersin.org</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>We acknowledge the <rs type="funder">Gene Expression Omnibus (GEO) database, Cancer Genome Atlas (TCGA)</rs>, and <rs type="funder">International Cancer Genome Consortium (ICGC)</rs> for data sharing.</p></div>
+			</div>
+			<div type="funding">
+<div><head>Funding</head><p>The author(s) declare that financial support was received for the research, authorship, and/or publication of this article. This study received the funding from <rs type="funder">Xiamen Municipal Bureau of Science and Technology</rs> (<rs type="grantNumber">3502Z20209042</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_P9zyCzV">
+					<idno type="grant-number">3502Z20209042</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statement</head><p>The datasets presented in this study can be found in online repositories. The names of the repository/repositories and accession number(s) can be found in the article/Supplementary Material.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Differences in the distribution of various clinical factors in high-and low-TIPRGPI groups. There were significant differences in stage, T-stage, primary/metastasis, and Breslow depth.</p><p>Author contributions </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of interest</head><p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Publisher's note</head><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary material</head><p>The Supplementary Material for this article can be found online at: https://www.frontiersin.org/articles/10.3389/fimmu.2024.1343425/ full#supplementary-material SUPPLEMENTARY FIGURE <ref type="figure">1</ref> Correlations between TIP score and immune score (A), stromal score (B), estimate score (C), tumor purity (D), activated CD4/CD8 (E, F) and PD-1/ CTLA-4 (G, H). Tumor purity was negatively correlated with TIP score and the rest were positively correlated.</p><p>SUPPLEMENTARY FIGURE <ref type="figure">2</ref> TIP score correlations with TMB and TIDE were all significant but not strong.</p><p>SUPPLEMENTARY FIGURE <ref type="figure">3</ref> GO and KEGG enrichment analysis. (A) GO enrichment analysis. (B) KEGG analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY FIGURE 4</head><p>Survival curves for different clinical subgroups of high-and low-TIPRGPI groups. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY FIGURE 6</head><p>The correlation between the infiltration scores of the 23 different TME cells and the TIPRGPI score was found to be significantly correlated, except for endothelial cells, which were negatively correlated with the TIPRGPI score. (adaptive immunity in red, intrinsic immune cells in green, and stromal cells in blue). <ref type="figure">7</ref> TIPRGPI cells most relevant to TME. (A) Venn diagram revealing 21 types of most relevant TME cells contributing to the risk stratification of melanoma patients by TIPRGPI; (B) The bar graphs show the number of cells in the differential analysis, correlation analysis and survival analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY FIGURE</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY FIGURE 8</head><p>Cellular relevance of TIPRGPI constituent genes most relevant to TME. (ns: p&gt;0.05; *: p ≤ 0.05; **: p ≤ 0.01; ***: p ≤ 0.001; ****: p ≤ 0.0001).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY FIGURE 9</head><p>Differences in expression of seven immune-related gene sets (immune cell recruitment, immune suppression, innate immunity, adaptive immunity, antigen presentation and processing, cytotoxicity/killing of cancer cells, inflammation) between high-and low-TIPRGPI groups. There were significantly different in enrichment in all 7 gene sets (ns: p&gt;0.05; *: p ≤ 0.05; **: p ≤ 0.01; ***: p ≤ 0.001; ****: p ≤ 0.0001).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUPPLEMENTARY FIGURE 10</head><p>The total number of differential genes between the high-and low-TIPRGP groups was 87, and the PPI interaction network constructed using the 87 differential genes, in which the protein PTPRC with the most connections to other nodes in red at the right center of the figure was used as a core factor.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">From melanocytes to melanomas</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Shain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Bastian</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nrc.2016.37</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Rev Cancer</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="345" to="358" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Cancer statistics, 2020: report from national cancer registry programme, India</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mathur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sathishkumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chaturvedi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Sudarshan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Santhappan</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/GO.20.00122</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JCO Glob Oncol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1063" to="1075" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Cancer statistics</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Siegel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jemal</surname></persName>
+		</author>
+		<idno type="DOI">10.3322/caac.21590</idno>
+	</analytic>
+	<monogr>
+		<title level="j">CA Cancer J Clin</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="7" to="30" />
+			<date type="published" when="2020">2020. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Cutaneous nevi and risk of melanoma death in women and men: A prospective study</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Weinstock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Stampfer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Qureshi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jaad.2018.12.058</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Am Acad Dermatol</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="1284" to="1291" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Activation of G protein-coupled estrogen receptor signaling inhibits melanoma and improves response to immune checkpoint blockade</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Natale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dahal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Dentchev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">Z</forename><surname>Stanger</surname></persName>
+		</author>
+		<idno type="DOI">10.7554/eLife.31770</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ELIFE</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">31770</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Autoimmune diseases and immune-checkpoint inhibitors for cancer therapy: review of the literature and personalized risk-based prevention strategy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Haanen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Ernstoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Menzies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Puzanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Grivas</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.annonc.2020.03.285</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ann Oncol</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="724" to="744" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Immunotherapy for melanoma</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Albittar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Alhalabi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">I</forename><surname>Glitza</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-79308-1_3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv Exp Med Biol</title>
+		<imprint>
+			<biblScope unit="volume">1244</biblScope>
+			<biblScope unit="page" from="51" to="68" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Advances in immunotherapy for melanoma</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Redman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">T</forename><surname>Gibney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Atkins</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title/>
+		<idno type="DOI">10.1186/s12916-016-0571-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Med</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">20</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Advances in immunotherapy for melanoma: A comprehensive review</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rodriguez-Cerdeira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Carnero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lopez-Barcenas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Sanchez-Blanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sanchez-Blanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fabbrocini</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2017/3264217</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mediators Inflammation</title>
+		<imprint>
+			<biblScope unit="page">3264217</biblScope>
+			<date type="published" when="2017">2017. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The introduction of LAG-3 checkpoint blockade in melanoma: immunotherapy landscape beyond PD-1 and CTLA-4 inhibition</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">Y</forename><surname>Kreidieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Tawbi</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/17588359231186027</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ther Adv Med Oncol</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">2630763</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">TIGIT, a novel immune checkpoint therapy for melanoma</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Cong</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41419-023-05961-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Death Dis</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">466</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Long-term outcomes with nivolumab plus ipilimumab or nivolumab alone versus ipilimumab in patients with advanced melanoma</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Wolchok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Chiarion-Sileni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Grob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rutkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Lao</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/JCO.21.02229</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Oncol</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="127" to="137" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A decade of checkpoint blockade immunotherapy in melanoma: understanding the molecular basis for immune sensitivity and resistance</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zappasodi</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41590-022-01141-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Immunol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="660" to="670" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Tumor microenvironment as a therapeutic target in cancer</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yu</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Chemokines in the cancer microenvironment and their relevance in cancer immunotherapy</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Nagarsheth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Wicha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zou</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nri.2017.49</idno>
+		<idno>doi: 10.1038/nri.2017.49</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Rev Immunol</title>
+		<imprint>
+			<biblScope unit="volume">221</biblScope>
+			<biblScope unit="page" from="559" to="572" />
+			<date type="published" when="2017">2021. 2017</date>
+		</imprint>
+	</monogr>
+	<note>Pharmacol Ther.</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Identification of a tumor immunological phenotype-related gene signature for predicting prognosis, immunotherapy efficacy, and drug candidates in hepatocellular carcinoma</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fimmu.2022.862527</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Front Immunol</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">862527</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Tumor immunological phenotype signature-based high-throughput screening for the discovery of combination immunotherapy compounds</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">Z</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename></persName>
+		</author>
+		<idno type="DOI">10.1126/sciadv.abd7851</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci Adv</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">7851</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Tumor regression and allograft rejection after administration of anti-PD-1</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Lipson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Bagnasco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Zachary</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/NEJMc1509268</idno>
+	</analytic>
+	<monogr>
+		<title level="j">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">374</biblScope>
+			<biblScope unit="page" from="896" to="898" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Targeting the IL-6/JAK/STAT3 signalling axis in cancer</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O'</forename><surname>Keefe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Grandis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Aburjania</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Whitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jaskula-Stzul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Rose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename></persName>
+		</author>
+		<idno type="DOI">10.1634/theoncologist.2017-0677</idno>
+		<idno>doi: 10.1634/theoncologist. 2017-0677</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Rev Clin Oncol</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="900" to="911" />
+			<date type="published" when="2018">2018. 2018</date>
+		</imprint>
+	</monogr>
+	<note>ONCOLOGIST</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Identification of TUBB4A as a prognostic biomarker of melanoma by transcriptomic data and in vitro experiments</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cao</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/15330338231184842</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Technol Cancer Res Treat</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page">2071040566</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">TRIM69: a marker of metastasis and potential sensitizer to 5-Fluorouracil and PD-1 blockers in colon adenocarcinoma</title>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">J</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">B</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Q</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>An</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12876-023-02927-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Gastroenterol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page">292</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Chloride intracellular channel proteins (CLICs) and Malignant tumor progression: A focus on the preventive role of CLIC2 in invasion and metastasis</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ozaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mikami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kunieda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tanaka</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/cancers14194890</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancers</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">4890</biblScope>
+			<date type="published" when="2022">2022</date>
+			<pubPlace>Basel</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Protein tyrosine phosphatase receptor type C (PTPRC or CD45)</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Al</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Mcmullin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mills</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/jclinpath-2020-206927</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Pathol</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="548" to="552" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Protein tyrosine phosphatase 1B(PTP1B) promotes melanoma cells progression through Src activation</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/21655979.2021.1988376</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BIOENGINEERED</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="8396" to="8406" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Pan-cancer analysis of PARP1 alterations as biomarkers in the prediction of immunotherapeutic effects and the association of its expression levels and immunotherapy signatures</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fimmu.2021.721030</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Front Immunol</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">721030</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Immune cell and tumor cell-derived CXCL10 is indicative of immunotherapy response in metastatic melanoma</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Reschke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Flood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">F</forename><surname>Higgs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hatogai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">F</forename><surname>Gajewski</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/jitc-2021-003521</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Immunother Cancer</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">3521</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Integrated analysis to reveal potential therapeutic targets and prognostic biomarkers of skin cutaneous melanoma</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Xia</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fimmu.2022.914108</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Front Immunol</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">914108</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A novel necroptosisrelated gene signature in skin cutaneous melanoma prognosis and tumor microenvironment</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fgene.2022.917007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Front Genet</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">917007</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Prediction of survival and immunotherapy response by the combined classifier of G protein-coupled receptors and tumor microenvironment in melanoma</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40001-023-01346-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Med Res</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page">352</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Network-based classification of breast cancer metastasis</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Y</forename><surname>Chuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">T</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ideker</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/msb4100180</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mol Syst Biol</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">140</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">A transcriptomic pan-cancer signature for survival prognostication and prediction of immunotherapy response based on endothelial senescence</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Uhl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gires</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Reichel</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12929-023-00915-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J BioMed Sci</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page">21</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Early readout on overall survival of patients with melanoma treated with immunotherapy using a novel imaging analysis</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Dercle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Moskowitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Firas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Beylergil</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamaoncol.2021.6818</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Oncol</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="385" to="392" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">RNA sequencing: the teenage years</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Stark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Grzelak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hadfield</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41576-019-0150-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Rev Genet</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="631" to="656" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Immunology of melanoma</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mukherji</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clindermatol.2012.08.017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Clin Dermatol</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="156" to="165" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

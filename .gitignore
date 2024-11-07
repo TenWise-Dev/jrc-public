@@ -1,0 +1,12 @@
+_build/
+_static/
+_templates/
+tempfiles/
+.jrc/
+__pycache__/
+.pytest_cache/
+doc2vec.model
+tfidf-2.joblib
+tfidf-3.joblib
+ignore/
+randomforest.pkl

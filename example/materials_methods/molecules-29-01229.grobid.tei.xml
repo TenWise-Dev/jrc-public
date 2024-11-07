@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Discovery of Novel Noncovalent KRAS G12D Inhibitors through Structure-Based Virtual Screening and Molecular Dynamics Simulations</title>
+				<funder ref="#_am53gHk">
+					<orgName type="full">State Key Laboratory of Quality Research in Chinese Medicine, Macau University of Science and Technology, Macau, China</orgName>
+				</funder>
+				<funder ref="#_8pvCcAg">
+					<orgName type="full">Science and Technology Development Fund, Macau SAR</orgName>
+				</funder>
+				<funder ref="#_qTF8zgR #_zQEuPsH">
+					<orgName type="full">unknown</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-03-10">10 March 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Zhenya</forename><surname>Du</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Dr. Neher&apos;s Biophysics Laboratory for Innovative Drug Discovery</orgName>
+								<orgName type="laboratory">State Key Laboratory of Quality Research in Chinese Medicine</orgName>
+								<orgName type="institution">Macau Institute for Applied Research in Medicine and Health</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Chinese Medicine</orgName>
+								<orgName type="institution">Macau University of Science and Technology</orgName>
+								<address>
+									<postCode>999078</postCode>
+									<settlement>Macao</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department" key="dep1">Teaching and Research Department of Public Medical Courses</orgName>
+								<orgName type="department" key="dep2">School of Nursing</orgName>
+								<orgName type="institution">Guangzhou Xinhua University</orgName>
+								<address>
+									<postCode>510520</postCode>
+									<settlement>Guangzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gao</forename><surname>Tu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Dr. Neher&apos;s Biophysics Laboratory for Innovative Drug Discovery</orgName>
+								<orgName type="laboratory">State Key Laboratory of Quality Research in Chinese Medicine</orgName>
+								<orgName type="institution">Macau Institute for Applied Research in Medicine and Health</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Chinese Medicine</orgName>
+								<orgName type="institution">Macau University of Science and Technology</orgName>
+								<address>
+									<postCode>999078</postCode>
+									<settlement>Macao</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yaguo</forename><surname>Gong</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Dr. Neher&apos;s Biophysics Laboratory for Innovative Drug Discovery</orgName>
+								<orgName type="laboratory">State Key Laboratory of Quality Research in Chinese Medicine</orgName>
+								<orgName type="institution">Macau Institute for Applied Research in Medicine and Health</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Chinese Medicine</orgName>
+								<orgName type="institution">Macau University of Science and Technology</orgName>
+								<address>
+									<postCode>999078</postCode>
+									<settlement>Macao</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xiangzheng</forename><surname>Fu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Dr. Neher&apos;s Biophysics Laboratory for Innovative Drug Discovery</orgName>
+								<orgName type="laboratory">State Key Laboratory of Quality Research in Chinese Medicine</orgName>
+								<orgName type="institution">Macau Institute for Applied Research in Medicine and Health</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Chinese Medicine</orgName>
+								<orgName type="institution">Macau University of Science and Technology</orgName>
+								<address>
+									<postCode>999078</postCode>
+									<settlement>Macao</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Qibiao</forename><surname>Wu</surname></persName>
+							<email>qbwu@must.edu.mo</email>
+							<idno type="ORCID">0000-0002-1670-1050</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Dr. Neher&apos;s Biophysics Laboratory for Innovative Drug Discovery</orgName>
+								<orgName type="laboratory">State Key Laboratory of Quality Research in Chinese Medicine</orgName>
+								<orgName type="institution">Macau Institute for Applied Research in Medicine and Health</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Chinese Medicine</orgName>
+								<orgName type="institution">Macau University of Science and Technology</orgName>
+								<address>
+									<postCode>999078</postCode>
+									<settlement>Macao</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Guankui</forename><surname>Long</surname></persName>
+							<idno type="ORCID">0000-0002-1826-3736</idno>
+							<affiliation key="aff3">
+								<orgName type="department">School of Materials Science and Engineering</orgName>
+								<orgName type="laboratory">Renewable Energy Conversion and Storage Center (RECAST)</orgName>
+								<orgName type="institution" key="instit1">National Institute for Advanced Materials</orgName>
+								<orgName type="institution" key="instit2">Nankai University</orgName>
+								<address>
+									<postCode>300350</postCode>
+									<settlement>Tianjin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Discovery of Novel Noncovalent KRAS G12D Inhibitors through Structure-Based Virtual Screening and Molecular Dynamics Simulations</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-03-10">10 March 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">73B060DF4549D22544B13AB79720E459</idno>
+					<idno type="DOI">10.3390/molecules29061229</idno>
+					<note type="submission">Received: 30 December 2023 Revised: 18 February 2024 Accepted: 8 March 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-04-19T12:36+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>KRAS G12D</term>
+					<term>noncovalent inhibitor</term>
+					<term>virtual screening</term>
+					<term>molecular dynamics</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The development of effective inhibitors targeting the Kirsten rat sarcoma viral protooncogene (KRAS G12D ) mutation, a prevalent oncogenic driver in cancer, represents a significant unmet need in precision medicine. In this study, an integrated computational approach combining structure-based virtual screening and molecular dynamics simulation was employed to identify novel noncovalent inhibitors targeting the KRAS G12D variant. Through virtual screening of over 1.7 million diverse compounds, potential lead compounds with high binding affinity and specificity were identified using molecular docking and scoring techniques. Subsequently, 200 ns molecular dynamics simulations provided critical insights into the dynamic behavior, stability, and conformational changes of the inhibitor-KRAS G12D complexes, facilitating the selection of lead compounds with robust binding profiles. Additionally, in silico absorption, distribution, metabolism, excretion (ADME) profiling, and toxicity predictions were applied to prioritize the lead compounds for further experimental validation. The discovered noncovalent KRAS G12D inhibitors exhibit promises as potential candidates for targeted therapy against KRAS G12D -driven cancers. This comprehensive computational framework not only expedites the discovery of novel KRAS G12D inhibitors but also provides valuable insights for the development of precision treatments tailored to this oncogenic mutation.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The Kirsten rat sarcoma viral proto-oncogene (KRAS) is a gene that is frequently mutated in human cancers. It belongs to the RAS family of genes, which also includes H-RAS and N-RAS. KRAS mutations are found in approximately 30% of human cancers, making it one of the most common oncogenes <ref type="bibr" target="#b0">[1]</ref>. It is often single-point mutations that result in a change in the amino acid sequence of the encoded protein. The most common KRAS mutation is the substitution of a single amino acid at position 12, which alters GTPase activity. For example, KRAS G12D is a specific mutation of the KRAS gene that involves a substitution of the amino acid glycine (G) at position 12 with aspartic acid (D). KRAS mutation results in a constitutively active form of the KRAS protein, which leads to uncontrolled cell growth and division. This mutation is often associated with aggressive and treatment-resistant cancers, making it an important target for cancer research and drug development. It has been found in a variety of cancers, including pancreatic cancer, colorectal cancer, and non-small cell lung cancer (NSCLC).</p><p>Because KRAS is a small GTPase protein that is highly conserved and has a complex structure, it is difficult to target it with small molecule inhibitors. In addition, KRAS is part of a signaling network that is tightly regulated and has many redundant components, making it challenging to develop inhibitors that can specifically target KRAS without disrupting other cellular processes. However, recent research has identified potential therapeutic strategies that target KRAS or its associated proteins, providing hope for the development of effective KRAS-targeted therapies. For example, the successful development of covalent inhibitors indicated that the mutated cysteine residues in KRAS G12C leveraged a binding pocket in the switch II domain, leading to the creation of clinically effective small molecule inhibitors for patients with this mutation <ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref>. These findings suggest that the switch II binding pocket present in all KRAS proteins might be a plausible surface for the development of additional KRAS inhibitors.</p><p>KRAS G12D is the most common KRAS mutation with an incidence rate of approximately 2.5 times higher than the G12C mutation, but there are currently no approved targeted drugs. It has been considered a more challenging target than KRAS G12C as it lacks a reactive residue proximal to the switch II binding pocket; thus, novel approaches for developing selective inhibitors with substantial affinity and drug-like potency are needed <ref type="bibr" target="#b4">[5]</ref>. Additionally, the G12D mutation introduces a negatively charged aspartic acid residue into the KRAS protein, which can destabilize the active state of the protein and increase the difficulty of designing inhibitors that can bind effectively <ref type="bibr" target="#b5">[6]</ref>. Furthermore, the extent of oncogene addiction to KRAS G12D in cancers housing this mutation remains incompletely understood, posing a critical question for the effective development of inhibitors and therapeutic regimens directed at this particular mutation.</p><p>Due to the absence of proximal reactive residues, employing non-covalent interactions such as hydrogen bonds (HBs) or salt bridges <ref type="bibr" target="#b6">[7]</ref> emerges as a viable strategy for designing inhibitors targeting KRAS G12D . In alignment with this approach, several compounds, including MRTX1133 <ref type="bibr" target="#b7">[8,</ref><ref type="bibr" target="#b8">9]</ref>, BI-2852 <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11]</ref>, MRTX-EX185 <ref type="bibr" target="#b11">[12]</ref>, compound 3144 <ref type="bibr" target="#b12">[13]</ref>, and TH-Z835 <ref type="bibr" target="#b6">[7]</ref> have been developed, as shown in Figure <ref type="figure" target="#fig_0">1</ref>. Among them, MRTX1133 has been confirmed in vivo <ref type="bibr" target="#b13">[14]</ref>. HRS-4642 developed by Hengrui Pharmaceuticals shows an initial positive result in the clinic (NCT05533463) <ref type="bibr" target="#b14">[15]</ref>. ASP3082, developed by Astellas Pharma, exhibits remarkable anti-tumor activity in KRAS G12D mutated cancer models (NCT05382559) <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b16">17]</ref>. However, the details of targeting information for HRS-4642 and ASP3082 are missing. Other inhibitors, such as RMC-9805, LUNA18, QTX3034, and UA022, are still in the very early stage <ref type="bibr" target="#b17">[18]</ref>. The success of these compounds underscores the potential efficacy of non-covalent inhibitors as a solution for targeting the KRAS G12D mutation.</p><p>Computational methodologies have played a significant role in understanding and targeting KRAS G12D . Vatansever et al. have employed long-term Molecular Dynamics (MD) simulations and elucidated the altered structure and dynamics of the G12D mutant protein, providing insights into its destabilized active state and challenges for inhibitor binding <ref type="bibr" target="#b5">[6]</ref>. Structure-based virtual screening, in conjunction with molecular dynamics simulations, offers an effective strategy for developing potential compounds capable of disrupting protein-protein interactions and modulating the abnormal activity of oncogenic KRAS mutants. Using a combinatorial virtual screening method, Li et al. discovered the novel thieno <ref type="bibr">[2,3-d]</ref>pyrimidine analogs as KRAS G12D inhibitors, which displayed potent antiproliferative activity on KRAS G12D mutated cancer cell lines, especially compound KD-8 <ref type="bibr" target="#b18">[19]</ref>. Through biological evaluation and structure-based virtual screening, Wang et al. identified four potent and noncovalent KRAS G12D inhibitors <ref type="bibr" target="#b19">[20]</ref>. Structure-based drug design (SBDD) has demonstrated its viability as a means of reducing expenses and time while performing research and optimization in drug discovery and development. Computational methodologies have played a significant role in understanding and targeting KRAS G12D . Vatansever et al. have employed long-term Molecular Dynamics (MD) simulations and elucidated the altered structure and dynamics of the G12D mutant protein, providing insights into its destabilized active state and challenges for inhibitor binding <ref type="bibr" target="#b5">[6]</ref>. Structure-based virtual screening, in conjunction with molecular dynamics simulations, offers an effective strategy for developing potential compounds capable of disrupting protein-protein interactions and modulating the abnormal activity of oncogenic KRAS mutants. Using a combinatorial virtual screening method, Li et al. discovered the novel thieno <ref type="bibr">[2,3-d]</ref>pyrimidine analogs as KRAS G12D inhibitors, which displayed potent antiproliferative activity on KRAS G12D mutated cancer cell lines, especially compound KD-8 <ref type="bibr" target="#b18">[19]</ref>. Through biological evaluation and structure-based virtual screening, Wang et al. identified four potent and noncovalent KRAS G12D inhibitors <ref type="bibr" target="#b19">[20]</ref>. Structure-based drug design (SBDD) has demonstrated its viability as a means of reducing expenses and time while performing research and optimization in drug discovery and development.</p><p>This study aimed to employ a comprehensive computational approach that combines structure-based virtual screening and molecular dynamics simulations to discover and characterize novel noncovalent inhibitors targeting the KRAS G12D mutation. More than 1.7 million molecules from the ChemDiv (version 2022) and Specs (version 2022) were virtually screened, and the top 20 molecules were selected for further ADME verification. Finally, the top 17 molecules were subjected to molecular dynamics simulations to investigate the targeting strength and stability of the KRAS G12D mutated protein. By interrogating the dynamic behavior, binding kinetics, and specificity of the identified inhibitors, this investigation provides crucial molecular insights essential for the development of precision therapies tailored to KRAS G12D -driven malignancies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Results and Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Virtual Screening of Compounds against KRAS G12D</head><p>The high-resolution X-ray structure of KRAS G12D (PDB ID: 7RPZ) in complex with the ligand MRTX1133 was downloaded from the protein data bank (PDB) database <ref type="bibr" target="#b7">[8]</ref>. More This study aimed to employ a comprehensive computational approach that combines structure-based virtual screening and molecular dynamics simulations to discover and characterize novel noncovalent inhibitors targeting the KRAS G12D mutation. More than 1.7 million molecules from the ChemDiv (version 2022) and Specs (version 2022) were virtually screened, and the top 20 molecules were selected for further ADME verification. Finally, the top 17 molecules were subjected to molecular dynamics simulations to investigate the targeting strength and stability of the KRAS G12D mutated protein. By interrogating the dynamic behavior, binding kinetics, and specificity of the identified inhibitors, this investigation provides crucial molecular insights essential for the development of precision therapies tailored to KRAS G12D -driven malignancies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Results and Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Virtual Screening of Compounds against KRAS G12D</head><p>The high-resolution X-ray structure of KRAS G12D (PDB ID: 7RPZ) in complex with the ligand MRTX1133 was downloaded from the protein data bank (PDB) database <ref type="bibr" target="#b7">[8]</ref>. More than 1.7 million compounds in the chemical database ChemDiv and Specs were screened followed by the workflow shown in Figure <ref type="figure" target="#fig_2">2</ref>. Prior to molecular docking, the validation of the docking protocol was imperative. In this study, we used the crystal structure of the KRAS G12D -MRTX1133 complex (PDB ID: 7RPZ) as the template for validation. The cocrystallized ligand MRTX1133, which is used as a reference in this study, was re-docked into the active site of KRAS G12D (Figure <ref type="figure" target="#fig_3">3</ref>), revealing an exemplary correspondence between the docking conformation of MRTX1133 and its actual conformation at the active site. The root mean squared displacement (RMSD) was calculated to be 1.19 Å. The main contribution of the displacement originates from the rotation of 2-fluoropyrrolizidine. This alignment attests to the robust reliability of the employed docking methodology, thus establishing its suitability for subsequent virtual screening endeavors.</p><p>the active site of KRAS G12D (Figure <ref type="figure" target="#fig_3">3</ref>), revealing an exemplary correspondence between the docking conformation of MRTX1133 and its actual conformation at the active site. The root mean squared displacement (RMSD) was calculated to be 1.19 Å. The main contribution of the displacement originates from the rotation of 2-fluoropyrrolizidine. This alignment attests to the robust reliability of the employed docking methodology, thus establishing its suitability for subsequent virtual screening endeavors.   the active site of KRAS (Figure <ref type="figure" target="#fig_3">3</ref>), revealing an exemplary correspondence between the docking conformation of MRTX1133 and its actual conformation at the active site. The root mean squared displacement (RMSD) was calculated to be 1.19 Å. The main contribution of the displacement originates from the rotation of 2-fluoropyrrolizidine. This alignment attests to the robust reliability of the employed docking methodology, thus establishing its suitability for subsequent virtual screening endeavors.   <ref type="table" target="#tab_1">1</ref>. All the 20 listed compounds have docking scores varying between -8.00 kcal/mol and -10.11 kcal/mol, which indicates that all these compounds could bind the protein efficiently. Among these compounds, compound 485643 displayed the lowest docking score of -10.11 kcal/mol, but still fell a little short of the reference MRTX1133, which has a docking score of -12.18 kcal/mol. Compound 909401 includes an aryl-oxy-propanolamine pharmacophore, which is a typical β-blocker. This indicates that compound 909401 may have the side effects of lowering blood pressure and reducing heart rate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>502065</head><p>-    We calculated the ADME properties of the 20 hit compounds obtained from the virtual screening workflow using QikProp (version 5.5). The ADME analysis yielded significant properties, such as the octanol/water partition coefficient, aqueous solubility, Caco-2 cell permeability, IC 50 value for the blockage of HERG K + channels, MDCK cell permeability, and human oral absorption. The evaluated scores are listed in Table <ref type="table" target="#tab_2">2</ref>. According to the value of MRTX1133, the criteria for the use of inhibitors for the octanol/water partition coefficient log P, aqueous solubility log S, Caco-2 cell permeability, apparent MDCK cell permeability, and human oral absorption were set to -2.0 to 6.5, -6.5 to 0.5 mol/L, &gt;50 nm/s, &gt;40 nm/s and &gt;60%, respectively. The thresholds were adopted from the QikProp manual. As the calculated logS of MRTX1133 is -6.77, which is outside of the recommended region, then we change the allowed range to -6.8-0.5. Compounds 1251964, 347398, and 274371 were subsequently excluded. Therefore, based on the molecular interaction and ADME properties analysis, the 17 hit compounds were finally chosen for MD simulation. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">MD Simulation of Ligand-Protein Complex</head><p>Next, 17 selected compounds identified via structure-based virtual screening were docked into the KRAS G12D binding site and their MD simulations were performed. MRTX1133 was used as the positive control. The initial and the final pose of the molecular dynamics were compared to testify whether the compounds are firmly bound as shown in Figure <ref type="figure" target="#fig_10">5</ref>, Figures <ref type="figure" target="#fig_1">S1</ref> and<ref type="figure" target="#fig_5">S2</ref> (available in the Supplementary Materials). For the MRTX1133, the change of pose before and after the MD simulation is very small: the backbone in the deep cavity is kept, and only the 2-fluoropyrrolizidine group is slightly variated. The groups in the cavity of compounds 1307165, 502065, and 294749 were slightly shifted. While the other groups in the half-open space lack anchor, they behave like a tail wagging. The geometries of other compounds demonstrated significant change although they are still in the docking pocket. It must be mentioned that compounds 1125857 and 1205378 escape from the docking pocket, which means these two compounds may not be good KRAS G12D inhibitors.</p><p>To quantitatively evaluate the configuration change during MD simulations, the RMSD of KRAS G12D , ligands, and their complex were carried out. The RMSD of the complex of KRAS G12D and MRTX1133 is approximately 3.30 Å as shown in Figure <ref type="figure" target="#fig_6">S3a</ref>. However, the corresponding RMSD of 1307165 is approximately 2.10 Å, which is even smaller than MRTX1133, which is inconsistent with the initial and the final pose comparisons of MRTX1133 and 1307165 as aforementioned. We argue that the RMSD of the complex is unable to demonstrate whether the compound is firmly bound to KRAS G12D because the RMSD mainly originates from KRAS G12D as KRAS G12D is much larger than the ligand. As shown by the RMSD (black line) of KRAS G12D and the RMSD (green line) of the complex in Figures <ref type="figure" target="#fig_11">S3-S5</ref>, the RMSDs of the complex and KRAS G12D are almost the same for every compound. Then, the RMSD of the ligand (after alignment) was carried out. It is 0.34 Å for MRTX1133, which is smaller than that for all hit compounds. Among these compounds, 909401 and 485643 give relatively smaller ligand RMSDs of 0.97 and 0.97 Å, respectively. The RMSD of compound 1307165 displays the largest RMSD of 3.56 Å due to the wagging tail group. It is found that even the compounds 1125857 and 1205378 have left the docking pocket and their RMSD are 2.46 and 2.56 Å due to alignment. Considering that the docking pose is the relative position of the ligand and the docking pocket (residues 3-13 and 58-101), the RMSD of the ligand and the docking pocket may be a good representation. Again, because the docking pocket is much larger than the ligand, the deviation may be mainly attributed to the docking pocket. Therefore, the ligand RMSDs were calculated by aligning the configuration to the docking pocket, shown as the blue line, and labeled as MOL-PKT in Figures <ref type="figure" target="#fig_11">S3-S5</ref>. The RMSD of MRTX1133 is approximately 0.70 Å. Compounds 502065, 909401, and 294749 demonstrated RMSDs less than 3.00 Å and could be considered as firmly bound. Compounds 1307165, 1166303, 485643, 1292268, and 1509470 also show small RMSD within 6.00 Å. Their docking should be stable. Further analysis finds that the wagging tail of compound 1307165 is due to the unpreferable configuration of the initial docking pose. In the initial pose, both the amines in the tail group demonstrate no interaction with the pocket. After 10 ns relaxation during MD simulation, the tail flips to the space near Asp12, and then two HBs and one salt bridge form. There is no obvious structure change after 10 ns. Compounds 1194622, 1243333, 1292268, 1185436, 1002187, 1121521, 1280969, and 1079487 exhibit increasing RMSD or relatively large RMSD. This finding indicates the binding of these compounds to proteins may not be stable. Longer MD simulations are required for further verification. Surprisingly, compounds 1125857 and 1205378 produced very large and increasing RMSDs, which suggests that the ligand is leaving, and then left the docking pocket. Therefore, these two compounds are not good KRAS G12D inhibitors.  To quantitatively evaluate the configuration change during MD simulations, the RMSD of KRAS G12D , ligands, and their complex were carried out. The RMSD of the complex of KRAS G12D and MRTX1133 is approximately 3.30 Å as shown in Figure <ref type="figure" target="#fig_6">S3a</ref>. However, the corresponding RMSD of 1307165 is approximately 2.10 Å, which is even smaller than MRTX1133, which is inconsistent with the initial and the final pose comparisons of MRTX1133 and 1307165 as aforementioned. We argue that the RMSD of the complex is The average binding free energy (∆G) of these 17 compounds and MRTX1133 were evaluated and are shown in Table <ref type="table" target="#tab_3">3</ref>. MRTX1133 has the most negative average binding free energy (∆G) of -60.58 kcal/mol, followed by compound 1307165 with a ∆G of -41.94 kcal/mol, which is 70% of that of MRTX1133. Compounds 1194622 and 1166303 also show relatively large ∆G values of -31.71 kcal/mol and -30.47 kcal/mol. All other compounds demonstrate medium ∆G except 1125857 and 1205378. These two compounds not only exhibit very lower |∆G| &lt; 10 kcal/mol, but also have increasing RMSD during MD, indicating unstable binding. Generally, all other compounds demonstrated larger |∆G| &gt; 10.00 kcal/mol, and small structure and free energy fluctuations during MD. Counting the binding energy and stability observed in MD simulations, 15 molecules, especially 1307165, have the potential to be effective inhibitors. To determine the reason for the lower binding energy compared to MRTX1133, interaction maps were drawn. The saved MD trajectories were grouped into three groups using the epsilon clustering method. The group with the greatest number of frames was chosen as the dominant group, which should be the most representative. The frame with the greatest number of HBs in this group was used to construct the interaction map. Figure <ref type="figure" target="#fig_13">6a</ref> illustrates the ligand interactions with the protein, 6 HBs were observed for MRTX1133. These HBs tightly bind the ligand to Asp12-N(H 2 )R 2 + , Gly60-N(H 2 )R 2 + , Glu62-N(H)R 3 + (agree with X-ray crystal structures with KRAS G12D /GDP) <ref type="bibr" target="#b7">[8]</ref>, Asp69, and Hie95-N(H)R 3 + . The HB between Asp69 and the OH group of MRTX1133 exists in all the MD configurations. The HBs of Hie95 and Gly60 are in 95% and 94% MD configurations. In addition, the Hie95 could also form HB with the F in MRTX1133 in 43% configurations. The NH 2 + site above the seven-element ring forms two HBs with Asp12, each show in 84% and 79% configurations. Two HBs on Glu62 with N between five-element ring, exhibit in 66% and 59%. The strong binding of MRTX1133 with KRAS originated from these abundant HBs rather than covalent bonds. Five HBs are observed for compound 1307165 binding with Asp12 and Glu62. A pi-cation interaction with Lys16 is also observed (Figure <ref type="figure" target="#fig_13">6b</ref>). The strongest bond is the two HB between Arg68 and the O between two N atoms, with an occurrence of 79% and 75%, followed by the HB between Gly60 and N with an occurrence of 68%. HBs between Asp12 with the two HN of ligand have been observed in 31% and 30% of MD trajectory. There are other HBs but their occurrence is lower than 20%. The slightly fewer HB and lower occurrences in compound 1307165 indicate its binding energy will be slightly lower than MRTX1133.</p><p>Besides HBs, stronger binding salt bridges are also present. It is found that there are two salt bridges (Asp12-N(H 2 )R 2 + and Glu62-N(H)R 3 + ) in the MRTX1133. Only one salt bridge (Asp12-N(H)R 3 + ) is observed for compound 1307165. In the interaction map, for compound 1194622, only two HBs (Glu62-N(H)R 2 and Hie95-OH) are present between the ligand and the KRAS G12D , no salt bridge is observed. In the full MD process, HBs of</p><formula xml:id="formula_0">Hie95-OH, Glu62-N(H)R 2 , Asp92-N(H)R 3 + , Asp92-N(H)R 3 + (different O in Asp92), Glu62- N(H)R 3</formula><p>+ , and Glu62-N(H)R 3 + (different O in Glu62) are observed with occurrences of 62%, 53%, 50%, 42%, 30%, and 26%, respectively. Generally, compound 1307165 has one salt bridge and one hydrogen bond less than MRTX1133, leading to 20 kcal/mol higher in binding energy. Compound 1194622 has two salt bridges less than MRTX1133, leading to a 30 kcal/mol higher binding energy. We could conclude that a salt bridge contributes 15 kcal/mol and a hydrogen bond contributes 5 kcal/mol to the binding energy. Based on the structure-dependent interaction analysis, we found that most interactions between ligand and KRAS G12D are dominated by KRAS G12D residue-N(H X )R 4-x + of ligand (for salt bridge and hydrogen bond) or KRAS G12D residue-N(H X )R 3-x of ligand (for hydrogen bond). Therefore, we conclude that a valid KRAS G12D should have abundant amine groups and be easily charged.</p><p>The HB between Asp69 and the OH group of MRTX1133 exists in all the MD configurations. The HBs of Hie95 and Gly60 are in 95% and 94% MD configurations. In addition, the Hie95 could also form HB with the F in MRTX1133 in 43% configurations. The NH2 + site above the seven-element ring forms two HBs with Asp12, each show in 84% and 79% configurations. Two HBs on Glu62 with N between five-element ring, exhibit in 66% and 59%. The strong binding of MRTX1133 with KRAS originated from these abundant HBs rather than covalent bonds. Five HBs are observed for compound 1307165 binding with Asp12 and Glu62. A pi-cation interaction with Lys16 is also observed (Figure <ref type="figure" target="#fig_13">6b</ref>). The strongest bond is the two HB between Arg68 and the O between two N atoms, with an occurrence of 79% and 75%, followed by the HB between Gly60 and N with an occurrence of 68%. HBs between Asp12 with the two HN of ligand have been observed in 31% and 30% of MD trajectory. There are other HBs but their occurrence is lower than 20%. The slightly fewer HB and lower occurrences in compound 1307165 indicate its binding energy will be slightly lower than MRTX1133. Besides HBs, stronger binding salt bridges are also present. It is found that there are two salt bridges (Asp12-N(H2)R2 + and Glu62-N(H)R3 + ) in the MRTX1133. Only one salt bridge (Asp12-N(H)R3 + ) is observed for compound 1307165. In the interaction map, for compound 1194622, only two HBs (Glu62-N(H)R2 and Hie95-OH) are present between the ligand and the KRAS G12D , no salt bridge is observed. In the full MD process, HBs of Hie95-OH, Glu62-N(H)R2, Asp92-N(H)R3 + , Asp92-N(H)R3 + (different O in Asp92), Glu62-N(H)R3 + , and Glu62-N(H)R3 + (different O in Glu62) are observed with occurrences of 62%, 53%, 50%, 42%, 30%, and 26%, respectively. Generally, compound 1307165 has one salt bridge and one hydrogen bond less than MRTX1133, leading to 20 kcal/mol higher in binding energy. Compound 1194622 has two salt bridges less than MRTX1133, leading to a 30 kcal/mol higher binding energy. We could conclude that a salt bridge contributes 15 kcal/mol and a hydrogen bond contributes 5 kcal/mol to the binding energy. Based on the structure-dependent interaction analysis, we found that most interactions between ligand and KRAS G12D are dominated by KRAS G12D residue-N(HX)R4-x + of ligand (for salt bridge and hydrogen bond) or KRAS G12D residue-N(HX)R3-x of ligand (for hydrogen bond). Therefore, we conclude that a valid KRAS G12D should have abundant amine groups and be easily charged. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Method</head><p>Figure <ref type="figure" target="#fig_2">2</ref> illustrates the virtual screening workflow, which has demonstrated efficacy in the identification of inhibitors in diverse enzyme systems, such as HPK1 and LRRK2. Notably, each stage of the virtual screening and molecular docking process was meticulously executed using the Schrodinger software (version 2018-1). The ChemDiv and Specs chemical databases comprising more than 1.7 million compounds were subjected to screening based on the KRAS G12D receptor. The compounds were first filtered according to Lipinski's parameters to ensure the drug-likeness of the potential inhibitor compounds. Based on the docking scores and visual inspection, the top 17 compounds were selected for further MD investigations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Preparation of Receptor and Ligands</head><p>The structure of KRAS G12D in complex with MRTX1133 (PDB ID: 7RPZ; resolution: 1.30 Å) was obtained from the Protein Data Bank (https://www.rcsb.org/ (accessed on 1 January 2022)) <ref type="bibr" target="#b7">[8]</ref>. The protein preparation wizard in the Schrödinger suite (version 2021) was utilized to introduce hydrogen atoms, eliminate all water molecules, assign charges, and determine protonation states at pH 7.4. Subsequently, the structures were optimized using the OPLS-2005 force field. The prepared structure was employed to generate a grid using the Glide module of Schrödinger, with MRTX1133 chosen as the center, and the grid box dimensions set at 20 Å × 20 Å × 20 Å. For virtual screening, more than 1.7 million molecules from the ChemDiv (version 2022) and Specs (version 2022) databases constituted the screening library. All the compounds were imported into the Ligprep module of Schrödinger for ligand preparation. This involved generating ionization states of molecules at pH 7.0 ± 2.0 using Epik (version 4.3), creating stereoisomers, and generating one low-energy conformation per ligand. The ligand structures were downloaded from the official website in the format of structure data file (SDF), in which important chirality has been specified. The specified chirality is retained. Other chirality centers without specification were created.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Structure-Based Virtual Screening</head><p>A multistage virtual screening process was employed to identify potential lead molecules targeting KRAS G12D . Following Lipinski's rule of five filtering steps and removal of reactive functionalities, three sequential docking steps were implemented using the Schrödinger Glide module: high-throughput virtual screening (HTVS), standard precision (SP), and extra precision (XP). A lower docking score indicated better binding affinity between KRAS G12D and ligand. At each stage, the top 10% of docked molecules were selected for further refinement. This yielded a final pool of 5000 diverse candidates, identified through k-means clustering based on hashed fingerprints. Visual inspection of KRAS G12D -ligand binding modes then narrowed down the selection to 20 compounds for further analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">ADME Properties Prediction</head><p>A staggering 40% of promising drug candidates stumble in clinical trials due to unfavorable ADME properties <ref type="bibr" target="#b20">[21]</ref>. In silico ADME prediction can quickly evaluate the drug-likeness of a compound by calculating its pharmacokinetic parameters and physicochemical properties. This powerful tool can considerably reduce the amount of consumed time and resources during the overall drug development process. We utilized the QikProp module of Schrödinger to assess the ADME profiles of hit compounds.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Molecular Dynamic (MD) Simulations</head><p>To study the binding mode and stability of KRAS G12D with the most potent lead compounds, we employed MD simulations. The initial KRAS G12D -MRTX1133 complex structure was sourced from the Protein Data Bank. The structures of KRAS G12D complexed with the most potent compounds were obtained from Glide docking. For these, we performed 200 ns MD simulations using AMBER 22 to assess their stability. The restrained electrostatic potential (RESP) calculated by the Hartree-Fock (HF) method with a 6-31G* basis set in the Gaussian 09 package was used to fit the partial charges for the compound. The ff14SB force field and the general AMBER force field (gaff) were used for KRAS G12D and the compound, respectively. The complex was solvated in TIP3PBOX at a distance of 10 Å to the boundary. After adding ions to neutralize the systems, the systems were minimized, heated, and equilibrated. Multiple MD procedures were employed to equilibrate the system. Finally, 200 ns MD simulations at 300 K with 1.0 atm in an NPT ensemble were performed. The trajectory analysis was performed via the cpptraj (version 6.4.4) module in AMBER 22. The binding free energy of each compound was determined by the molecular mechanics generalized Born surface area (MMGBSA) method <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b22">23]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Conclusions</head><p>In conclusion, we integrated a computational approach, combining structure-based virtual screening and molecular dynamics simulations, to identify and characterize potential noncovalent inhibitors targeting the challenging KRAS G12D mutation. Over 1.7 million compounds were screened resulting in 15 promising molecules for MD analysis. MD simulations provided valuable insights into the stability, binding kinetics, and specificity of the identified inhibitors. Among the compounds, compound 1307165 emerged as a particularly noteworthy candidate, demonstrating a substantial ∆G and stable interactions with the KRAS G12D protein. The interaction maps presented in Figure <ref type="figure" target="#fig_12">6</ref> underscored the importance of hydrogen bonds in stabilizing ligand-protein complexes. Compound 1307165 exhibited</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. (a) The chemical structures of known inhibitors of KRAS G12D . (b) Normalized active RAS in tumor lysates from mice bearing Panc 04.03 xenografts treated with vehicle or MRTX1133 administered IP at the doses indicated plus one dose the next day. Brackets with * indicates statistical significance versus vehicle control using one-way ANOVA (* p &lt; 0.05). (c) Tumor growth inhibition after IP administration of MRTX1133 BID to mice bearing MRTX1133 Panc 04.03 xenografts at the doses indicated; Brackets with * indicates tumor volumes were statistically significant versus vehicle using a two-tailed Studentʼs t-test (* p &lt; 0.05). (b,c) were adapted from Ref. [9].</figDesc><graphic coords="3,89.70,87.78,418.32,219.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. (a) The chemical structures of known inhibitors of KRAS G12D . (b) Normalized active RAS in tumor lysates from mice bearing Panc 04.03 xenografts treated with vehicle or MRTX1133 administered IP at the doses indicated plus one dose the next day. Brackets with * indicates statistical significance versus vehicle control using one-way ANOVA (* p &lt; 0.05). (c) Tumor growth inhibition after IP administration of MRTX1133 BID to mice bearing MRTX1133 Panc 04.03 xenografts at the doses indicated; Brackets with * indicates tumor volumes were statistically significant versus vehicle using a two-tailed Student's t-test (* p &lt; 0.05). (b,c) were adapted from Ref. [9].</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. The workflow of virtual screening adopted in this study.</figDesc><graphic coords="4,54.69,320.16,468.24,267.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. (a)The 2D ligand and protein interactions of the KRAS G12D -MRTX1133 complex docked by Glide XP; (b) binding modes of the KRAS G12D -MRTX1133 complex. The docking conformations of</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. The workflow of virtual screening adopted in this study.</figDesc><graphic coords="4,58.33,314.38,468.24,267.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. The workflow of virtual screening adopted in this study.</figDesc><graphic coords="4,157.77,84.31,284.04,206.57" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. (a)The 2D ligand and protein interactions of the KRAS G12D -MRTX1133 complex docked by Glide XP; (b) binding modes of the KRAS G12D -MRTX1133 complex. The docking conformations of Figure 3. (a)The 2D ligand and protein interactions of the KRAS G12D -MRTX1133 complex docked by Glide XP; (b) binding modes of the KRAS G12D -MRTX1133 complex. The docking conformations of Glide SP (green, GScore = -13.53) and XP (pink, GScore = -12.24), and the actual conformation (white, PDB ID: 7RPZ) of the co-crystallized ligand MRTX1133. Based on the docking scores and visual inspection, 20 compounds were selected as potential candidates. The chemical structures of these compounds are shown in Figure 4. The corresponding docking scores of these 20 compounds are listed in Table1. All the 20 listed compounds have docking scores varying between -8.00 kcal/mol and -10.11 kcal/mol, which indicates that all these compounds could bind the protein efficiently. Among these compounds, compound 485643 displayed the lowest docking score of -10.11 kcal/mol, but still fell a little short of the reference MRTX1133, which has a docking score of -12.18 kcal/mol. Compound 909401 includes an aryl-oxy-propanolamine pharmacophore, which is a typical β-blocker. This indicates that compound 909401 may have the side effects of lowering blood pressure and reducing heart rate.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Chemical structures with charges of 20 hit compounds from Glide XP docking protocol.Figure 4. Chemical structures with charges of 20 hit compounds from Glide XP docking protocol.</figDesc><graphic coords="5,168.32,86.92,365.26,278.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Chemical structures with charges of 20 hit compounds from Glide XP docking protocol.Figure 4. Chemical structures with charges of 20 hit compounds from Glide XP docking protocol.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Molecules 2024 ,</head><label>2024</label><figDesc>29, x FOR PEER REVIEW 7 of 13 cavity is kept, and only the 2-fluoropyrrolizidine group is slightly variated. The groups in the cavity of compounds 1307165, 502065, and 294749 were slightly shifted. While the other groups in the half-open space lack anchor, they behave like a tail wagging. The geometries of other compounds demonstrated significant change although they are still in the docking pocket. It must be mentioned that compounds 1125857 and 1205378 escape from the docking pocket, which means these two compounds may not be good KRAS G12D inhibitors.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. The initial (white CPK representation) and the final (at 200 ns, shown in green CPK representation) poses at the docking pocket of MRTX1133 (a), 1307165 (b), 1194622 (c), 1166303 (d), 502065 (e), and 1243333 (f). The protein is shown as a ribbon colored by residue position.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. The initial (white CPK representation) and the final (at 200 ns, shown in green CPK representation) poses at the docking pocket of MRTX1133 (a), 1307165 (b), 1194622 (c), 1166303 (d), 502065 (e), and 1243333 (f). The protein is shown as a ribbon colored by residue position.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. (a) The interaction map between MRTX1133 and the KRAS G12D at 180.0 ns; (b) The interaction map between compound 1307165 and KRAS G12D at 159.6 ns. The frame used to plot the interaction is the frame with the greatest number of HBs in the dominant group.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. (a) The interaction map between MRTX1133 and the KRAS G12D at 180.0 ns; (b) The interaction map between compound 1307165 and KRAS G12D at 159.6 ns. The frame used to plot the interaction is the frame with the greatest number of HBs in the dominant group.</figDesc><graphic coords="9,85.91,224.27,442.92,210.66" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 .</head><label>1</label><figDesc>The docking scores of hit compounds were obtained from the Glide XP docking protocol.</figDesc><table><row><cell>Compound</cell><cell>Docking Scores (kcal/mol)</cell><cell>Compound</cell><cell>Docking Scores (kcal/mol)</cell></row><row><cell>MRTX1133</cell><cell>-12.18</cell><cell>274371</cell><cell>-8.72</cell></row><row><cell>485643</cell><cell>-10.11</cell><cell>1121521</cell><cell>-8.49</cell></row><row><cell>1002187</cell><cell>-9.71</cell><cell>347398</cell><cell>-8.48</cell></row><row><cell>1166303</cell><cell>-9.31</cell><cell>1125857</cell><cell>-8.48</cell></row><row><cell>1243333</cell><cell>-9.19</cell><cell>1251964</cell><cell>-8.45</cell></row><row><cell>502065</cell><cell>-9.05</cell><cell>1509470</cell><cell>-8.35</cell></row><row><cell>294749</cell><cell>-9.04</cell><cell>1185436</cell><cell>-8.21</cell></row><row><cell>1079487</cell><cell>-9.02</cell><cell>909401</cell><cell>-8.11</cell></row><row><cell>1307165</cell><cell>-9.00</cell><cell>1205378</cell><cell>-8.11</cell></row><row><cell>1280969</cell><cell>-8.96</cell><cell>1292268</cell><cell>-8.04</cell></row><row><cell>1194622</cell><cell>-8.87</cell><cell></cell><cell></cell></row><row><cell cols="3">2.2. Compounds with ADME Properties against KRAS G12D</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Pharmacokinetic profile of the hit compounds.</figDesc><table><row><cell>Compound</cell><cell>Molecular Weight</cell><cell>logP (o/w) a</cell><cell>logS b</cell><cell>Caco c</cell><cell>PMDCK d</cell><cell>Percent Human Oral Absorption e</cell></row><row><cell>MRTX1133</cell><cell>600.64</cell><cell>5.59</cell><cell>-6.77</cell><cell>51.67</cell><cell>84.37</cell><cell>64.45</cell></row><row><cell>485643</cell><cell>495.68</cell><cell>3.10</cell><cell>-2.26</cell><cell>110.38</cell><cell>119.74</cell><cell>81.66</cell></row><row><cell>1002187</cell><cell>485.55</cell><cell>4.74</cell><cell>-4.69</cell><cell>839.28</cell><cell>2372.93</cell><cell>100.00</cell></row><row><cell>1166303</cell><cell>423.56</cell><cell>2.77</cell><cell>-3.05</cell><cell>243.47</cell><cell>157.30</cell><cell>85.87</cell></row><row><cell>1243333</cell><cell>341.39</cell><cell>2.26</cell><cell>-4.37</cell><cell>318.84</cell><cell>238.58</cell><cell>84.97</cell></row><row><cell>502065</cell><cell>445.56</cell><cell>3.79</cell><cell>-4.57</cell><cell>187.40</cell><cell>145.95</cell><cell>89.84</cell></row><row><cell>294749</cell><cell>386.49</cell><cell>1.61</cell><cell>-2.38</cell><cell>53.46</cell><cell>69.44</cell><cell>67.30</cell></row><row><cell>1079487</cell><cell>362.47</cell><cell>3.43</cell><cell>-3.41</cell><cell>151.03</cell><cell>139.69</cell><cell>86.00</cell></row><row><cell>1307165</cell><cell>448.61</cell><cell>3.56</cell><cell>-3.40</cell><cell>557.12</cell><cell>501.26</cell><cell>96.95</cell></row><row><cell>1280969</cell><cell>463.97</cell><cell>4.36</cell><cell>-6.60</cell><cell>715.90</cell><cell>1315.61</cell><cell>100.00</cell></row><row><cell>1194622</cell><cell>450.63</cell><cell>3.33</cell><cell>-4.48</cell><cell>60.07</cell><cell>47.50</cell><cell>78.29</cell></row><row><cell>274371</cell><cell>415.42</cell><cell>2.57</cell><cell>-4.48</cell><cell>25.02</cell><cell>15.63</cell><cell>67.02</cell></row><row><cell>1121521</cell><cell>327.39</cell><cell>1.57</cell><cell>-3.15</cell><cell>103.17</cell><cell>46.99</cell><cell>72.18</cell></row><row><cell>347398</cell><cell>466.04</cell><cell>3.48</cell><cell>-2.98</cell><cell>9.42</cell><cell>676.19</cell><cell>64.75</cell></row><row><cell>1125857</cell><cell>384.50</cell><cell>2.81</cell><cell>-4.32</cell><cell>722.39</cell><cell>1305.50</cell><cell>94.58</cell></row><row><cell>1251964</cell><cell>471.01</cell><cell>4.47</cell><cell>-4.53</cell><cell>15.08</cell><cell>629.79</cell><cell>74.21</cell></row><row><cell>1509470</cell><cell>395.93</cell><cell>4.06</cell><cell>-4.24</cell><cell>119.25</cell><cell>149.77</cell><cell>87.89</cell></row><row><cell>1185436</cell><cell>404.47</cell><cell>2.42</cell><cell>-4.05</cell><cell>442.24</cell><cell>348.33</cell><cell>88.44</cell></row><row><cell>909401</cell><cell>427.50</cell><cell>3.61</cell><cell>-5.02</cell><cell>167.70</cell><cell>79.44</cell><cell>87.88</cell></row><row><cell>1205378</cell><cell>379.50</cell><cell>3.35</cell><cell>-4.60</cell><cell>392.49</cell><cell>199.16</cell><cell>92.96</cell></row><row><cell>1292268</cell><cell>443.55</cell><cell>4.06</cell><cell>-5.38</cell><cell>329.09</cell><cell>164.63</cell><cell>95.78</cell></row></table><note><p>a Predicted octanol/water partition coefficient log P (acceptable range -2.0 to 6.5). b Predicted aqueous solubility log S in mol/L (acceptable range: -6.8 to 0.5). c Predicted Caco-2 cell permeability in nm/s (acceptable range: &gt; 50). d Predicted apparent MDCK cell permeability in nm/s (acceptable range: &gt; 40). e Percentage of human oral absorption (acceptable range: &gt; 60%).</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 .</head><label>3</label><figDesc>Ligands and their average binding free energy with KRAS G12D .</figDesc><table><row><cell>Compound</cell><cell>MMGBSA ∆G (kcal/mol)</cell><cell>Compound</cell><cell>MMGBSA ∆G (kcal/mol)</cell></row><row><cell>MRTX1133</cell><cell>-60.58</cell><cell>1292268</cell><cell>-20.39</cell></row><row><cell>1307165</cell><cell>-41.94</cell><cell>1185436</cell><cell>-18.34</cell></row><row><cell>1194622</cell><cell>-31.71</cell><cell>1002187</cell><cell>-17.84</cell></row><row><cell>1166303</cell><cell>-30.47</cell><cell>1121521</cell><cell>-16.01</cell></row><row><cell>502065</cell><cell>-27.81</cell><cell>1509470</cell><cell>-15.02</cell></row><row><cell>1243333</cell><cell>-26.11</cell><cell>1280969</cell><cell>-13.39</cell></row><row><cell>909401</cell><cell>-25.33</cell><cell>1079487</cell><cell>-10.02</cell></row><row><cell>294749</cell><cell>-24.63</cell><cell>1125857</cell><cell>-5.42</cell></row><row><cell>485643</cell><cell>-22.59</cell><cell>1205378</cell><cell>-1.68</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments:</head><p>The authors acknowledge the <rs type="institution">National Supercomputer Center in Guangzhou</rs> for providing computational resources.</p></div>
+			</div>
+			<div type="funding">
+<div><p>Funding: This work was funded by the <rs type="funder">Science and Technology Development Fund, Macau SAR</rs> (File No.: <rs type="grantNumber">0098/2021/A2</rs>, <rs type="grantNumber">0048/2023/AFJ, 0056/2020/AMJ, 0114/2020/A3</rs>, <rs type="grantNumber">0015/2019/AMJ</rs>), and <rs type="person">Dr. Neher</rs>'s <rs type="institution">Biophysics Laboratory for Innovative Drug Discovery</rs>, <rs type="funder">State Key Laboratory of Quality Research in Chinese Medicine, Macau University of Science and Technology, Macau, China</rs> (<rs type="grantNumber">001/2020/ALC</rs>). Institutional Review Board Statement: Not applicable. Informed Consent Statement: Not applicable.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_8pvCcAg">
+					<idno type="grant-number">0098/2021/A2</idno>
+				</org>
+				<org type="funding" xml:id="_qTF8zgR">
+					<idno type="grant-number">0048/2023/AFJ, 0056/2020/AMJ, 0114/2020/A3</idno>
+				</org>
+				<org type="funding" xml:id="_am53gHk">
+					<idno type="grant-number">0015/2019/AMJ</idno>
+				</org>
+				<org type="funding" xml:id="_zQEuPsH">
+					<idno type="grant-number">001/2020/ALC</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Data Availability Statement: All data generated or analyzed during this study are included in the article.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>rich hydrogen bonds and a salt bridge, emphasizing its potential as a robust inhibitor. Based on the structure-based interaction analysis, this work demonstrated that a good KRAS G12D inhibitor should include some amine groups to enable the possibility of forming salt bridges and hydrogen bonds. This would be a good strategy to drug the undruggable KRAS G12D . While the study provides promising candidates for further exploration, it is crucial to acknowledge that all these candidates are not optimized. Future research endeavors could focus on refining these structures and computational models. These findings offer hope for the development of targeted therapies to address the unmet need for cancer caused by the KRAS G12D mutation. This research sets the stage for continued exploration and innovation in the field.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Materials:</head><p>The following are available online at https://www.mdpi.com/article/ 10.3390/molecules29061229/s1, Figure <ref type="figure">S1</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflicts of Interest:</head><p>The authors declare no conflicts of interest.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Association of KRAS G13D tumor mutations with outcome in patients with metastatic colorectal cancer treated with first-line chemotherapy with or without cetuximab</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tejpar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Celik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schlichting</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Sartorius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bokemeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van Cutsem</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/JCO.2012.42.2592</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Clin. Oncol</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="3570" to="3577" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The path to the clinic: A comprehensive review on direct KRASG12C inhibitors</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Kwan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Piazza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Keeton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Leite</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13046-021-02225-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Exp. Clin. Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Targeting KRAS G12C with Covalent Inhibitors</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Ostrem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Shokat</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-cancerbio-041621-012549</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annu. Rev. Cancer Biol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="49" to="64" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Fragment Optimization of Reversible Binding to the Switch II Pocket on KRAS Leads to a Potent, In Vivo Active KRASG12C Inhibitor</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bröker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Waterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Smethurst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kessler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Böttcher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gmaschitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Phan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Little</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Abbott</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.jmedchem.2c01120</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Med. Chem</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="14614" to="14629" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Drugging the undruggable RAS: Mission Possible?</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">W</forename><surname>Fesik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Kimmelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Der</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nrd4389</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Rev. Drug Discov</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="828" to="851" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Oncogenic G12D mutation alters local conformations and dynamics of K-Ras</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vatansever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Erman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">H</forename><surname>Gümüş</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-019-48029-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<date type="published" when="2019">2019. 11730</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">KRAS(G12D) can be targeted by potent inhibitors via formation of salt bridge</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41421-021-00368-w</idno>
+		<imprint/>
+	</monogr>
+	<note>Cell Discov. 2022, 8, 5. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Identification of MRTX1133, a Noncovalent, Potent, and Selective KRAS G12D Inhibitor</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Blake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Bowcut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Briere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Calinisan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Dahlke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Fell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Gunn</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.jmedchem.1c01688</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Med. Chem</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="3123" to="3133" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Anti-tumor efficacy of a potent and selective non-covalent KRASG12D inhibitor</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hallin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Bowcut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Calinisan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Briere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hargis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">D</forename><surname>Engstrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Laguer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Medwid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Vanderpool</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lifset</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-022-02007-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Med</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="2171" to="2182" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Drugging an undruggable pocket on KRAS</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kessler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gmachl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mantoulidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zoephel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gollner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Covini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Gerstberger</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1904529116</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Natl. Acad. Sci</title>
+		<meeting>Natl. Acad. Sci<address><addrLine>USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="page" from="15823" to="15829" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Drugging all RAS isoforms with one pocket</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kessler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bergner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Böttcher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Döbel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hinkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Müllauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Weiss-Puxbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Mcconnell</surname></persName>
+		</author>
+		<idno type="DOI">10.4155/fmc-2020-0221</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Futur. Med. Chem</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1911" to="1923" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">KRAS is vulnerable to reversible switch-II pocket engagement in cells</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Vasta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Peacock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Zimprich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">F</forename><surname>Binkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Corona</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41589-022-00985-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Chem. Biol</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="596" to="604" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Multivalent Small-Molecule Pan-RAS Inhibitors</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Welsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Chambers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Stokes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H</forename><surname>Bos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zask</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sanchez-Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Badgley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2017.02.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<imprint>
+			<biblScope unit="volume">168</biblScope>
+			<biblScope unit="page" from="878" to="889" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note>e29. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Efficacy of a Small-Molecule Inhibitor of KrasG12D in Immunocompetent Models of Pancreatic Cancer</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Kemp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Markosyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I.-K</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hallin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shoush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Quinones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">V</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Bassett</surname></persName>
+		</author>
+		<idno type="DOI">10.1158/2159-8290.CD-22-1066</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Discov</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="298" to="311" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">LBA33 A first-in-human phase I study of a novel KRAS G12D inhibitor HRS-4642 in patients with advanced solid tumors harboring KRAS G12D mutation</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.annonc.2023.10.025</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ann. Oncol</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<date type="published" when="1273">2023. 1273</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">ASP3082, a First-in-class novel KRAS G12D degrader, exhibits remarkable anti-tumor activity in KRAS G12D mutated cancer models</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nagashima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Inamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Nishizono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Suzuki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Yoshinari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yamanaka</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0959-8049(22)00881-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Cancer</title>
+		<imprint>
+			<biblScope unit="volume">174</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Trial in progress: A phase 1, first-in-human, open-label, multicenter, dose-escalation and dose-expansion study of ASP3082 in patients with previously treated advanced solid tumors and KRAS G12D mutations</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Tolcher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Spira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Janne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lorusso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Herzberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Goldman</surname></persName>
+		</author>
+		<idno type="DOI">10.1200/JCO.2023.41.4_suppl.TPS764</idno>
+		<idno>TPS764</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Clin. Oncol</title>
+		<imprint>
+			<biblScope unit="page">41</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">AstraZeneca Joins KRAS Push in Cancer with Chinese Deal</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Taylor</surname></persName>
+		</author>
+		<ptr target="https://pharmaphorum.com/news/astrazeneca-joins-kras-push-cancer-chinese-deal" />
+		<imprint>
+			<date type="published" when="2022">2023. 1 September 2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Discovery of Thieno[2,3-d]pyrimidine-based KRAS G12D inhibitors as potential anticancer agents via combinato-rial virtual screening</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejmech.2022.114243</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Med. Chem</title>
+		<imprint>
+			<biblScope unit="volume">233</biblScope>
+			<date type="published" when="2022">2022. 114243</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Discovery of potent and noncovalent KRASG12D inhibitors: Structurebased virtual screening and biological evaluation</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-M</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Qu</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fphar.2022.1094887</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Front. Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<date type="published" when="2022">2022. 1094887</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The Role of Absorption, Distribution, Metabolism, Excretion and Toxicity in Drug Discovery</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Sahakian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M F</forename><surname>De Morais</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Polzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Winter</surname></persName>
+		</author>
+		<idno type="DOI">10.2174/1568026033452096</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Curr. Top. Med. Chem</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="1125" to="1154" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The MM/PBSA and MM/GBSA methods to estimate ligand-binding affinities</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Genheden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Ryde</surname></persName>
+		</author>
+		<idno type="DOI">10.1517/17460441.2015.1032936</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Opin. Drug Discov</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="449" to="461" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Assessing the Performance of the MM/PBSA and MM/GBSA Methods. 1. The Accuracy of Binding Free Energy Calculations Based on Molecular Dynamics Simulations</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/ci100275a</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Inf. Model</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="69" to="82" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods</title>
+		<imprint>
+			<publisher>Disclaimer/Publisher&apos;s Note</publisher>
+		</imprint>
+	</monogr>
+	<note>instructions or products referred to in the content</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

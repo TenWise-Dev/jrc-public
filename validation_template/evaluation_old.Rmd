@@ -1,0 +1,150 @@
+```{r setup2, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  message=FALSE,warning=FALSE,cache=FALSE,include=FALSE, eval=TRUE)
+suppressMessages({
+  library(tidyr)
+  library(dplyr)
+  library(DT)
+  library(openxlsx)
+  library(ggplot2)
+  library(jsonlite)
+  })
+
+```
+
+# Read the score data (merged and also unmerged)
+```{r cars}
+# Function to convert Python dictionary string to nested named list
+convert_to_named_list <- function(python_dict_str) {
+  # Replace single quotes with double quotes
+  json_str <- gsub("'", "\"", python_dict_str)
+  # Convert to nested named list
+  fromJSON(json_str)
+}
+
+# Function to remove the first layer ("nam") of the nested list
+remove_first_layer <- function(named_list) {
+  # Extract the list inside "nam"
+  return(named_list$nam)
+}
+
+sum_values <- function(named_list) {
+  return(sum(unlist(named_list)))
+}
+
+disease_areas <- c('atmps', 'autoimmun','breastcanc',
+                   'cardiovasc','gastrointestin',
+                   'immonco','infectdis',
+                   'metadisord','neurodeg','respdis' )
+reslist <- list()
+for (da in disease_areas){
+  df_predict <- read.xlsx(paste0("predictions/", da, "/", da,"_merged_and_scored.xlsx")) %>% 
+    # select(pmid, mean,sum,title, abstract) %>%
+    rename(avg_score = mean) %>% 
+    mutate(disease_area = da) %>%
+    mutate(issue = as.character(issue))
+  reslist[[da]] <- df_predict
+}
+alldat <- bind_rows(reslist)
+
+## Unmerged data (i.e. score per embedding classifier combination)
+umlist <- list()
+for (da in disease_areas){
+  df_overview <- read.xlsx(paste0("predictions/", da, "/", da,"_scored_overview.xlsx")) %>% 
+    # select(pmid,prediction,method, embedding,score,title, abstract) %>%
+    mutate(disease_area = da) %>%
+    mutate(issue = as.character(issue))
+  umlist[[da]] <- df_overview
+}
+
+if ("tagging_scores" %in% colnames(umlist)) {
+  umdata <- bind_rows(umlist) %>%
+    mutate(tagging_scores = lapply(tagging_scores, convert_to_named_list)) %>%
+    mutate(tagging_scores = lapply(tagging_scores, remove_first_layer)) %>%
+    mutate(tagged_sum = sapply(tagging_scores, sum_values)) %>%
+    select(-c(tagging_scores))
+} else {
+  umdata <- bind_rows(umlist)
+}
+
+write.xlsx(umdata, file = "all_results.xlsx")
+umdata
+```
+
+```{r}
+all_results = read.xlsx(xlsxFile = "all_results.xlsx")
+all_results %>% head()
+```
+
+# Keep predictions in [8 to 12 models positive result]
+```{r}
+if ("tagged_sum" %in% colnames(all_results)) {
+  pmid_tags <- all_results %>%
+    select(pmid, tagged_sum) %>%
+    distinct()
+}
+
+# Move bow_pos and bow_neg embedding scores to separate dataframe for later join
+pow_bow_results <- all_results %>%
+  filter(embedding == "bow_pos") %>%
+  group_by(pmid, disease_area) %>%
+  summarise(bow_positive = sum(prediction), bow_pos_avg_score = mean(score), .groups = "keep") %>%
+  ungroup()
+
+neg_bow_results <- all_results %>%
+  filter(embedding == "bow_neg") %>%
+  group_by(pmid, disease_area) %>%
+  summarise(neg_positive = sum(prediction), bow_neg_avg_score = mean(score), .groups = "keep") %>%
+  ungroup()
+
+all_results_filtered <- all_results %>% 
+  filter(embedding != "bow_pos" & embedding != "bow_neg") %>%
+  group_by(pmid, disease_area) %>% 
+  summarise(models_positive = sum(prediction), avg_score = mean(score), .groups = "keep") %>% 
+  ungroup()
+
+# Combine the information from the bow_pos and bow_neg embeddings back into the main dataframe
+final_results <- all_results_filtered %>%
+  left_join(pow_bow_results, by = c("pmid", "disease_area")) %>%
+  left_join(neg_bow_results, by = c("pmid", "disease_area"))
+
+if ("tagged_sum" %in% colnames(all_results)) {
+  all_results_filtered <- all_results_filtered %>%
+    left_join(pmid_tags, by = c("pmid"))
+}
+final_results %>% head()
+```
+
+# Keep the top 100 pmids (12 positive and highest tagged_sum) per disease area
+```{r}
+if ("tagged_sum" %in% colnames(final_results)) {
+  results_ranked <- final_results %>% 
+    group_by(disease_area) %>%
+    arrange(desc(models_positive), desc(tagged_sum)) %>%
+    slice(1:100) %>%
+    ungroup()
+} else {
+  results_ranked <- final_results %>% 
+    group_by(disease_area) %>%
+    arrange(desc(models_positive)) %>%
+    slice(1:100) %>%
+    ungroup()
+}
+
+# Use results_ranked to filter all_results_filtered
+filtered_data <- final_results %>% 
+  inner_join(results_ranked %>% select(pmid, disease_area), by = c("pmid", "disease_area"))
+
+if ("tagged_sum" %in% colnames(final_results)) {
+  metadata <- all_results %>% select(-c(tagged_sum, prediction, method, embedding, score))
+} else {
+  metadata <- all_results %>% select(-c(prediction, method, embedding, score))
+}
+
+# Enrich the filtered data with the metadata from all_results
+enriched_data <- left_join(filtered_data, metadata, by = c("pmid", "disease_area")) %>% distinct()
+enriched_data
+```
+
+```{r}
+write.xlsx(enriched_data, "validation_overview.xlsx")
+```

@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Prediction of potential mechanisms of rhubarb therapy for colorectal cancer based on network pharmacological analysis and molecular docking</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><roleName>MM</roleName><forename type="first">Fan</forename><surname>Yang</surname></persName>
+							<idno type="ORCID">0000-0002-0495-4464</idno>
+						</author>
+						<author>
+							<persName><roleName>MD</roleName><forename type="first">Xinghua</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>MD a ,</roleName><forename type="first">Yujie</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>MD</roleName><forename type="first">Yun</forename><surname>Ren</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>MM a ,</roleName><forename type="first">Jiao</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>MM</roleName><forename type="first">Keyuan</forename><surname>Xiao</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yang</forename><forename type="middle">F</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<affiliation>
+								<orgName>a Changzhi People&apos;s Hospital, The Affiliated Hospital of Shanxi Medical University, </orgName>
+								<address><addrLine>Changzhi, Shanxi Province, P.R. China. Changzhi, Shanxi Province 046000, P.R. China</addrLine></address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation>
+								<orgName> Changzhi People&apos;s Hospital, The Affiliated Hospital of Changzhi Medical College,</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Prediction of potential mechanisms of rhubarb therapy for colorectal cancer based on network pharmacological analysis and molecular docking</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">820E196F9A963D1FDA8C8F64E7FB1D38</idno>
+					<idno type="DOI">10.1097/MD.0000000000037477</idno>
+					<note type="submission">Received: 3 October 2023 / Received in final form: 8 January 2024 / Accepted: 13 February 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-04-19T12:36+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>colorectal cancer</term>
+					<term>network pharmacology</term>
+					<term>pathway</term>
+					<term>Rheum palmatum L</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The objective of this study was to investigate the potential targets and mechanism of Rheum palmatum L in the treatment of colorectal cancer based on the network pharmacology and molecular docking, which could provide the theoretical basis for clinical applications. The potential components were screened using TCMSP database and articles. The gene targets of colorectal cancer were screened through the Genecards database and Online Mendelian Inheritance in Man database. Then, the common targets of components and colorectal cancer were used to construct the network diagram of active components and targets in Cytoscape 3.7.0. The protein-protein interaction (PPI) diagram was generated using String database, and the targets were further analyzed by gene ontology and Kyoto Encyclopedia of Genes and Genomes. Molecular docking between gene targets and active components was analyzed via AutoDock, and visualized through PyMol. Among this study, main targets might be TP53, EGF, MYC, CASP3, JUN, PTGS2, HSP90AA1, MMP9, ESR1, PPARG. And 10 key elements might associate with them, such as aloe-emodin, beta-sitosterol, gallic acid, eupatin, emodin, physcion, cis-resveratrol, rhein, crysophanol, catechin. The treatment process was found to involve nitrogen metabolism, p53 signaling pathway, and various cancer related pathway, as well as the AGE-RAGE signaling pathway, estrogen signaling pathway, interleukin-17 signaling pathway and thyroid hormone signaling pathway. The molecular docking was verified the combination between key components and their respective target proteins. Network pharmacological analysis demonstrated that R palmatum was could regulated p53, AGE-RAGE, interleukin-17 and related signaling pathway in colorectal cancer, which might provide a scientific basis of mechanism.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Colorectal cancer (CRC), is a highly invasive and lethal type of gastrointestinal cancer. <ref type="bibr" target="#b0">[1]</ref> Among all cancers worldwide, CRC ranks third in terms of morbidity, and mortality accounts for approximately 10%. <ref type="bibr" target="#b1">[2]</ref> The early symptom of CRC was neglected, including hematochezia, abdominal pain, diarrhea, changes in bowel habits. Currently, the more common treatment for CRC patients included reoperation, chemotherapy, radiotherapy, targeted therapy or a combination of therapies. But after treating, the prognosis for CRC patients remains poor. <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref> Moreover, long-term use of these therapies can lead to severe side effects, such as nausea and vomiting, oral ulcers, diarrhea, hepatotoxicity, myelosuppression and immunosuppression. <ref type="bibr" target="#b2">[3]</ref> It is common to use traditional Chinese medicine (TCM) combined with Western medicine in clinical practice, which could reduce toxicity and enhance effects. <ref type="bibr" target="#b4">[5]</ref> TCM were applying in CRC to anti-tumor through promoted cancer cell apoptosis, inhibited cancer metastasis, and reduced drug resistance and side effects and regulated intestinal flora. <ref type="bibr" target="#b5">[6]</ref> However, the specific mechanism underlying TCM was still not clear.</p><p>Rheum palmatum L. Syst. Ed, a TCM, widely using for centuries, have broader range of beneficial effects such as antioxidant, anti-inflammatory, antimicrobial and cardioprotective activities. It contains many chemical ingredients such as emodin, aloe-emodin. These components have shown pharmacological effects in various cancers, including CRC, hepatocellular carcinoma, and lung cancer. <ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref> Some studies has reported that emodin reversed 5-Fu resistance in CRC via downregulation of PI3K/Akt signaling pathway and aloe-emodin suppressed epidermal growth factor (EGF)-induced neoplastic cell transformation by inhibiting the ERK/MSK1 and AKT/GSK3β signaling pathways. <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11]</ref> Some studies have reported the efficacy of prescription about R palmatum L in treating CRC. Dahuang Fuzi Baijiang decoction could prevent tumor progression by modulating adaptive immunity, and Dahuang Zhechong Pill could suppress liver metastasis of colorectal cancer. <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b12">13]</ref> But the core targets and specific mechanism of R palmatum is still not clear for CRC.</p><p>Network pharmacology can guide and assist in drug repositioning and predict the mechanism and metabolic characteristics of CHMs. <ref type="bibr" target="#b13">[14]</ref> The components of CHMs were screened using network analysis and the binging target was visualizing through Autodock. These techniques help us better comprehend the molecular mechanism of diseases from a multidimensional perspective. <ref type="bibr" target="#b14">[15]</ref> In this study, utilizing the network pharmacology and molecular docking, it was explored including the crucial components of R palmatum, the core targets of CRC and R palmatum, and the molecular biological mechanism for CRC, which would be a scientific reference in clinic.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">The collection and screening of active ingredients and targets with R palmatum L</head><p>According to TCMSP database (https://old.tcmsp-e.com/ tcmsp.php), <ref type="bibr" target="#b15">[16]</ref> the ingredients of R palmatum L were collected. The potential active ingredients of R palmatum L with DL L 0.18 and OB ≥ 30 were selected for CRC. In addition, the other active ingredients with R palmatum L that were searched from articles in PubMed database were enrolled, including emodin, cis-resveratrol, physcion, chrysophanol. <ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref><ref type="bibr" target="#b21">[22]</ref> The SMILES of potential active ingredients was obtained from Pubchem database (https://pubchem.ncbi. nlm.nih.gov/). <ref type="bibr" target="#b22">[23]</ref> The potential targets of the active components were predicted from TCMSP database and Swiss Target Prediction database (http://www.Swisstargetprediction. ch/). <ref type="bibr" target="#b23">[24]</ref> After removing the repetitive targets, the targets in Swiss database registered as potential active ingredients with probability of 0.5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">The acquisition of core targets in CRC</head><p>The gene of CRC was obtained after searching "colorectal cancer" in Online Mendelian Inheritance in Man database <ref type="bibr" target="#b24">[25]</ref> (https://omim.org/) and Genecards database (https://www.genecards.org/). <ref type="bibr" target="#b25">[26]</ref> Then, the targets of CRC were screened after removing the reduplicated targets of 2 databases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Network construction between the active components of R palmatum L and the targets of CRC</head><p>The intersection was analysis between core targets of active components in R palmatum L and related targets in CRC, which constructed Venn diagram (http://www.ehbio.com/test/venn/#/). Then, the network diagram of active components of R palmatum L and common targets was exported from Cytoscape 3.7.0, and analyzed by topological property.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">The network construction of PPI</head><p>The interaction function of protein to protein was analyzed by String database (https://string-db.org/). <ref type="bibr" target="#b26">[27]</ref> After restricting species of "homosapiens," the mutual target was entered into String database with mediumconfidence = 0.4 of the minimum interaction score. Then, the PPI network diagram was constructed after hiding the unrelated interaction. The database imported into Cytoscape3.7.0 (www.cytoscape.org/) <ref type="bibr" target="#b27">[28]</ref> was subjected to topology analysis. Finally, the top 10 gene targets were screened after sequencing by degree.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">The core component analysis of gene ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway</head><p>The common targets were analyzed by GO including biological process (BP), molecular function (MF) and cell component (CC), and the pathway was analyzed by KEGG. The GO and KEGG was analyzed in the Hiplot platform (https://hiplot-academic.com/). The bubble chart of the top 20 entries with P value &lt; .05 were drawn in R 4.0.3 software.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6.">Molecular docking validation</head><p>By restricting "homosapiens" with an acceptable resolution of &lt;2.5, suitable target protein structures were screened in the PDB database (https://www.rcsb.org/). <ref type="bibr" target="#b28">[29]</ref> The SDF files of ingredients were download from the PubChem database. The target proteins were dehydrogenated in AutoDock. <ref type="bibr" target="#b29">[30]</ref> The size and position of the box were adjusted to optimal conformation of ligands and receptors outputting in "pdbqt" format. The molecular docking results visualized using PyMol 2.4.0. <ref type="bibr" target="#b30">[31]</ref> And the docking results of core components and target was showed by heat map. The flow chartis shown in Figure <ref type="figure" target="#fig_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Result</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Screening of active components in R palmatum L</head><p>The active components were screened by OB ≥ 30% and DL ≥ 0.18 in TCMSP database. <ref type="bibr" target="#b31">[32]</ref> And some active components of R palmatum L that could obliterate CRC cell were added in reported studies, such as emodin, cis-resveratrol, physcion,</p><formula xml:id="formula_0">emodin 8-O-β-d-glucoside, gallic acid, Chrysophanol 8-O- β-d-glucoside, aloe-emodin-8-O-β-d-glucoside, physcion- 8-O-β-d-glucoside, chrysophanol.</formula><p>All the components were in Table <ref type="table" target="#tab_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">The prediction targets of active components and the network construction and analysis</head><p>The 110 targets of active components were predicated by TCMSP database and Swiss Target Prediction database. The 10,660 targets of CRC were screened by OMIN database and GeneCards database. Then 87 mutual targets were drawn in Veen diagram (Fig. <ref type="figure" target="#fig_1">2A</ref>). The network diagram of "antitumor component-targets" of R palmatum L was constructed by Cytoscape3.7.0 (Fig. <ref type="figure" target="#fig_1">2B</ref>). A total of 102 interactions was obtained, including 15 compounds and 87 targets were shown as quadrate and roundness, respectively. In the network diagram, the emodin, beta-sitosterol, gallic acid, aloe-emodin, cis-resveratrol, eupatin, physcion, rhein, crysophanol, catechin had higher degree (Table <ref type="table" target="#tab_1">2</ref>).</p><p>The common targets and the CRC defined species as "Homo sapiens" and mediumconfidence as 0.4, and hid the unconnected interactions in the String database. Then, the PPI network diagram was constructed (Fig. <ref type="figure" target="#fig_1">2C</ref>). The average degree of common targets and CRC was 12.815 using Cytoscape 3.7.0 and NetworkAnalyer. Then, the 34 targets which the degree value was higher than 12.815 were displayed in different sizes and colors according to the degree value in the PPI network diagram (Fig. <ref type="figure" target="#fig_1">2D</ref>). After ranking the 34 targets, the top 10 targets were TP53, EGF, MYC, CASP3, JUN, PTGS2, HSP90AA1, MMP9, ESR1, PPARG.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">The GO enrichment and KEGG enrichment analysis</head><p>The function of gene production was described by GO enrichment analysis, which consisted of BP, MF and CC. In this study, the result of GO enrichment analysis gathered 3221 BPs, 389 MFs, 239 CCs, and KEGG analysis collected 237 related pathways. The bubble chart was drawn by the top 20 items and KEGG enrichment analysis according to the P value screening with P va.5 and ranked from smaller to larger. The size of bubble represented the number of genes in GO and KEGG enrichment, with the large bubble representing the more genes. The size of P value was correlated with red with the smaller P value representing the tight correlation. Then, the bar chart of 20 items was present according to the P value (Fig. <ref type="figure" target="#fig_2">3</ref>).</p><p>The results of GO enrichment explained that the treatment process was involved in response to lipopolysaccharide, response to drug, response to steroid hormone, and tightly related with carbonate dehydratase activity, nuclear receptor activity, ligand-activated transcription factor activity, hydrolyase activity, steroid hormone receptor activity (Fig. <ref type="figure" target="#fig_2">3</ref>). This function and process was carried out from membrane raft, membrane microdomain, membrane region. The results of KEGG enrichment analysis suggested that the mechanism of CRC was correlated with the pathways included nitrogen metabolism, p53 signaling pathway, some cancer related pathway (colorectal cancer, small cell lung cancer, breast cancer, thyroid cancer), AGE-RAGE signaling pathway, estrogen signaling pathway, interleukin-17 (IL-17) signaling pathway and thyroid hormone signaling pathway (Fig. <ref type="figure" target="#fig_3">4A</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Molecular docking results</head><p>Molecular docking was performed to analyze how the core compounds interacted with the core targets. The docking results were combined and displayed using heatmaps. PyMol was used to visualize the top-ranked results. A docking score lower than -4.25 kcal/mol indicates some binding activity, while a score lower than -7.0 kcal/mol indicates strong binding activity. The present results showed that the average docking score was -7.51 kJ/mol, among which the results with docking score ≤ -7.0 kJ/mol accounted for 78%, reflecting that the compounds in the Rheum officinale pairs had good binding ability to the core target according to the scoring results. Heatmaps showed all the scoring results (Fig. <ref type="figure" target="#fig_3">4B</ref>). Some molecular docking results were visualized byusing PyMol 2.4.0, as shown in Figure <ref type="figure" target="#fig_4">5</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>CRC is a complex tumor involving multiple carcinogenic signaling pathways, the molecular mechanisms of which are not fully understood. <ref type="bibr" target="#b32">[33]</ref> The prognosis of patients is difficult to achieve satisfactory prognosis treating by surgery, radiotherapy and chemotherapy. <ref type="bibr" target="#b33">[34]</ref> Researches have suggested that the TCMs have good anti-tumor effects and regulate the immune microenvironment. <ref type="bibr" target="#b34">[35,</ref><ref type="bibr" target="#b35">36]</ref> And in clinic, TCMs with small side effect could prolong the survival time and improve the life quality of patients. <ref type="bibr" target="#b35">[36]</ref> However, TCMs have multi-targets and multi-pathways in treatment of CRC. And the specific mechanism of TCMs were not understood. Therefore, it is necessary to predict mechanisms of TCMs and provide theoretical basis for clinic.</p><p>In this study, 15 active ingredients were screened from R palmatum, to determine the correlation between the ingredients and clinical efficacy. Using network pharmacology, we identified 87 targets associated with these active ingredients. Through network construction analysis, we identified 10 key targets, including TP53, EGF, MYC, CASP3, JUN, PTGS2, HSP90AA1, MMP9, ESR1, PPARG, which play an important role in this study. TP53 is a crucial molecule in the occurrence and development of colorectal cancer. <ref type="bibr" target="#b36">[37]</ref> Research has indicated that upregulation of TP53 can impede the trans-activation of TCF4, provoke endoplasmic reticulum stress disorder in cancerous cells, and facilitate the demise of colon cancer cell. <ref type="bibr" target="#b37">[38]</ref> The EGF receptor (EGFR, ErbB-1, HER1) expressed in numerous tissues, plays various roles during development, in healthy individuals, and in different pathological conditions, including cancer. <ref type="bibr" target="#b38">[39]</ref> After binding with EGFR, it escalates EGFR kinase activity and triggers several signaling pathways, thereby managing cell survival and metabolism. <ref type="bibr" target="#b39">[40,</ref><ref type="bibr" target="#b40">41]</ref> HSP90AA1, a member of genetically conserved heat shock protein family, downregulated HSP90AA1 to restrain the malignant biological behavior of CRC. <ref type="bibr" target="#b41">[42]</ref> HSP90, a vital regulator of tumor development and metastasis, was suggested that it may be an independent prognostic factor for CRC patients. <ref type="bibr" target="#b42">[43]</ref> MMP9, a zincdependent endopeptidase, instigates gelatin and collagen degradation during tissue remodeling, thereby encouraging tumor invasion and metastasis. <ref type="bibr" target="#b43">[44]</ref> Studies have indicated that MMP9 expression is a natural biological means to inhibit CAC by  restricting reactive oxygen species (ROS) accumulation and DNA damage in the colon. <ref type="bibr" target="#b44">[45]</ref> The MYC gene encodes a transcription factor protein, which plays a role in regulating important processes such as cell growth, proliferation and apoptosis. <ref type="bibr" target="#b45">[46]</ref> Studies have shown that the abnormal expression of MYC is closely linked to the development and prognosis of CRC, with high levels of MYC associated with increased tumor aggressiveness and metastasis. <ref type="bibr" target="#b46">[47]</ref> Based on the core targets, we have identified 10 key elements that are associated with them. These components can serve as the fundamental active ingredients in the treatment of CRC using the Rheum officinale pair. Studies have shown that emodin can inhibit the proliferation and invasion of CRC cells by targeting ACSL4, as well as reduce the secretion of VEGF and the expression of VEGFR1 and VEGFR2. <ref type="bibr" target="#b47">[48]</ref> Furthermore, it can also inhibit cancer cells growth by regulating the Bcl-2/Bax ratio, reducing M2-like macrophages and affecting mitochondrial apoptosis pathway. <ref type="bibr" target="#b48">[49,</ref><ref type="bibr" target="#b49">50]</ref> Beta-Sitosterol inhibits the metastasis of CT26/luc colon cancer by inhibiting MMP-9 and inducing an anti-tumor Th1 immune response. <ref type="bibr" target="#b50">[51]</ref> Moreover, beta-sitosterol can induce the apoptosis of CRC cells by promoting the production of short-chain fatty acids by intestinal flora. <ref type="bibr" target="#b51">[52]</ref> Gallic acid can inhibit the progression of CRC by binding to targets associated with iron death and regulating the expression of the corresponding protein. <ref type="bibr" target="#b52">[53]</ref> The experimental results also shown that gallic acid exhibits obvious inhibitory activity on CRC cells and can inhibit the growth of CRC cells by disrupt mitochondrial function. <ref type="bibr" target="#b53">[54]</ref> Aloe-emodin could induce the production of ROS to improving apoptotic. In rectal cancer cells, aloe-emodin can generate ROS and increase the level of cytoplasmic Ca 2+ , which leading to elevated ER stress and the expression level of apoptosis-related caspase protein. <ref type="bibr" target="#b54">[55]</ref> Resveratrol activates tristetraprolin, upregulates the expression of miR-200c in CRC, and inhibits the proliferation and metastasis of CRC cells. <ref type="bibr" target="#b55">[56]</ref> Eupatin significantly inhibits the expression of iNOS and COX-2 in LPSinduced macrophages and microglia, as well as the production of nitrite, demonstrating a notable anti-inflammatory effect and protection of the intestinal microenvironment from inflammation. <ref type="bibr" target="#b56">[57]</ref> And the R palmatum L was applied in CRC.</p><p>GO enrichment analysis reveals that the treatment of CRC with Rheum officinale primarily involves the regulation of nutrients, vascular lesions, and oxidative substance metabolism. This process is influenced by various organelles, hormone levels, and steroid metabolism, and encompasses multiple pathways associated with inflammation and metabolic processes. These finding indicate that TCMs achieve therapeutic effects on CRC through multiple components, targets, pathways, and biological mechanisms. KEGG enrichment analysis identifies the p53 signaling pathway is the core signaling pathway of rhubarb in the treatment of colorectal cancer. p53, a tumor suppressor, plays a crucial role in tumor occurrence and development, involving to regulating of cell cycle arrest, DNA repair, antioxidant effect, anti-angiogenesis effect, metabolism, autophagy, aging and apoptosis, among others. <ref type="bibr" target="#b57">[58]</ref> p53 and its pathway-related genes p16 and p21 are involved in cell cycle checkpoint regulation affecting the cell cycle process by influencing CyclinD1/ Cyclin-dependent kinases4 genes. <ref type="bibr" target="#b58">[59]</ref> Advanced glycation end products (AGE) and its receptor (RAGE) was associated with various pathological conditions, such as diabetes, cancer. <ref type="bibr" target="#b59">[60]</ref> Some research reported that AGE are possibly involved in colorectal carcinogenesis, and AGE-RAGE signaling could considerably influence apoptosis, autophagy, and necroptosis. <ref type="bibr" target="#b59">[60,</ref><ref type="bibr" target="#b60">61]</ref> IL-17, a pleiotropic proinflammatory cytokine, prevent cancer cells from immune surveillance and regulate tumor angiogenesis, which play an important role in metastasis and prognosis of CRC. <ref type="bibr" target="#b61">[62,</ref><ref type="bibr" target="#b62">63]</ref> And its signaling pathway could promote tumor growth. In addition, activation of the IL-17 signaling pathway by the CXCL17-GPR35 axis affects drug resistance and colorectal cancer tumorigenesis. <ref type="bibr" target="#b63">[64,</ref><ref type="bibr" target="#b64">65]</ref> In this study, although targets and signaling pathways of Rheum officinale for CRC were potentially identified, there are certain limitations that need to be acknowledged. These limitations are as follows: Firstly, as the database slowly update, the data in this article may not timely updated; Second, the network pharmacology were used for the prediction of the target and mechanism, but database cannot replace the experimental verification. In this study, the components of Rheum and the targets of CRC was verified using molecular docking, but still lack of the verification by experiments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusions</head><p>In conclusion, the integration of network pharmacology and molecular docking revealed that the function of Rheum officinale was related to the core targets such as TP53, EGF, MYC, CASP3, JUN, PTGS2, HSP90AA1, MMP9, and others. The active ingredients mainly regulate BPs related to the response to lipopolysaccharides, drugs, and steroid hormone levels for CRC. The main pathways involved in the modulation include AGE-RAGE signaling pathway, estrogen signaling pathway, IL-17 signaling pathway and the TP53 signaling pathway, which are crucial for CRC treatment. In this study, This comprehensive analysis of the multi-component, multi-target, functional, and signaling pathway of Rheum officinale provides valuable insights for CRC treatment and can serve as a reference in clinic.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Flow diagram of the study.</figDesc><graphic coords="2,79.46,283.32,420.08,449.33" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. (A) Venn diagram of Rheum palmatum L targets and CRC disease-related targets. (B) Drug-ingredient-target-disease network diagram. (C) PPI network diagram of candidate genes. (D) Topological analysis diagram of the candidate genes. CRC = colorectal cancer, PPI = protein-protein interaction.</figDesc><graphic coords="4,79.50,351.35,420.00,372.30" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. GO enrichment analysis pathway diagram. (A) Enrichment of GO biological process. (B) Enrichment of GO molecular function. (C) Enrichment of GO cellular component. GO = gene ontology.</figDesc><graphic coords="5,63.60,346.50,482.40,120.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. (A) KEGG pathway enrichment diagram. (B) Molecular docking heat map. KEGG = Kyoto Encyclopedia of Genes and Genomes.</figDesc><graphic coords="5,64.50,521.91,480.00,210.73" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Schematic diagram of molecular docking.</figDesc><graphic coords="6,49.48,62.00,480.04,384.56" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>The potential active components of Rheum palmatum L.</figDesc><table><row><cell>MOL_ID</cell><cell>Molecule_name</cell><cell>OB</cell><cell>MW</cell><cell>DL</cell></row><row><cell>MOL000471</cell><cell>Aloe-emodin</cell><cell cols="3">83.38 270.25 0.24</cell></row><row><cell>MOL002293</cell><cell>Sennoside D_qt</cell><cell cols="3">61.06 524.50 0.61</cell></row><row><cell>MOL002235</cell><cell>Eupatin</cell><cell cols="3">50.80 360.34 0.41</cell></row><row><cell>MOL002276</cell><cell>Sennoside E_qt</cell><cell cols="3">50.69 524.50 0.61</cell></row><row><cell>MOL000096</cell><cell>(-)-Catechin</cell><cell cols="3">49.68 290.29 0.24</cell></row><row><cell>MOL002251</cell><cell>Mutatochrome</cell><cell cols="3">48.64 552.96 0.61</cell></row><row><cell>MOL002268</cell><cell>Rhein</cell><cell cols="3">47.07 284.23 0.28</cell></row><row><cell>MOL002281</cell><cell>Toralactone</cell><cell cols="3">46.46 272.27 0.24</cell></row><row><cell>MOL002288</cell><cell>Emodin-1-O-β-d-glucopyranoside</cell><cell cols="3">44.81 432.41 0.80</cell></row><row><cell>MOL002280</cell><cell cols="4">Torachrysone-8-O-d-(6'-oxayl)-glucoside 43.02 480.46 0.74</cell></row><row><cell>MOL002259</cell><cell>Physciondiglucoside</cell><cell cols="3">41.65 608.60 0.63</cell></row><row><cell>MOL000358</cell><cell>Beta-Sitosterol</cell><cell cols="3">36.91 414.79 0.75</cell></row><row><cell>MOL002297</cell><cell>Daucosterol_qt</cell><cell cols="3">35.89 386.73 0.70</cell></row><row><cell>MOL002303</cell><cell>Palmidin A</cell><cell cols="3">32.45 510.52 0.65</cell></row><row><cell>MOL002260</cell><cell>Procyanidin B-5,3'-O-gallate</cell><cell cols="3">31.99 730.67 0.32</cell></row><row><cell>MOL000554</cell><cell>Gallic acid-3-O-(6'-O-galloyl)-glucoside</cell><cell cols="3">30.25 484.40 0.67</cell></row><row><cell>MOL000472</cell><cell>Emodin</cell><cell cols="3">24.40 270.25 0.24</cell></row><row><cell cols="2">MOL001229 Cis-resveratrol</cell><cell cols="3">41.13 228.26 0.11</cell></row><row><cell>MOL000476</cell><cell>Physcion</cell><cell cols="3">22.29 284.28 0.27</cell></row><row><cell>MOL002243</cell><cell>Emodin 8-O-β-d-glucoside</cell><cell cols="3">27.06 432.41 0.80</cell></row><row><cell>MOL000513</cell><cell>Gallic acid</cell><cell cols="3">31.69 170.13 0.04</cell></row><row><cell>MOL002360</cell><cell>Chrysophanol-8-O-β-d-glucoside</cell><cell cols="3">20.85 416.41 0.77</cell></row><row><cell cols="2">MOL002241 Aloe-emodin-8-O-β-d-glucoside</cell><cell cols="3">9.04 432.41 0.81</cell></row><row><cell>MOL002366</cell><cell>Physcion-8-O-β-d-glucoside</cell><cell cols="3">18.31 446.44 0.82</cell></row><row><cell cols="2">MOL001729 Chrysophanol</cell><cell cols="3">18.64 254.25 0.21</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>The degree of potential active component with Rheum palmatum L.</figDesc><table><row><cell>Name</cell></row></table></figure>
+		</body>
+		<back>
+
+			
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>This research was funded by Shanxi Provincial Health Commission Research Project (2023141) and Changzhi People Hospital Innovative Research project fund (202101C03).</head></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" />			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Current progress of EMT: a new direction of targeted therapy for colorectal cancer with invasion and metastasis</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biomolecules</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">1723</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Progress of research on molecular targeted therapies for colorectal cancer</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Shilin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jiazhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Xing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Front Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">1160949</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Chinese herbal medicines for prevention and treatment of colorectal cancer: from molecular mechanisms to potential clinical applications</title>
+		<author>
+			<persName><forename type="first">M-Y</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L-Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y-M</forename><surname>Lou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Integr Med</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="369" to="384" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Chinese herbal medicines in the treatment of IBD and colorectal cancer: a review</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sałaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zatorski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sobczak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Curr Treat Options Oncol</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="405" to="420" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">New developments in the pharmacodynamics and pharmacokinetics of combination of Chinese medicine and Western medicine</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X-C</forename><surname>Liang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chin J Integr Med</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="312" to="319" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The triangular relationship between traditional Chinese medicines, intestinal flora, and colorectal cancer</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Res Rev</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="539" to="567" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Advances in bio-active constituents, pharmacology and clinical applications of rhubarb</title>
+		<author>
+			<persName><forename type="first">Y-J</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z-J</forename><surname>Pu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y-P</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chin Med</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">36</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Multi-material basis and multimechanisms of the Dahuang Zhechong pill for regulating Treg/Th1 balance in hepatocellular carcinoma</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F-R</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M-L</forename><surname>Xing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phytomedicine</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="page">154055</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A network pharmacology approach to investigate the anticancer mechanism and potential active ingredients of Rheum palmatum L. against lung cancer via induction of apoptosis</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Front Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">528308</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Emodin reverses 5-Fu resistance in human colorectal cancer via downregulation of PI3K/Akt signaling pathway</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Si</forename><forename type="middle">W</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am J Transl Res</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1851" to="1861" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Aloe emodin suppresses EGF-induced neoplastic cell transformation by inhibiting the ERK/MSK1 and AKT/ GSK3β signaling pathways</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mol Med Rep</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="5215" to="5220" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Dahuang Fuzi Baijiang decoction restricts progenitor to terminally exhausted T cell differentiation in colorectal cancer</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Sci</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="page" from="1739" to="1751" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Dahuang Zhechong Pill suppresses colorectal cancer liver metastasis via ameliorating exosomal CCL2 primed pre-metastatic niche</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Ethnopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">238</biblScope>
+			<biblScope unit="page">111878</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Traditional Chinese medicine network pharmacology in cardiovascular precision medicine</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J-Q</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Curr Pharm Des</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="2925" to="2933" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Network pharmacology: a new approach to unveiling traditional Chinese medicine</title>
+		<author>
+			<persName><forename type="first">X-M</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C-F</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chin J Nat Med</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="1" to="2" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">TCMSP: a database of systems pharmacology for drug discovery from herbal medicines</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ru</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Cheminf</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">13</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Therapeutic potential of emodin for gastrointestinal cancers</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Mcdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Vanderveen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">T</forename><surname>Velazquez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Integr Cancer Ther</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page">15347354211067469</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Physcion induces potential anticancer effects in cervical cancer cells</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Trybus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Król</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Trybus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cells</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">2029</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Gallic acid: molecular rival of cancer</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mishra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Environ Toxicol Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="473" to="485" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The potential antitumor effect of chrysophanol in relation to cervical cancer cells</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Trybus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Król</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Trybus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Cell Biochem</title>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="page" from="639" to="652" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Physcion-8-O-β-d-glucoside interferes with the nuclear factor-κB pathway and downregulates P-glycoprotein expression to reduce paclitaxel resistance in ovarian cancer cells</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Pharm Pharmacol</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="545" to="552" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Chrysophanol suppresses hypoxiainduced epithelial-mesenchymal transition in colorectal cancer cells</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y-J</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L-R</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Anat Rec (Hoboken)</title>
+		<imprint>
+			<biblScope unit="volume">302</biblScope>
+			<biblScope unit="page" from="1561" to="1570" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">PubChem substance and compound databases</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Thiessen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Bolton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="1202" to="1213" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">SwissTargetPrediction: a web server for target prediction of bioactive small molecules</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gfeller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Grosdidier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wirth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="32" to="38" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Searching online mendelian inheritance in man (OMIM): a knowledgebase of human genes and genetic phenotypes</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Amberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hamosh</surname></persName>
+		</author>
+		<idno>1.2.1-1.2.12</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Curr Protoc Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The GeneCards suite: from gene data mining to disease genome sequence analyses</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Stelzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Rosen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Plaschkes</surname></persName>
+		</author>
+		<idno>1.30.1-1.30.33</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Curr Protoc Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">STRING: known and predicted protein-protein associations, integrated and transferred across organisms</title>
+		<author>
+			<persName><forename type="first">Von</forename><surname>Mering</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Snel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="433" to="437" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Cytoscape: software for visualization and analysis of biological networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wiese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Warscheid</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Methods Mol Biol</title>
+		<imprint>
+			<biblScope unit="volume">696</biblScope>
+			<biblScope unit="page" from="291" to="303" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Protein Data Bank: the single global archive for 3D macromolecular structure data</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Null</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Burley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M</forename><surname>Berman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="520" to="528" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">AutoDock4 and AutoDockTools4: automated docking with selective receptor flexibility</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Huey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Lindstrom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Comput Chem</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="2785" to="2791" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Shortcuts for faster image creation in PyMOL</title>
+		<author>
+			<persName><forename type="first">Bhm</forename><surname>Mooers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Protein Sci</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="268" to="276" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Network pharmacology analysis to uncover the potential mechanisms of lycium barbarum on colorectal cancer</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Interdiscip Sci Comput Life Sci</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="515" to="525" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Thymosin β4 and β10 are highly expressed at the deep infiltrative margins of colorectal cancer -a mass spectrometry analysis</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Olianas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Serrao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Piras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur Rev Med Pharmacol Sci</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="7285" to="7296" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Molecular targeted study in tumors: from western medicine to active ingredients of traditional Chinese medicine</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><forename type="middle">Q</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biomed Pharmacother</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page">109624</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Anti-tumor effects of Chinese medicine compounds by regulating immune cells in microenvironment</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Front Oncol</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">746917</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Anticancer activities of TCM and their active components against tumor metastasis</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biomed Pharmacother</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="page">111044</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The prognostic significance of TP53 mutations in patients with right-sided and left-sided colorectal cancer</title>
+		<author>
+			<persName><surname>Moh'd Mk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Nishant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joanne</forename><forename type="middle">X</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Oncol</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page">3589</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Oridonin promotes endoplasmic reticulum stress via TP53-repressed TCF4 transactivation in colorectal cancer</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Shang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Exp Clin Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">EGFR targeting for cancer therapy: pharmacology and immunoconjugates with drugs and nanoparticles</title>
+		<author>
+			<persName><forename type="first">Eds</forename><surname>Santos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kab</forename><surname>Nogueira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lcc</forename><surname>Fernandes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Pharm</title>
+		<imprint>
+			<biblScope unit="volume">592</biblScope>
+			<biblScope unit="page">120082</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">EGF receptor signaling, phosphorylation, ubiquitylation and endocytosis in tumors in vivo</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Pinilla-Macua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Grassart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Duvvuri</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">31993</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Non-ligand-induced dimerization is sufficient to initiate the signalling and endocytosis of EGF receptor</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kourouniotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pennock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Mol Sci</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page">1200</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">DAB2IP down-regulates HSP90AA1 to inhibit the malignant biological behaviors of colorectal cancer</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Cancer</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">High expression of HSP90 is associated with poor prognosis in patients with colorectal cancer</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PeerJ</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">7946</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Updated results of a phase 1 study combining the matrix metalloproteinase 9 inhibitor GS-5745 with gemcitabine and nab-paclitaxel in patients with advanced pancreatic cancer</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Bendell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Brachmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Clin Oncol</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page">363</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Matrix metalloproteinase 9 (MMP9) limits reactive oxygen species (ROS) accumulation and DNA damage in colitis-associated cancer</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Walter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Canup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pujada</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Death Dis</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">MYC-Activated LncRNA MNX1-AS1 promotes the progression of colorectal cancer by stabilizing YB1</title>
+		<author>
+			<persName><forename type="first">Q-N</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X-J</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page" from="2636" to="2650" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Dual targeting of bromodomain and extraterminal domain proteins, and WNT or MAPK signaling, inhibits c-MYC expression and proliferation of colorectal cancer cells</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Tögel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nightingale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Chueh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mol Cancer Ther</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="1217" to="1226" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">ACSL4 promotes colorectal cancer and is a potential therapeutic target of emodin</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phytomedicine</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="page">154149</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Emodin inhibits LOVO colorectal cancer cell proliferation via the regulation of the Bcl-2/Bax ratio and cytochrome c</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Exp Ther Med</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="1225" to="1228" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Emodin reduces tumor burden by diminishing M2-like macrophages in colorectal cancer</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">T</forename><surname>Sougiannis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Vanderveen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Chatzistamou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am J Physiol Gastrointest Liver Physiol</title>
+		<imprint>
+			<biblScope unit="volume">322</biblScope>
+			<biblScope unit="page" from="383" to="395" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Liposomal β-sitosterol suppresses metastasis of CT26/luc colon carcinoma via inhibition of MMP-9 and evoke of immune system</title>
+		<author>
+			<persName><forename type="first">C-Y</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C-F</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W-T</forename><surname>Chou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pharmaceutics</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">1214</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Correlation between microbes and colorectal cancer: tumor apoptosis is induced by sitosterols through promoting gut microbiota to produce short-chain fatty acids</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Apoptosis</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="168" to="183" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Ferroptosis-related genes for overall survival prediction in patients with colorectal cancer can be inhibited by gallic acid</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Biol Sci</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="942" to="956" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Anti-cancer activity of quercetin, gallic acid, and ellagic acid against hepg2 and hct 116 cell lines: in vitro</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Abd-Rabou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Shalby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">H</forename><surname>Ahmed</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Pharma Bio Sci</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="584" to="592" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Aloe-Emodin induces endoplasmic reticulum stress-dependent apoptosis in colorectal cancer cells</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><forename type="middle">W</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Sci Monit</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="6331" to="6339" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Resveratrol inhibits proliferation, invasion and epithelial-mesenchymal transition by increasing miR-200c expression in HCT-116 colorectal cancer cells</title>
+		<author>
+			<persName><forename type="first">Karimi</forename><surname>Dermani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Saidijam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Amini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Cell Biochem</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="page" from="1547" to="1555" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Anti-inflammatory and tau phosphorylation-inhibitory effects of eupatin</title>
+		<author>
+			<persName><forename type="first">C-H</forename><surname>Chou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K-C</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">E</forename><surname>Lin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Molecules</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page">5652</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Current developments of targeting the p53 signaling pathway for cancer treatment</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pharmacol Ther</title>
+		<imprint>
+			<biblScope unit="volume">220</biblScope>
+			<biblScope unit="page">107720</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Anti-cancer effects of polyphenols via targeting p53 signaling pathway: updates and future directions</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Reale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ullah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biotechnol Adv</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page">107385</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">AGE-RAGE synergy influences programmed cell death signaling to promote cancer</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Waghela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">U</forename><surname>Vaidya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ranjan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mol Cell Biochem</title>
+		<imprint>
+			<biblScope unit="volume">476</biblScope>
+			<biblScope unit="page" from="585" to="598" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Clinical significance of AGE-RAGE axis in colorectal cancer: associations with glyoxalase-I, adiponectin receptor expression and prognosis</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sakellariou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Fragkou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Levidou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Cancer</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Role of interleukin (IL)-17 and T-helper (Th)17 cells in cancer</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biochem Biophys Res Commun</title>
+		<imprint>
+			<biblScope unit="volume">493</biblScope>
+			<biblScope unit="page" from="1" to="8" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">IL-17 and colorectal cancer: from carcinogenesis to treatment</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Razi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baradaran</forename><surname>Noveiry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Keshavarz-Fathi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cytokine</title>
+		<imprint>
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="page" from="7" to="12" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Activation of the IL-17 signalling pathway by the CXCL17-GPR35 axis affects drug resistance and colorectal cancer tumorigenesis</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am J Cancer Res</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="2172" to="2187" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">IL-17 can promote tumor growth through an IL-6-Stat3 signaling pathway</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kortylewski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Exp Med</title>
+		<imprint>
+			<biblScope unit="volume">206</biblScope>
+			<biblScope unit="page" from="1457" to="1464" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

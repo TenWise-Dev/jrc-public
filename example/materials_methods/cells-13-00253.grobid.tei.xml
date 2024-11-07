@@ -1,0 +1,2263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Characterization of pSer129-αSyn Pathology and Neurofilament Light-Chain Release across In Vivo, Ex Vivo, and In Vitro Models of Pre-Formed-Fibril-Induced αSyn Aggregation</title>
+				<funder>
+					<orgName type="full">University of Southern Denmark</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-01-29">29 January 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Maja</forename><forename type="middle">L</forename><surname>Hansen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Neuroscience, Molecular and Cellular Pharmacology</orgName>
+								<orgName type="institution">H. Lundbeck A/S</orgName>
+								<address>
+									<postCode>2500</postCode>
+									<settlement>Valby, Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Malene</forename><surname>Ambjø</surname></persName>
+							<idno type="ORCID">0000-0003-3609-3408</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Neuroscience, Molecular and Cellular Pharmacology</orgName>
+								<orgName type="institution">H. Lundbeck A/S</orgName>
+								<address>
+									<postCode>2500</postCode>
+									<settlement>Valby, Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Mikkel</forename><forename type="middle">N</forename><surname>Harndahl</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Biotherapeutic Discovery</orgName>
+								<orgName type="institution">H. Lundbeck A/S</orgName>
+								<address>
+									<postCode>2500</postCode>
+									<settlement>Valby, Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tau</forename><surname>Benned-Jensen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Neuroscience, Molecular and Cellular Pharmacology</orgName>
+								<orgName type="institution">H. Lundbeck A/S</orgName>
+								<address>
+									<postCode>2500</postCode>
+									<settlement>Valby, Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Karina</forename><surname>Fog</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Neuroscience, Molecular and Cellular Pharmacology</orgName>
+								<orgName type="institution">H. Lundbeck A/S</orgName>
+								<address>
+									<postCode>2500</postCode>
+									<settlement>Valby, Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kaare</forename><surname>Bjerregaard-Andersen</surname></persName>
+							<idno type="ORCID">0000-0003-3609-3408</idno>
+							<affiliation key="aff1">
+								<orgName type="department">Biotherapeutic Discovery</orgName>
+								<orgName type="institution">H. Lundbeck A/S</orgName>
+								<address>
+									<postCode>2500</postCode>
+									<settlement>Valby, Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Florence</forename><surname>Sotty</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Neuroscience, Histology and Pathology Models</orgName>
+								<orgName type="institution">H. Lundbeck A/S</orgName>
+								<address>
+									<postCode>2500</postCode>
+									<settlement>Valby, Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Characterization of pSer129-αSyn Pathology and Neurofilament Light-Chain Release across In Vivo, Ex Vivo, and In Vitro Models of Pre-Formed-Fibril-Induced αSyn Aggregation</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-01-29">29 January 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">ECDC534035C537E7EE32356B8CB46DE3</idno>
+					<idno type="DOI">10.3390/cells13030253</idno>
+					<note type="submission">Received: 4 December 2023 Revised: 18 January 2024 Accepted: 26 January 2024</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-04-19T12:36+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Hansen, M.L.</term>
+					<term>Ambjørn, M.</term>
+					<term>Harndahl, M.N.</term>
+					<term>Benned-Jensen, T.</term>
+					<term>Fog, K.</term>
+					<term>Bjerregaard-Andersen, K.</term>
+					<term>Sotty, F alpha-synuclein</term>
+					<term>pre-formed fibrils</term>
+					<term>protein aggregation</term>
+					<term>neurofilament light chain</term>
+					<term>biomarkers</term>
+					<term>neurodegeneration</term>
+					<term>F28tg mouse model</term>
+					<term>synucleinopathies</term>
+					<term>Parkinson&apos;s disease</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Protein aggregation is a predominant feature of many neurodegenerative diseases, including synucleinopathies, which are characterized by cellular inclusions containing α-Synuclein (αSyn) phosphorylated at serine 129 (pSer129). In the present study, we characterized the development of αSyn pre-formed fibril (PFF)-induced pSer129-αSyn pathology in F28tg mice overexpressing human wild-type αSyn, as well as in ex vivo organotypic cultures and in vitro primary cultures from the same mouse model. Concurrently, we collected cerebrospinal fluid (CSF) from mice and conditioned media from ex vivo and in vitro cultures and quantified the levels of neurofilament light chain (NFL), a biomarker of neurodegeneration. We found that the intra-striatal injection of PFFs induces the progressive spread of pSer129-αSyn pathology and microglial activation in vivo, as well as modest increases in NFL levels in the CSF. Similarly, PFF-induced αSyn pathology occurs progressively in ex vivo organotypic slice cultures and is accompanied by significant increases in NFL release into the media. Using in vitro primary hippocampal cultures, we further confirmed that pSer129-αSyn pathology and NFL release occur in a manner that correlates with the fibril dose and the level of the αSyn protein. Overall, we demonstrate that αSyn pathology is associated with NFL release across preclinical models of seeded αSyn aggregation and that the pharmacological inhibition of αSyn aggregation in vitro also significantly reduces NFL release.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>α-Synuclein (αSyn) is an aggregation-prone protein and the prime constituent of fibrillar inclusions, which occupy the cytoplasm of neurons and oligodendrocytes in patients with synucleinopathies such as Parkinson's disease and multiple system atrophy <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref>. The discovery that αSyn aggregates can spread from inclusion-bearing neurons to grafted cells in humans <ref type="bibr" target="#b3">[4]</ref> and mice <ref type="bibr" target="#b4">[5]</ref> suggests that αSyn aggregates can transmit themselves from cell to cell, akin to a proteinaceous infectious particle ("prion"). The prion-like spread of misfolded αSyn is believed to accelerate disease progression, as αSyn aggregates internalized by recipient cells can template ("seed") the misfolding of native αSyn, leading to the amplification of αSyn pathology <ref type="bibr">[6]</ref><ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr">[9]</ref>.</p><p>The induction of αSyn aggregates can be modeled by adding or injecting αSyn preformed fibrils (PFFs) into cell cultures <ref type="bibr" target="#b9">[10]</ref> and animals <ref type="bibr" target="#b10">[11]</ref>, respectively. After their internalization and escape from the endolysosomal system, the PFFs seed the conversion of native αSyn into fibrillar forms <ref type="bibr" target="#b11">[12]</ref>, resulting in protein-and organelle-rich aggregates that successfully mimic key features of patient-derived Lewy Bodies, such as detergentinsolubility and the phosphorylation of αSyn at serine 129 (pSer129-αSyn) <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b12">13,</ref><ref type="bibr" target="#b13">14]</ref>. In agreement with the seeding-and-spreading hypothesis, the histological analysis of pSer129-αSyn pathology in PFF-injected mice has shown that the spreading pattern of pathological αSyn is dependent on the brain connectome and Snca expression, indicating that the spreading of αSyn aggregates is governed by neuronal wiring and the amount of endogenous αSyn available for seeding <ref type="bibr" target="#b14">[15]</ref>. Furthermore, the seeded aggregation of αSyn induces cellular deterioration, as evidenced by synaptic dysfunction <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b13">14,</ref><ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b16">17]</ref>, reduced mitochondrial respiration <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b17">18]</ref>, cytosolic Ca 2+ imbalance <ref type="bibr" target="#b18">[19]</ref>, impaired organelle trafficking <ref type="bibr" target="#b19">[20,</ref><ref type="bibr" target="#b20">21]</ref>, and the malfunction of the autophagosomal-lysosomal system <ref type="bibr" target="#b17">[18,</ref><ref type="bibr" target="#b21">22,</ref><ref type="bibr" target="#b22">23]</ref>.</p><p>Mounting evidence suggests that glial cells influence the pathogenesis of synucleinopathies. Microglia, the brain-resident immune cells, exhibit increased activity in Parkinson's disease patients when compared to healthy controls <ref type="bibr" target="#b23">[24]</ref>. Additionally, both in vivo and in vitro data suggest that exposure to misfolded αSyn is immunogenic, leading, among other processes, to inflammasome activation and the secretion of proinflammatory cytokines <ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref><ref type="bibr" target="#b28">[29]</ref>. Histological examination reveals that PFF-induced αSyn aggregation triggers pronounced morphological changes in Iba1 + microglia in vivo, which become hypertrophic <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b29">30]</ref> and increase in number <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b30">31]</ref>.</p><p>αSyn aggregation, neuronal dysfunction, and neuroinflammation are believed to contribute to neurodegeneration. Conventionally, PFF-induced cell death has been estimated in vitro by using neuron-specific methods, e.g., the quantification of the number of surviving NeuN + nuclei <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b31">32]</ref> or general cytotoxicity assays, such as lactate dehydrogenase <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b31">32,</ref><ref type="bibr" target="#b32">33]</ref> and caspase-3 assays <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b13">14]</ref>. The assessment of neurodegeneration in PFF-treated animals is commonly performed by assessing tyrosine hydroxylase immunoreactivity as a proxy for dopaminergic neuron loss in the substantia nigra pars compacta <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b24">25,</ref><ref type="bibr" target="#b29">30,</ref><ref type="bibr" target="#b33">34]</ref>. However, to evaluate neurodegeneration across the brain, tyrosine hydroxylase stainings are of limited use. Recent publications conclude that quantifications of neurofilament light chain (NFL) in biofluids can be used to sensitively estimate neurodegeneration in rodent models of Creutzfeldt-Jakob disease <ref type="bibr" target="#b34">[35]</ref>, Huntington's disease <ref type="bibr" target="#b35">[36]</ref>, and tauopathies <ref type="bibr" target="#b36">[37]</ref>, as well as in genetic models of synucleinopathies <ref type="bibr" target="#b37">[38]</ref>.</p><p>Here, we investigate the potential of using NFL as a biomarker of neurodegeneration across in vivo, ex vivo, and in vitro models of PFF-induced αSyn aggregation. Our results indicate that αSyn aggregation is a key factor influencing NFL release in these models and that NFL measurements can be used across different model systems to study the timing and severity of the neurodegenerative response and to evaluate the impact of pharmacological interventions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Materials and Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Mice</head><p>C57BL/6 mice (referred to as wild-type (WT) mice) were purchased from Taconic Denmark. C57BL/6OlaHsd mice with an acquired deletion of the Snca gene encoding αSyn <ref type="bibr" target="#b38">[39]</ref> (referred to as Snca KO mice) were purchased from Envigo Netherlands. The tg(snca)F28Pka mouse model (referred to as F28tg) overexpresses human αSyn under the mouse Snca promotor and was created on a C57BL/6J background via pronucleus injection of a DNA sequence encoding human αSyn, as previously described <ref type="bibr" target="#b39">[40]</ref>. F28tg mice were maintained and bred at Taconic Denmark.</p><p>A total of 40 WT, 205 F28tg, and 10 Snca KO mice were used for in vivo experiments. For experiments related to Figure <ref type="figure" target="#fig_1">1A</ref>, 12 untreated F28tg, 10-12 PFF-injected F28tg, and 6 PFF-injected WT mice were used per time point. Figure <ref type="figure" target="#fig_1">1B</ref> shows representative images from an experiment where 12 WT and 12 F28tg mice were used. The data presented in Figures <ref type="figure">2</ref> and<ref type="figure" target="#fig_4">3A</ref> are from an experiment including 4-6 monomer-injected F28tg per time point and 11-13 PFF-injected F28tg per time point. Figure <ref type="figure" target="#fig_4">3B</ref> shows data from a set of 15 monomer-injected F28tg and 14 PFF-injected F28tg mice (7-8 mice per condition and time point). Finally, the data presented in Figure <ref type="figure">S2</ref> were obtained from 10 WT and 10 Snca KO mice (5 mice per strain and per readout).</p><p>PFF-injected WT mice were used per time point. Figure <ref type="figure" target="#fig_1">1B</ref> shows representative images from an experiment where 12 WT and 12 F28tg mice were used. The data presented in Figures <ref type="figure">2</ref> and<ref type="figure" target="#fig_4">3A</ref> are from an experiment including 4-6 monomer-injected F28tg per time point and 11-13 PFF-injected F28tg per time point. Figure <ref type="figure" target="#fig_4">3B</ref> shows data from a set of 15 monomer-injected F28tg and 14 PFF-injected F28tg mice (7-8 mice per condition and time point). Finally, the data presented in Figure <ref type="figure">S2</ref> were obtained from 10 WT and 10 Snca KO mice (5 mice per strain and per readout).     <ref type="figure">2A</ref>. For all brain regions, a two-way ANOVA with Šídák's post hoc test was applied to compare PFF-and monomer-injected animals at each time point. ns, p &gt; 0.05; ** p ≤ 0.01; *** p ≤ 0.001. Illustrations of brain regions were created with BioRender.com. (B) Levels of selected inflammation-related genes in the frontal cortex (FC), temporal cortex (TC), and hippocampus (Hpc) measured by Fluidigm in PFF-injected animals when compared to monomer-injected controls (N = 6-8 per group). Multiple two-sample t-tests with Welch correction were performed on the log-transformed data, and the Benjamini-Hochberg method was applied to control for the false discovery rate (FDR(Q) = 1%). Outlines indicate statistically significant differences (p ≤ 0.05).</p><p>All animals had ad libitum access to water and food (Brogaarden, Lynge, Denmark). The light/dark cycle was maintained at 12 h, the room temperature (RT) was 21 ± 2 °C, and the relative humidity was 55 ± 5%. The animal experiments were performed in accordance with the European Communities Council Directive no. 86/609, the directives of the Danish National Committee on Animal Research Ethics, and Danish legislation on experimental animals (license no. 2014-15-0201-00339).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Pre-Formed Fibrils</head><p>Human αSyn (uniprot ID: P37840) was expressed in a HEK293 6E cell line and captured on an anion-exchange chromatography column, equilibrated with 20 mM Tris-HCl pH 7.5, directly from the cell media after harvest to avoid any freezing. Elution was performed with a salt gradient to 1 M NaCl over 10 column volumes (CVs). The eluate peak, confirmed by SDS-PAGE to hold αSyn, was subjected to ammonium sulfate (AMS)  <ref type="figure">2A</ref>. For all brain regions, a two-way ANOVA with Šídák's post hoc test was applied to compare PFF-and monomer-injected animals at each time point. ns, p &gt; 0.05; ** p ≤ 0.01; *** p ≤ 0.001. Illustrations of brain regions were created with BioRender.com. (B) Levels of selected inflammation-related genes in the frontal cortex (FC), temporal cortex (TC), and hippocampus (Hpc) measured by Fluidigm in PFF-injected animals when compared to monomer-injected controls (n = 6-8 per group). Multiple two-sample t-tests with Welch correction were performed on the log-transformed data, and the Benjamini-Hochberg method was applied to control for the false discovery rate (FDR(Q) = 1%). Outlines indicate statistically significant differences (p ≤ 0.05).</p><p>All animals had ad libitum access to water and food (Brogaarden, Lynge, Denmark). The light/dark cycle was maintained at 12 h, the room temperature (RT) was 21 ± 2 • C, and the relative humidity was 55 ± 5%. The animal experiments were performed in accordance with the European Communities Council Directive no. 86/609, the directives of the Danish National Committee on Animal Research Ethics, and Danish legislation on experimental animals (license no. 2014-15-0201-00339).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Pre-Formed Fibrils</head><p>Human αSyn (uniprot ID: P37840) was expressed in a HEK293 6E cell line and captured on an anion-exchange chromatography column, equilibrated with 20 mM Tris-HCl pH 7.5, directly from the cell media after harvest to avoid any freezing. Elution was performed with a salt gradient to 1 M NaCl over 10 column volumes (CVs). The eluate peak, confirmed by SDS-PAGE to hold αSyn, was subjected to ammonium sulfate (AMS) precipitation by the addition of 40% w/v AMS for 30 min, followed by 30 min centrifugation at 4500× g. The supernatant was discarded. The isolated pellet was solubilized in 20 mM piperazine pH 5.5, and the solution was centrifuged for 30 min at 12,000× g. The supernatant was subjected to anion-exchange chromatography and eluted with a NaCl gradient to 500 mM over 10 CVs. The eluate peak was concentrated and loaded onto a Superdex 75 column for size-exclusion chromatography (SEC). The monomeric peak fractions were pooled and aliquoted for storage at -80 • C. Final purity was assessed from SDS-PAGE and analytical SEC. Endotoxin levels were verified to be below 0.5 EU/mg. Furthermore, dynamic light scattering (DLS) was used to verify monodispersity and the absence of aggregated species. The fibrillation was based on the published protocol from Polinski et al. <ref type="bibr" target="#b40">[41]</ref>. To prepare PFFs, monomeric αSyn was thawed and concentrated to ~5 mg/mL in dPBS (Gibco, Thermo Fisher Scientific, Roskilde, Denmark). The solution was then transferred to round-bottom tubes, sealed with parafilm, and placed in an orbital shaker at 1000 rpm for 5 days at 37 • C. The assemblies were sonicated on ice using a UP200st Vial Tweeter (Hielscher Ultrasonics, Teltow, Germany) at 100% for a total of 2 min. The temperature of the sample was monitored during sonication, and the process was paused if a temperature of 40 • C was reached. Once the sample was cooled down, sonication continued. A size distribution average (Z-average) below 100 nm was verified by DLS. For representative DLS data from before and after the sonication step, please see Figure <ref type="figure" target="#fig_1">S1</ref>. The sonicated PFFs were aliquoted in volumes of 10 µL and stored at -80 • C. PFF concentrations are reported in αSyn monomer equivalents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Stereotaxic Injections</head><p>Mice were anesthetized using isoflurane (1.5-2% in 30% oxygen/70% nitrogen) and mounted in a stereotaxic frame while maintaining their temperature at 37 • C via a heating pad. An incision was made in the skin, and a hole was drilled in the skull above the striatum at the following coordinates: AP 0.5 mm anterior to bregma and 2.1 mm lateral to the midline, according to the atlas of Paxinos and Franklin (2001). A calibrated glass capillary (Hirschmann ® Ringcaps ® , 5 µL) was backfilled with PFFs or monomers at a concentration of 2 µg/µL in sterile PBS and lowered in the striatum 2.6 mm below the surface of the brain. A total volume of 2 µL (4 µg) of PFFs or monomers was injected in the right striatum via pressure injection at a rate of 0.3 µL per minute, and the capillary was left in place for an additional 5 min to allow for the diffusion of the material before being removed. The skin was then sutured, and the animals were left to recover from anesthesia before being returned to their home cages. Mice received Temgesic (Bupaq ® Vet., buprenorphine 0.03 mg/mL; VetViva Richter GmbH, Wels, Austria) at a dose of 0.1 mg/kg subcutaneously 3 times during the following 24 h for pain relief. Mice were kept undisturbed for the assigned survival time, i.e., 0.5, 1.5, 3, 6, 9, or 12 months postinjection (mpi).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Terminal Sampling Procedures</head><p>Mice were anesthetized with Avertin (tribromoethanol, 250 mg/kg i.p.). CSF was collected from the cisterna magna, as described previously <ref type="bibr" target="#b41">[42]</ref>. Briefly, mice were placed on a heating pad to maintain their temperature at 37 • C and mounted in a stereotaxic frame with the back of the head facing up and the nose pointing down at ~45 • . The dura covering the cisterna magna was exposed and punctured using a pulled, sharpened glass capillary (Hirschmann ® Ringcaps ® , 50 µL) secured in an electrode holder with a 90 • bend at the distal end (model 1769, Kopf, Miami, FL, USA). A total of 10-20 µL of blood-free CSF was typically obtained using this method.</p><p>For subsequent immunohistochemistry, mice were transcardially perfused with chilled heparinized PBS followed by 4% paraformaldehyde, and their brains were harvested and post-fixed overnight before being transferred to PBS with 0.1% sodium azide.</p><p>For the subsequent analysis of αSyn aggregates (homogeneous time-resolved fluorescence) and gene expression (Fluidigm) in brain homogenates, the mice were transcardially perfused with chilled heparinized PBS, and their brains were quickly harvested and dissected to isolate the hippocampus and cortex from the PFF-injected hemisphere. Tissues were snap-frozen on dry ice and stored at -80 • C until homogenization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Brain Immunohistochemistry</head><p>Immunohistochemistry for the visualization of pSer129-αSyn and Iba1 was performed by Neuroscience Associates (Knoxville, TN, USA) using their MultiBrain ® technology. The initial optimization of both pSer129-αSyn and Iba1 immunohistochemistry included the testing of the specificity of the stainings by omitting the primary antibody <ref type="bibr">[43]</ref>. In addition, a section from a historical study was included in each set of immunostainings to ensure the consistency of the detected signal over time <ref type="bibr">[43]</ref>. Briefly, blocks of 25 mouse brains were frozen and sectioned at 35 µm thickness. Free-floating sections were incubated overnight with the primary antibodies (anti-pSer129-αSyn, Abcam, Hong Kong, ab51253; anti-Iba1, Abcam, ab178846). Following rinses, sections were incubated with a biotinylated secondary antibody followed by Vector Lab's ABC solution (avidin-biotin-HRP complex; VECTASTAIN ® Elite ABC, Vector, Burlingame, CA, USA). The sections were again rinsed and then treated with diaminobenzidine tetrahydrochloride (DAB) with nickel and hydrogen peroxide to create a visible reaction product. Following further rinses, the sections were mounted on gelatin-coated glass slides and air-dried. The slides were dehydrated in alcohol, cleared in xylene, and coverslipped.</p><p>The quantification of pSer129-αSyn was performed by manually counting the total number of positive cell bodies in all sections spaced 210 µm apart encompassing a given brain area: substantia nigra (SN), central nucleus of the amygdala (CeA), hippocampal cornu ammonis 1 (CA1), and dentate gyrus (DG); this resulted in 4 to 15 sections depending on the antero-posterior extent of the area. In the motor cortex (MC) and entorhinal cortex (EC), where neuritic staining was prominent in addition to somatic staining, the total area of positive staining was quantified in 3-4 sections using ImageJ (built-in thresholding analysis).</p><p>Iba1-positive staining was quantified as the total area of staining in 3 sections for each brain area using a built-in thresholding analysis in ImageJ bundled with 64-bit Java 8 (Wayne Rasband and contributors, U. S. National Institutes of Health, Bethesda, MD, USA). Before the analysis with ImageJ, all images were converted to 8-bit images.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6.">Organotypic Hippocampal Slice Cultures</head><p>Organotypic hippocampal slice cultures (OHSCs) were prepared from post-natal day 6-7 mice. The hippocampi were isolated by dissection, and 350 µm thick hippocampal slices were sectioned with a tissue chopper (McIlwain, Hemmant, Australia) and transferred to a Petri dish containing cold Gey's balanced salt solution (Sigma, Tokyo, Japan, G9779) with 6.5 mg/L glucose. The separation of the slices was performed with ultra-thin spatulas, and intact slices were transferred onto membrane inserts (Merck, Rahway, NJ, USA, PICM0RG50) floating on top of 1.1 mL/well OHSC plating media (25% heat-inactivated horse serum, 50% OptiMEM with GlutaMAX, 25 mM glucose, 1 mM GlutaMAX, 2.5 mg/L phenol red, 25% HBSS with calcium and magnesium). OHSCs were maintained at 37 • C, 5% CO 2 , and 95% relative humidity. All subsequent medium changes were performed in OHSC maintenance medium (95% Neurobasal medium, 2% B27 supplement, 1 mM GlutaMAX, 25 mM glucose). All medium components were purchased from Gibco, except for glucose and phenol red, which were from Merck and Sigma, respectively. The media were changed on day 3 in vitro (DIV3), on DIV6, and on the day of PFF treatment (DIV9). Seeding was performed by adding 1 µL of PFF solution (5 µg/µL) on top of each slice. After PFF treatment, the media were changed once weekly unless otherwise indicated. During medium changes, the conditioned media were collected and stored at -20 • C until NFL measurements.</p><p>The fixation and staining of OHSCs were performed with inspiration from Gogolla et al. <ref type="bibr" target="#b43">[44]</ref>. Cultures were fixed for 10 min in 4% paraformaldehyde, washed, and incubated with 20% v/v methanol in PBS for another 10 min. Membrane inserts with OHSCs were stored at 4 • C in PBS containing 0.02% sodium azide until staining. Cultures were permeabilized overnight (O.N.) in 0.5% TritonX-100 in tris-buffered saline (TBS) and blocked for 6 h at RT in 10% bovine serum albumin (BSA) in PBS. OHSCs were subsequently soaked in a primary antibody (anti-pSer129-αSyn, Abcam, ab51253, 1:1000) solution O.N. The primary antibody solution was removed by three sequential washing steps with 0.3% TritonX-100 in TBS. The secondary antibody (Cy3-donkey-antirabbit, Jackson ImmunoResearch Europe Ltd., Ely, United Kingdom, 711-165-152, 1:1000) and DAPI were then applied for 3 h, followed by another 3 washes to remove the excess antibody. OHSCs were cut out of their membrane inserts and mounted on glass slides, coverslipped, and sealed with nail polish. Confocal images were acquired with a Leica DMi 8 microscope equipped with a 5X/0.15 objective (HC PL Fluotar, Leica, Wetzlar, Germany). Images were subsequently imported to Imaris (version 9.0.6, Oxford Instruments, Abingdon, UK), where a mask was designed for the quantification of pSer129-αSyn pathology (Imaris surface analysis with a smoothening value of 1 µm and pixel intensity threshold of 20). OHSCs with abnormal morphology or staining artifacts were excluded from the analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7.">Primary Hippocampal Cultures</head><p>Time-mated pregnant female mice were euthanized, and embryos (embryonic day <ref type="bibr" target="#b18">19)</ref> were obtained from their uterine sacs and decapitated immediately. With microscopic guidance, hippocampi were isolated by dissection and stored in cold Hibernate-E (BrainBits). The pooled solution of hippocampi obtained from all embryos in the litter was trypsinized (5 mL 0.05% trypsin-EDTA, 1% penicillin-streptomycin, 99% Hibernate-E without CaCl 2 , 37 • C) for 15 min. Trypsinization was terminated by adding 5 mL of plating medium (10% 10X Minimum Essential Medium, 0.25% GlutaMAX, 0.6% w/v Glucose, 1 mM sodium pyruvate, 0.22% w/v sodium bicarbonate, 100 U/mL penicillin-streptomycin, 10% horse serum, all diluted in sterile H 2 O) on top. Hippocampi were then pelleted (300× g, 3 min), and the trypsin solution was replaced with 1 mL of neuronal plating medium. The tissue was then resuspended 20 times to mechanically separate the cells. Cells were plated at a density of 4.7•10 4 /cm 2 in culture plates (96-well: Greiner, 655090; 6-well: Nunc, 140675) coated with 0.1 mg/mL poly-L-lysine (Merck, P1399). After 3-4 h of incubation, the plating medium was replaced with 100 µL/well neurobasal plus maintenance medium (97.7% Neurobasal PLUS, 0.01 mg/mL Gentamicin, 2% v/v B27 PLUS supplement, 0.25% v/v GlutaMAX). After 3 days of incubation, 10 µL/well of cytosine β-D-arabinofuranoside (Sigma) was added to a final concentration of 1 µM to reduce the growth of glial cells. PFFs were diluted in neurobasal plus maintenance medium containing 0.5 µM cytosine β-D-arabinofuranoside and added on DIV5 with a full medium change. All medium components except for glucose (Sigma) and sodium bicarbonate (Sigma) were from Gibco. Experiments with the Hlu-3 antibody targeting human αSyn at amino acids 113-115, as previously described <ref type="bibr" target="#b44">[45]</ref>, and the isotype control antibody targeting HIV-1 gp120 were performed by pre-mixing the PFFs and the antibodies at the indicated molar concentrations before their addition to the cells on DIV5.</p><p>On DIV21, the conditioned medium from the primary hippocampal cultures was collected and stored at -20 • C until NFL measurements, and the cells were washed in PBS and subsequently fixed for 10 min in 4% paraformaldehyde at RT and 10 min in 100% methanol at -20 • C. Blocking was performed in 1% BSA for 1 h, and cultures were subsequently incubated with primary antibodies (anti-pSer129-αSyn, Abcam, ab51253, 1:1000; anti-NeuN, MerckMillipore, Burlington, MA, USA, MAB377, 1:500) for 2 h, washed, and incubated with secondary antibodies (Cy3-donkey-anti-rabbit, Jackson, 711-165-152, 1:1000; Alexa-488-donkey-anti-mouse, Jackson 715-545-150) and Hoechst (Sigma, 63493, 1:500). Unbound antibodies were removed by performing a final washing step (2× in PBS).</p><p>Cultures were subjected to high-content imaging with a Cellomics ArrayScan ® VTI HCS Reader (Thermo Fisher Scientific, Waltham, MA, USA) equipped with a 20×/0.75 objective (Leica). Forty images were acquired per well, and an algorithm (Thermo Scientific HCS Studio: Cellomics Scan Version 6.6.3. Assay template: SpotDetector.v4) that recognizes and records the size and intensity of pSer129-αSyn-positive (pSer129-αSyn + ) spots was designed and applied to measure the total intensity of pSer129-αSyn + inclusions. Using a different algorithm, we quantified the number of viable (non-pycnotic) NeuN + nuclei per well for the normalization of the pSer129-αSyn signal.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.8.">Fractionation by Ultracentrifugation</head><p>Cell pellets were collected from 6-well plates on DIV21 and stored at -80 • C until fractionation by ultracentrifugation. Pellets were lysed for 15 min on ice in 1% TritonX-100 in TBS containing protease and phosphatase inhibitors (Roche, Basel, Switzerland), followed by sonication (30 s, 50% amplitude, QSONICA, Newtown, CT, USA Q800R2). To isolate the triton-soluble fraction, lysates were ultracentrifuged (4 • C, 30 min, 100,000× g), and the supernatant was collected. The remaining pellet was denatured in 1% SDS diluted in TBS and subjected to sonication and ultracentrifugation, as performed for the triton-soluble fraction. The collected supernatant after the second ultracentrifugation step contained the triton-insoluble and SDS-extractable αSyn. Protein concentrations were measured using the Pierce BCA kit (Thermo Fisher, 23225).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.9.">Immunoblotting</head><p>The following immunoblotting procedure was applied to protein lysates from primary hippocampal cultures fractionated by ultracentrifugation, as well as samples of recombinant monomeric full-length mouse αSyn (uniprot ID: O55042), monomeric full-length human αSyn (uniprot ID: P37840), and truncated forms (amino acids 1-119 and 1-121) of monomeric human αSyn produced at H. Lundbeck A/S. Samples were prepared for gel loading by mixing with DTT (0.05 M final concentration), loading buffer (Invitrogen, Waltham, MA, USA, NP0007), and MilliQ water. Unless otherwise stated, 2.5 µg/well samples were applied to 4-12% bis-tris gels (Invitrogen, NP0323) soaked in MES running buffer (Invitrogen, NP0002), and electrophoresis was performed at 155 V for ~1 h. Proteins were blotted onto a PVDF membrane (35 V, 90 min) and boiled for 5 min prior to blocking (1 h, LICOR Biosciences, Bad Homburg vor der Höhe, Germany, 927-70001) and incubated with the indicated primary antibodies (anti-mouse αSyn, Cell Signaling, 4179, 1:5000; anti-human αSyn, Invitrogen, MA1-90346, 1:5000; anti-αSyn, Abcam, ab1903, 1:5000; anti-pSer129-αSyn, Abcam, 51253, 1:10000; anti-vinculin, Sigma, V9131, 1:5000; anti-NFL, Invitrogen, 13-0400, 1:5000) O.N. at 4 • C. Membranes were washed 3 times and incubated with the appropriate secondary antibodies (Goat-anti-ms-680, Invitrogen, A21058; Goat-anti-ms-800, LICOR, 926-32210; Goat-anti-rb-800, LICOR 926-32211; Goat-anti-rb-680, Invitrogen, A21077; Goat-anti-rb-680, LICOR 926-68071) 1 h in darkness. After washing, the blots were scanned with an Odyssey Lx imaging system (LICOR).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.10.">Neurofilament Light-Chain Immunoassay</head><p>MSD plates (MSD, L21XA) were coated with 15 µL/well capture antibody (UmanDiagnostics, Umeå, Sweden, UD1, 1.25 µg/mL in PBS) O.N. at 4 • C. Washing was performed 3 times with 50 µL/well 0.1% Tween-20 in TBS. Wells were blocked for 1 h with shaking (1000 rpm) in 1% casein-PBS (CSF samples) or 3% BSA-TBS (media samples). After washing, CSF samples were diluted 8.3-2.5× (depending on CSF volume) in 1% casein-PBS and applied at 10 µL/well. Medium samples from primary hippocampal cultures and OHSCs were diluted 4× and 2×, respectively, in TBS containing 0.5% BSA and 0.05% Tween-20 and applied at 20 µL/well. The bovine NFL standard (Progen, Heidelberg, Germany, 62008) was diluted in the same buffer as the samples and applied at the same volume. The incubation of samples and the standard was performed for 2 h at RT with shaking. Wells were subsequently washed and incubated with 15 µL/well biotin-labeled detection antibody (UmanDiagnostics, UD3, 0.5 µg/mL). The unbound detection antibody was washed off, and the wells were subsequently incubated for 1 h with 15 µL/well streptavidin-conjugated SULFO-TAG (0.25 µg/mL). Following a wash, the signal was developed by adding 40 µL/well MSD read buffer (MSD, R92TC1) and recorded with an electrochemiluminescence instrument (MSD, SECTOR S600). NFL concentrations in the samples were interpolated from the standard curve (4PL weighted by 1/y 2 ) and multiplied by the dilution factor.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.11.">Homogeneous Time-Resolved Fluorescence (HTRF)</head><p>The indicated brain areas were dissected out and homogenized in lysis buffer (from kit, see below; 18 µL or 9 µL buffer per mg tissue for hippocampal and cortical samples, respectively) supplemented with protease inhibitors (cOmplete, Roche) and phosphatase inhibitors (PhosSTOP, Roche) using Precellys ® tubes (CK14) and a Precellys ® tissue homogenizer (2 × 50 s, 5000 rpm). The HTRF assay (custom, developed by PerkinElmer Cisbio, Shelton, CT, USA) is based on fluorescence resonance energy transfer between two fluorophores in close proximity coupled to a pair of antibodies recognizing human αSyn at the epitope corresponding to amino acids 126-138, as determined by arrays of overlapping linear peptides at Pepscan (Pepscan Zuidersluisweg 28,243 RC Lelystad, The Netherlands). Using the same monoclonal antibody for the donor and acceptor fluorophores ensures that at least two αSyn molecules must be in close proximity for the assay to give a signal. Samples were diluted 16-fold (cortex) or 8-fold (hippocampus) in lysis buffer prior to mixing with an αSyn antibody mixture containing the antibody coupled to either the Tb-cryptate donor fluorophore (1:20) or the d2 acceptor fluorophore (1:20), as described by the manufacturer. The HTRF signal was measured on a PHEARstar (BMG LABTECH, Ortenberg, Germany) using a 337 nm laser excitation, simultaneous dual emission at 665/620 nm, and HTRF technology. The data are presented as percent αSyn aggregation above background normalized to protein concentrations (µg/µL) measured by the Pierce BCA kit (Thermo Fisher, 23225) according to the manufacturer's instructions. One data point from the "F28tg cortex 6 mpi" group was excluded from the data analysis, as no protein could be detected by BCA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.12.">Fluidigm</head><p>The tissue was homogenized (POLYTRON ® PT 1200 E) in 350 µL/sample RA1 buffer (Macherey-Nagel, Dueren, Germany) supplemented with 1% 2-Mercaptoethanol, and the RNA was purified with a NucleoSpin RNA kit (Macherey-Nagel, 740955.250) according to the manufacturer's instructions. The quality and concentration of RNA in the samples were measured with a Bioanalyzer (Model 2100, Agilent, Santa Clara, CA, USA). Samples with an RNA integrity number ≥ 8 were shipped to Eurofins Genomics (Aarhus, Denmark), where the levels of the indicated genes were measured with a Fluidigm assay. Real-time PCR data were analyzed as described previously <ref type="bibr" target="#b45">[46]</ref>. Briefly, Ct values were normalized to the monomer control within each group and the geometric mean of four house-keeping genes: Actb, Eif4a2, Atp5b, and Sdha. In addition to the genes mentioned in the figure, we analyzed the expression of Il10, Ifng, and Ifnb1, which were excluded from further analysis, as the expression did not reach the limit of quantification in multiple samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.13.">Statistics</head><p>Statistical analysis methods are stated in the figure legends. t-tests and ANOVAs, including the relevant post hoc tests, were performed in GraphPad Prism 9. Linear mixedeffects models and the associated post hoc tests were performed in R using the emmeans (v 1.7.0), lme4 (v1.1.-32), and nlme (v3.1-163) packages.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Overexpression of Human αSyn Increases αSyn Pathology upon PFF Injection In Vivo</head><p>F28tg mice overexpress human SNCA under the mouse Snca promotor and are therefore expected to overexpress human SNCA in brain areas with high Snca expression, such as the cortex and hippocampus (Allen Brain Atlas). To assess how the overexpression of human αSyn affects PFF-induced αSyn aggregation, we injected F28tg and WT mice with PFFs and quantified the levels of αSyn species containing ≥2 αSyn molecules (referred to as aggregates below for simplicity) in brain homogenates from the animals using an HTRF assay. In both the cortex and hippocampus, we observed a significantly higher level of αSyn aggregation in the F28tg mice when compared to WT at all time points measured (1, 3, and 6 mpi; Figure <ref type="figure" target="#fig_1">1A</ref>). Importantly, the HTRF signal in samples from untreated F28tg mice remained at baseline (Figure <ref type="figure" target="#fig_1">1A</ref>), confirming that the observed signal was driven by PFF-induced αSyn aggregation. In line with the HTRF quantification of αSyn aggregates, we observed robust pSer129-αSyn pathology in the MC at 1.5 mpi, which appeared more extensive in F28tg mice compared to WT (Figure <ref type="figure" target="#fig_1">1B</ref>). Additionally, in accordance with the HTRF data, pSer129-αSyn pathology was clearly visible in both the soma and neurites of the neurons in the CA1 region of the ventral hippocampus (vHpc) of F28tg mice at 1.5 mpi, while it was sparsely present in WT mice (Figure <ref type="figure" target="#fig_1">1B</ref>). We furthermore confirmed that endogenous αSyn is required for PFF-induced αSyn aggregation, as we did not detect any seeding in Snca KO mice with either the HTRF assay or pSer129-αSyn stainings (Figure <ref type="figure">S2</ref>). In summary, the data indicates that the overexpression of human αSyn increases seeded αSyn aggregation in both the cortex and hippocampus.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">PFF Injection into F28tg Mice Induces the Spread of αSyn Pathology and Release of NFL to the CSF</head><p>After demonstrating that PFF-treated F28tg mice exhibit exacerbated αSyn aggregation when compared to WT mice, we next characterized the spreading of αSyn aggregates in the F28tg model by quantifying pSer129-αSyn pathology in brain regions that are either directly or indirectly connected to the site of PFF injection. Neurons that are directly connected to the injection site are defined as located in regions of primary seeding (SN and MC), whereas neurons that are separated from the injection site by at least one synaptic connection are considered located in secondary seeding regions (hippocampal CA1, hippocampal DG, CeA, EC). pSer129-αSyn pathology at secondary seeding sites is hypothesized to result from the prion-like spread of αSyn aggregates from primary seeding sites (Figure <ref type="figure">2B</ref>) <ref type="bibr" target="#b14">[15]</ref>.</p><p>The qualitative evaluation of pSer129-αSyn pathology in PFF-injected F28tg mice revealed a difference in appearance across brain areas. In regions such as the SN, CeA, and, to some extent, the vHpc, pSer129-αSyn pathology appeared mainly as somatic staining with scarce neuritic staining. In cortical areas, especially in the MC, pSer129-αSyn pathology developed first as dense neuritic staining with rare positive cell bodies, while later time points showed a decline in pSer129-αSyn + neurites, with positive staining restricted mainly to cell bodies (Figure <ref type="figure">2A</ref>, MC). For this reason, pSer129-αSyn pathology was further quantified as a positive area in cortical regions (MC, EC) and positive cell numbers in other regions. The quantitative evaluation further showed that pSer129-αSyn pathology developed faster in primary seeding regions compared to secondary seeding regions. In the SN and MC, the level of pathology peaked at ~1.5-3 and ~1.5 mpi, respectively, followed by a decline in the number of pSer129-αSyn + cells (SN) and the area of pSer129-αSyn pathology (MC) (Figure <ref type="figure">2A</ref>). In the secondary seeding regions, we observed a peak in pathology at 6 mpi for some areas (CA1 and EC), while the pSer129-αSyn pathology in the DG and CeA continued to increase for up to 12 mpi (Figure <ref type="figure">2A</ref>). The order of pSer129-αSyn pathology development is consistent with the sequential spread of αSyn aggregates between interconnected brain regions. Importantly, brains from animals injected with the equivalent amount of monomeric αSyn showed the absence of the pSer129-αSyn signal at all time points after the injection (Figure <ref type="figure">2A</ref>; the 6 mpi time point is representative for all time points).</p><p>We next measured NFL levels in the CSF from PFF-and monomer-injected animals and found that NFL levels were elevated in the CSF of PFF-treated animals at 1.5-6 mpi, reaching statistical significance at 3 mpi (Figure <ref type="figure">2C</ref>). At 12 mpi, the NFL levels in CSF from PFF-and monomer-injected animals were on par, suggesting that PFF treatment induced the most pronounced neuronal death at earlier time points.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">The Progressive Spread of αSyn Is Paralleled by Reactive Microgliosis In Vivo</head><p>As microglia are known to rapidly react to extracellular αSyn aggregates and neurodegeneration, we subsequently examined the microglial response in regions of primary and secondary seeding in PFF-and monomer-injected F28tg mice. In regions of primary seeding (SN and MC), microglia hypertrophic with enlarged cell bodies and thick processes, leading to significant increases in Iba1 staining at 1.5-6 mpi compared to monomer-injected mice (Figure <ref type="figure" target="#fig_4">3A</ref>). Interestingly, at 12 mpi, the microglial phenotype at primary seeding sites in PFF-treated animals appeared similar to monomer-injected controls (Figure <ref type="figure" target="#fig_4">3A</ref>), concomitant with the relatively modest pSer129-αSyn pathological burden observed at this time point (Figure <ref type="figure">2A</ref>). The quantification of Iba1 staining in the EC (secondary seeding area) showed no significant increase at 1.5 mpi but a significant increase from 3 to 12 mpi (Figure <ref type="figure" target="#fig_4">3A</ref>), suggesting that both pSer129-αSyn pathology (Figure <ref type="figure">2A</ref>) and microgliosis in the EC are delayed when compared to primary seeding regions. We additionally quantified the area of Iba1 + cells in the posterior CA1, which is the hippocampal subregion where microgliosis is most evident, and found that the Iba1 area was significantly elevated from 1.5 to 6 mpi, whereafter it dropped to the level in monomer-injected animals (Figure <ref type="figure" target="#fig_4">3A</ref>).</p><p>To further assess whether PFF-induced αSyn aggregation alters the expression of genes associated with neuroinflammation, we performed high-throughput real-time PCR (Fluidigm) with a selected panel of genes on samples from the frontal cortex (FC), temporal cortex (TC), and hippocampus at 1.5 and 3 mpi. Of note, the FC contains the MC, among other cortical areas, whereas the TC contains areas such as the EC and cortical amygdalar area. In both the FC and TC, we observed robust changes in several genes, including Cst7, Itgax, Clec7a, Ccl6, Cxcl10, Tnf, and Lilrb4, some of which were significantly elevated at both 1.5 and 3 mpi (Figure <ref type="figure" target="#fig_4">3B</ref>). Interestingly, no significant changes in gene expression were observed in the hippocampus at any of the examined time points (Figure <ref type="figure" target="#fig_4">3B</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">PFF-Treated Ex Vivo Organotypic Hippocampal Slices Cultures Develop pSer129-αSyn Pathology and Release NFL in a Time-Dependent Manner</head><p>Ex vivo PFF models offer the advantage of studying the consequences of αSyn aggregation in a semi-realistic three-dimensional environment with a higher throughput and using fewer animals than in vivo studies. Hence, we characterized the progression of PFF-induced pSer129-αSyn pathology and NFL release in OHSCs from F28tg mice. PFF-treated F28tg OHSCs developed pSer129-αSyn inclusions in a time-dependent manner. The first pSer129-αSyn inclusions appeared between 2 and 7 days post-seeding (dps) and plateaued at ~14-21 dps (Figure <ref type="figure" target="#fig_6">4A,</ref><ref type="figure">B</ref>). The quantification of NFL in the conditioned media of the OHSCs showed an initial high level (Figure <ref type="figure" target="#fig_6">4C</ref>), likely due to the degeneration associated with the slice preparation, but at the time of the PFF addition, the NFL levels were stabilized at a relatively low level (Figure <ref type="figure" target="#fig_6">4C</ref>). At 14-28 dps, the NFL levels were significantly increased compared to those in PBS-treated OHSCs (Figure <ref type="figure" target="#fig_6">4C</ref>), indicating a close correlation between the amount of pSer129-αSyn pathology and neurodegeneration. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">αSyn Aggregation Is a Key Determinant of NFL Release in Primary Hippocampal Cultures</head><p>Inspired by the data from in vivo and ex vivo models, we next investigated whether the NFL assay could also be applied to samples from in vitro primary hippocampal cultures, thereby addressing the current lack of sensitive assays available for quantifying neurodegeneration in vitro.</p><p>Consistent with the in vivo observations, F28tg primary hippocampal cultures exhibited the increased formation of αSyn aggregates compared to cultures generated from WT mice following PFF treatment, both when assessed by imaging-based quantification of pSer129-αSyn staining intensity (Figure <ref type="figure" target="#fig_8">5A,</ref><ref type="figure">B</ref>) and when assessed by immunoblotting for the levels of triton-insoluble/SDS-extractable αSyn and pSer129-αSyn (Figure <ref type="figure" target="#fig_8">5C</ref>). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">αSyn Aggregation Is a Key Determinant of NFL Release in Primary Hippocampal Cultures</head><p>Inspired by the data from in vivo and ex vivo models, we next investigated whether the NFL assay could also be applied to samples from in vitro primary hippocampal cultures, thereby addressing the current lack of sensitive assays available for quantifying neurodegeneration in vitro.</p><p>Consistent with the in vivo observations, F28tg primary hippocampal cultures exhibited the increased formation of αSyn aggregates compared to cultures generated from WT mice following PFF treatment, both when assessed by imaging-based quantification of pSer129-αSyn staining intensity (Figure <ref type="figure" target="#fig_8">5A,</ref><ref type="figure">B</ref>) and when assessed by immunoblotting for the levels of triton-insoluble/SDS-extractable αSyn and pSer129-αSyn (Figure <ref type="figure" target="#fig_8">5C</ref>).</p><p>In response to seeded αSyn aggregation, F28tg and WT primary hippocampal cultures exhibited a dose-dependent increase in NFL release into the conditioned media (Figure <ref type="figure" target="#fig_8">5D</ref>). Of note, the NFL release from F28tg cultures was significantly higher than the release from WT cultures at intermediate PFF concentrations, above which the NFL release from both culture types was similar (Figure <ref type="figure" target="#fig_8">5D</ref>). Snca KO cultures did not form any pSer129-αSyn + aggregates after seeding (Figure <ref type="figure" target="#fig_8">5A,</ref><ref type="figure">C</ref>) and had significantly lower levels of NFL in the media when compared to WT (Figure <ref type="figure" target="#fig_8">5D</ref>), supporting that PFF-induced neurodegeneration is dependent on endogenous αSyn expression. Additionally, we confirmed that the results from the NFL assay were in line with other methods used to quantify cell death or neuronal viability (Figure <ref type="figure" target="#fig_4">S3</ref>).</p><p>To further characterize the αSyn expression in the Snca KO, WT, and F28tg primary hippocampal cultures, we performed immunoblotting. Expectedly, the expression of αSyn was absent in Snca KO cultures, while the expression of human αSyn was restricted to F28tg cultures (Figure <ref type="figure" target="#fig_8">5E</ref>). Using a pan-specific anti-αSyn antibody (clone 4D6, Figure <ref type="figure" target="#fig_6">S4D</ref>) recognizing a C-terminal epitope (amino acid 124-134 <ref type="bibr" target="#b46">[47]</ref>, Figure <ref type="figure" target="#fig_6">S4E</ref>) shared between human and mouse αSyn, we detected a ~2.5-fold increase in total αSyn levels in F28tg in vitro primary hippocampal cultures when compared to WT (Figure <ref type="figure" target="#fig_8">5E,</ref><ref type="figure">F</ref>). Interestingly, the levels of mouse αSyn were ~0.4-fold lower in F28tg cultures when compared to WT (Figure <ref type="figure" target="#fig_8">5E</ref>,F), potentially reflecting a compensatory downregulation in response to the αSyn overexpression in F28tg mice.  By blotting for total αSyn, mouse αSyn, human αSyn, and pSer129-αSyn in the tritoninsoluble/SDS-extractable fraction of lysates from F28tg primary hippocampal cultures, we additionally confirmed a PFF-dose-dependent increase in aggregate formation contributed by both mouse and human αSyn (Figure <ref type="figure" target="#fig_6">S4A,</ref><ref type="figure">B</ref>) and a concomitant reduction in mouse triton-soluble αSyn (Figure <ref type="figure" target="#fig_6">S4A,</ref><ref type="figure">C</ref>), highlighting the sequestration of soluble αSyn into insoluble aggregates. We also observed a PFF-dose-dependent increase in tritoninsoluble/SDS-extractable pSer129-αSyn, peaking at ~29 nM PFF (Figure <ref type="figure" target="#fig_6">S4A,</ref><ref type="figure">B</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6.">PFF-Induced Neurodegeneration In Vitro Is Inhibited by an Anti-αSyn Antibody</head><p>We next co-treated F28tg primary hippocampal cultures with the anti-αSyn antibody Hlu-3 in combination with PFFs to evaluate its effect on the seeded aggregation of αSyn and NFL release. Treatment with Hlu-3, but not an isotype control antibody with no affinity toward αSyn, significantly reduced pSer129-αSyn + inclusions (Figure <ref type="figure" target="#fig_10">6A,</ref><ref type="figure">B</ref>). Furthermore, the anti-αSyn antibody, but not the isotype control antibody, significantly reduced NFL release (Figure <ref type="figure" target="#fig_10">6C</ref>), indicating that Hlu-3 in this setup protects against pathology development and αSyn-aggregate-driven neurodegeneration.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>With the aim of studying αSyn pathology development and neurodegeneration in a model with accelerated αSyn aggregation, we seeded F28tg mice and cultures with PFFs generated from human αSyn. To support the hypothesis that PFF-induced αSyn aggregation is enhanced by the overexpression of human αSyn, we performed HTRF on in vivo samples (Figure <ref type="figure" target="#fig_1">1A</ref>) and immunoblotting for the detection of triton-insoluble/SDSextractable αSyn on in vitro PFF-treated cultures (Figure <ref type="figure" target="#fig_8">5C</ref>) using antibodies that are crossreactive with human and mouse αSyn. With both HTRF and immunoblotting, we observed increased αSyn aggregate formation in F28tg mice and cultures when compared to WT in support of the exacerbated αSyn aggregation being driven by the overexpression of human αSyn. Further supporting this, we detected the increased formation of pSer129-αSyn in the F28tg mice (Figure <ref type="figure" target="#fig_1">1B</ref>) and cultures (Figure <ref type="figure" target="#fig_8">5A-C</ref>) compared to WT. We speculate that the increased formation of αSyn aggregates in F28tg mice and cultures could be driven by the species compatibility between human PFFs and human αSyn expression, as demonstrated by others <ref type="bibr" target="#b33">[34]</ref>, and/or the increased levels of αSyn available for PFF-templated aggregation. While our data suggest that the overexpression of human αSyn increases seeded αSyn aggregation, it deserves to be mentioned that the relative quantification of pSer129-αSyn + aggregates in F28tg and WT mice and cultures is limited by potential differences in the affinity of the anti-pSer129-αSyn antibody toward human and mouse pSer129-αSyn, the ability of mouse kinases and phosphatases to regulate the phosphorylation of aggregated human and mouse αSyn, and the susceptibility of human and mouse αSyn to C-terminal truncations that cleave off the pSer129 modification.</p><p>Based on the previous literature suggesting that αSyn aggregation causes neuronal deterioration and death <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b13">14,</ref><ref type="bibr" target="#b16">17]</ref>, we expected to measure increased NFL release in the seeded F28tg primary hippocampal cultures with a corresponding higher pathology load compared to WT and Snca KO cultures (Figure <ref type="figure" target="#fig_8">5A-C</ref>). At intermediate PFF concentrations <ref type="bibr" target="#b28">(29,</ref><ref type="bibr">102</ref>, and 356 nM), the NFL levels in the conditioned media were significantly higher in F28tg cultures compared to WT. However, no difference in NFL levels between F28tg and WT cultures was found at the highest PFF concentration (1245 nM) (Figure <ref type="figure" target="#fig_8">5D</ref>). As neurons in primary hippocampal cultures continuously develop processes after plating, we speculate, based on our routine inspections of the cells with light microscopy, that the highest PFF concentration interfered with neuronal outgrowth in the F28tg cultures, potentially limiting the amount of NFL released in response to PFF-mediated toxicity. While we did not collect data to support this hypothesis, we suspect that the observed impaired neuritic outgrowth in the F28tg cultures treated with the highest concentration of PFF could be a cellular response to αSyn aggregation, explaining why it was more prominent in the F28tg cultures when compared to WT. Importantly, the NFL level in conditioned media from PFF-treated Snca KO cultures, which do not form αSyn aggregates, remained at baseline, further indicating that PFF-induced neuronal toxicity is driven by the aggregation of endogenous αSyn and not mediated by the fibrils per se.</p><p>Consistent with the prion-like nature of αSyn aggregates, we observed a progressive spread of pSer129-αSyn pathology in PFF-injected F28tg mice. Expectedly, early pathology was prominent in the primary seeding areas, the MC and SN, peaking at ~1.5 and ~1.5-3 mpi, respectively. Interestingly, pSer129-αSyn pathology declined dramatically af-ter reaching peak levels (Figure <ref type="figure">2A</ref>). In the MC, where the pSer129-αSyn pathology was quantified by area due to extensive neuritic staining, the decline in the pSer129-αSyn signal could reflect a change in pSer129-αSyn localization, which becomes less neuritic and more somatic with time, leading to an apparent decrease in area. It could, however, also be due to the death of inclusion-bearing neurons, as noted by others <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b33">34]</ref> and supported by the significant ~1.7-fold increase in NFL levels observed at 3 mpi in PFFversus monomer-injected animals (Figure <ref type="figure">2C</ref>). Others have reported changes in NFL in the CSF from A30P-αSyn transgenic mice seeded with A30P-αSyn brain homogenate. In the study by Bacioglu et al., NFL in the CSF increased ~400-fold compared to A30P-αSyn mice injected with homogenate from WT mice <ref type="bibr" target="#b37">[38]</ref>. While both our study and the data from Bacioglu et al. support the link between αSyn aggregation and neurodegeneration, it remains to be addressed whether the more robust NFL response observed in their A30P-αSyn brain homogenate-seeded A30P-αSyn mice compared to our PFF-seeded F28tg mice is mediated by differences in the mouse strain, the potency of the seeding material, or other technical variations.</p><p>In contrast to the relatively modest PFF-induced changes in NFL levels in vivo (Figure <ref type="figure">2C</ref>), we observed more pronounced effects of PFF treatment on NFL levels in conditioned media from F28tg OHSCs (Figure <ref type="figure" target="#fig_6">4C</ref>) and especially F28tg primary hippocampal cultures (Figure <ref type="figure" target="#fig_8">5D</ref>). However, a limitation in our ability to compare the NFL results across model systems is that it was not technically possible to apply comparable amounts of PFF per neuron across in vivo, ex vivo, and in vitro systems. Hence, we speculate that the difference in the magnitude of the NFL response across model systems could be mediated by differences in the amount of induced pathology. This notion is further supported by our data from primary hippocampal cultures demonstrating that the level of αSyn aggregation and the neurodegenerative response are dependent on the amount of seeding material added.</p><p>Another important difference to consider when studying PFF-induced αSyn aggregation and NFL release using in vivo, ex vivo, and in vitro model systems is the number of glial cells present, as this might significantly impact both the αSyn-seeding process and the neuroinflammatory response and thus neurodegeneration. While in vivo and ex vivo models contain considerable numbers of glial cells, the proliferation of glial cells in vitro is inhibited by the addition of cytosine β-D-arabinofuranoside to enrich for neurons. We hypothesize that the presence of glial cells might have influenced our results in various ways. For instance, it has been shown that glial cells take up and degrade PFFs <ref type="bibr" target="#b47">[48,</ref><ref type="bibr" target="#b48">49]</ref>, possibly reducing PFF uptake and αSyn pathology in the neurons. On the other hand, microglia secrete proinflammatory factors in response to PFFs, thereby activating astrocytes, which secrete neurotoxic substances <ref type="bibr" target="#b27">[28]</ref>, potentially promoting NFL release. However, glial cells also clear dying neurons <ref type="bibr" target="#b49">[50]</ref>, and their phagocytic activity could therefore also limit the release of NFL into the CSF of mice and conditioned media of OHSCs. Whether glial cells promote or halt neurodegeneration and influence the release of NFL remains an open question, although highly relevant given the prominent microgliosis observed in vivo.</p><p>Microgliosis in the primary seeding regions of PFF-injected F28tg mice showed an overall good time-and brain-area-dependent correlation with the amount of pSer129-αSyn pathology (Figure <ref type="figure" target="#fig_4">3A</ref>), indicating that microglia respond promptly to αSyn aggregation. Interestingly, at secondary seeding sites, we observed significant changes in Iba1 staining prior to extensive pSer129-αSyn pathology development (Figure <ref type="figure" target="#fig_4">3A</ref>), potentially reflecting an early inflammatory response toward extracellular misfolded αSyn and/or factors released from the relatively few seeded neurons. To further characterize the inflammatory response in areas of αSyn aggregation, we analyzed the expression of selected neuroinflammationrelevant genes and found that the levels of several transcripts were significantly changed in the FC and TC, but not in the hippocampus (Figure <ref type="figure" target="#fig_4">3B</ref>), where reactive microgliosis, evaluated histologically, was overall relatively mild, although significant when restricted to, e.g., the CA1 of the vHpc (Figure <ref type="figure" target="#fig_4">3A</ref>). While one limitation of analyzing tissue in bulk is that it does not allow us to assign the changes in gene expression to certain cell types, it is an interesting notion that some of the most significantly changed genes in PFF-injected mice, e.g., Cst7, Itgax, Clec7a, and Lilrb4, are found to be expressed by disease-associated microglia in models of Alzheimer's disease <ref type="bibr" target="#b50">[51]</ref><ref type="bibr" target="#b51">[52]</ref><ref type="bibr" target="#b52">[53]</ref>, suggesting that shared microglial responses exist between protein-misfolding diseases. Additionally, the upregulation of Clec7a, encoding the pathogen recognition receptor Clec7a, in microglia has recently been shown to promote neuroinflammation in a mouse model of Parkinson's disease <ref type="bibr" target="#b53">[54]</ref>, while the roles of Cst7, Itgax, and Lilrb4 in relation to Parkinson's disease remain to be further investigated. Furthermore, we found that Tnf was differentially expressed upon PFF treatment, consistent with published in vitro data from primary microglia <ref type="bibr" target="#b27">[28]</ref>. Moreover, in agreement with previous in vitro data from astrocytes treated with conditioned media from PFF-treated microglia <ref type="bibr" target="#b27">[28]</ref> or factors (Il-1α, C1q, TNFα) <ref type="bibr" target="#b54">[55,</ref><ref type="bibr" target="#b55">56]</ref> known to be secreted by PFF-treated microglia <ref type="bibr" target="#b27">[28]</ref>, we found a strong PFF-induced upregulation of Cxcl10 in vivo, making it plausible that the observed changes in Cxcl10 expression, potentially driven by astrocytes, is induced by microglia.</p><p>In summary, we systematically evaluated the levels of pSer129-αSyn pathology and NFL release across in vivo, ex vivo, and in vitro models of seeded αSyn aggregation. We show through in vitro and ex vivo experiments that the release of NFL into conditioned media is significantly influenced by the extent of αSyn pathology, which, in turn, is affected by the mouse strain (mouse and human αSyn levels), PFF concentration, and time. Additionally, we detected a slight increase in NFL in the CSF from PFF-treated F28tg mice, reaching statistical significance at 3 mpi, corresponding to the approximate time point of when αSyn pathology dropped after reaching peak levels. Hence, we demonstrated that NFL, a promising biomarker of a variety of neurological disorders <ref type="bibr" target="#b56">[57]</ref>, can be measured across different preclinical αSyn-seeding models of variable complexity to improve our understanding of αSyn-driven neurodegeneration, as well as pharmacological interventions.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. α-Synuclein (αSyn) aggregation in pre-formed fibril (PFF)-injected wild-type (WT) and F28tg mice. (A) αSyn aggregation measured by homogeneous time-resolved fluorescence (HTRF) in the cortex and hippocampus of WT (N = 6 per time point) and F28tg (PFF: N = 10-12 per time point; untreated: N = 11-12 per time point) mice at the indicated time points. Bars show mean ± SEM. Statistical analysis was performed on log-transformed data to account for heteroscedasticity using a two-way ANOVA followed by Šídák's multiple-comparisons test. ns, p &gt; 0.05; * p ≤ 0.05; *** p ≤ 0.001. Only data from PFF-injected animals were included in the analysis. (B) Representative histological images of serine-129-phosphorylated (pSer129) αSyn in the motor cortex (MC) and the cornu ammonis 1 (CA1) of the ventral hippocampus (vHpc) of WT and F28tg mice at 1.5 mpi. Illustrations showing the approximate location of the imaged brain area were created with BioRender.com. Scale bars represent 100 μm.</figDesc><graphic coords="3,168.14,124.71,389.47,399.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. α-Synuclein (αSyn) aggregation in pre-formed fibril (PFF)-injected wild-type (WT) and F28tg mice. (A) αSyn aggregation measured by homogeneous time-resolved fluorescence (HTRF) in the cortex and hippocampus of WT (n = 6 per time point) and F28tg (PFF: n = 10-12 per time point; untreated: n = 11-12 per time point) mice at the indicated time points. Bars show mean ± SEM. Statistical analysis was performed on log-transformed data to account for heteroscedasticity using a two-way ANOVA followed by Šídák's multiple-comparisons test. ns, p &gt; 0.05; * p ≤ 0.05; *** p ≤ 0.001. Only data from PFF-injected animals were included in the analysis. (B) Representative histological images of serine-129-phosphorylated (pSer129) αSyn in the motor cortex (MC) and the cornu ammonis 1 (CA1) of the ventral hippocampus (vHpc) of WT and F28tg mice at 1.5 mpi. Illustrations showing the approximate location of the imaged brain area were created with BioRender.com. Scale bars represent 100 µm.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 .Figure 2 .</head><label>22</label><figDesc>Figure 2. PFF injection induces progressive spread of pSer129-αSyn pathology in F28tg mi pSer129-αSyn pathology in MC, substantia nigra (SN), central nucleus of the amygdala (CeA of the vHpc, dentate gyrus (DG) of the vHpc, and entorhinal cortex (EC) at selected time following striatal injection of αSyn monomers or PFFs. pSer129-αSyn pathology was quanti area (arbitrary units) of pSer129-αSyn staining (MC, EC) or number of pSer129-αSyn + cells (SN CA1, DG) at all time points (months post-injection, mpi), as shown on the right. Graphs show ± SEM of N = 11-13 mice/condition. Scale bar represents 200 μm. Illustrations on the left indic approximate location of the imaged region and were created with BioRender.com, (accessed October 2023). (B) Simplified drawing illustrating how αSyn aggregates might spread from jection site (dorsal striatum, dStr) to primary seeding regions (red, plain arrows) and sec seeding regions (blue, dotted arrows). Created with BioRender.com. Abbreviations not a mentioned: NAc, nucleus accumbens; BLA, basolateral amygdala; Hpc, hippocampus. (C) filament light-chain (NFL) levels in cerebrospinal fluid (CSF) from monomer-and PFF-injected mice at selected time points. Graphs show mean ± SEM of the responses from N = 9-10 (PFF) 5-10 (monomer) mice per time point. Treatment groups were compared at all time points wi way ANOVA followed by Šídák's multiple-comparisons test. ns, p &gt; 0.05; * p ≤ 0.05; ** p ≤ 0.0Figure 2. PFF injection induces progressive spread of pSer129-αSyn pathology in F28tg mice. (A) pSer129-αSyn pathology in MC, substantia nigra (SN), central nucleus of the amygdala (CeA), CA1 of the vHpc, dentate gyrus (DG) of the vHpc, and entorhinal cortex (EC) at selected time points following striatal injection of αSyn monomers or PFFs. pSer129-αSyn pathology was quantified as area (arbitrary units) of pSer129-αSyn staining (MC, EC) or number of pSer129-αSyn + cells (SN, CeA, CA1, DG) at all time points (months post-injection, mpi), as shown on the right. Graphs show mean ± SEM of n = 11-13 mice/condition. Scale bar represents 200 µm. Illustrations on the left indicate the approximate location of the imaged region and were created with BioRender.com, (accessed on 20 October 2023). (B) Simplified drawing illustrating how αSyn aggregates might spread from the injection site (dorsal striatum, dStr) to primary seeding regions (red, plain arrows) and secondary seeding regions (blue, dotted arrows). Created with BioRender.com. Abbreviations not already mentioned: NAc, nucleus accumbens; BLA, basolateral amygdala; Hpc, hippocampus. (C) Neurofilament light-chain (NFL) levels in cerebrospinal fluid (CSF) from monomer-and PFF-injected F28tg mice at selected time points. Graphs show mean ± SEM of the responses from n = 9-10 (PFF) or n = 5-10 (monomer) mice per time point. Treatment groups were compared at all time points with two-way ANOVA followed by Šídák's multiple-comparisons test. ns, p &gt; 0.05; * p ≤ 0.05; ** p ≤ 0.01.</figDesc><graphic coords="4,164.34,89.73,395.99,459.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. PFF injection induces microgliosis in F28tg mice. (A) F28tg mice were injected with αSyn monomers or PFFs into the dorsal striatum, and brain samples were collected for Iba1 staining at intervals ranging from 1.5 to 12 mpi. Displayed are representative Iba1 stainings in the MC, SN, CA1, and EC, along with quantifications of the Iba1-staining area (arbitrary units) in the corresponding regions. Scale bars on images represent 100 μm. Graphs show mean ± SEM of N = 11-13 (PFF) or N = 4-6 (monomer) mice per group. Black bars on graphs highlight the approximate timing of the observed peak in pSer129-αSyn pathology shown in Figure 2A. For all brain regions, a two-way ANOVA with Šídák's post hoc test was applied to compare PFF-and monomer-injected animals at each time point. ns, p &gt; 0.05; ** p ≤ 0.01; *** p ≤ 0.001. Illustrations of brain regions were created with BioRender.com. (B) Levels of selected inflammation-related genes in the frontal cortex (FC), temporal cortex (TC), and hippocampus (Hpc) measured by Fluidigm in PFF-injected animals when compared to monomer-injected controls (N = 6-8 per group). Multiple two-sample t-tests with Welch correction were performed on the log-transformed data, and the Benjamini-Hochberg method was applied to control for the false discovery rate (FDR(Q) = 1%). Outlines indicate statistically significant differences (p ≤ 0.05).</figDesc><graphic coords="5,166.16,87.08,389.95,333.39" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. PFF injection induces microgliosis in F28tg mice. (A) F28tg mice were injected with αSyn monomers or PFFs into the dorsal striatum, and brain samples were collected for Iba1 staining at intervals ranging from 1.5 to 12 mpi. Displayed are representative Iba1 stainings in the MC, SN, CA1, and EC, along with quantifications of the Iba1-staining area (arbitrary units) in the corresponding regions. Scale bars on images represent 100 µm. Graphs show mean ± SEM of n = 11-13 (PFF) or n = 4-6 (monomer) mice per group. Black bars on graphs highlight the approximate timing of the observed peak in pSer129-αSyn pathology shown in Figure 2A. For all brain regions, a two-way ANOVA with Šídák's post hoc test was applied to compare PFF-and monomer-injected animals at each time point. ns, p &gt; 0.05; ** p ≤ 0.01; *** p ≤ 0.001. Illustrations of brain regions were created with BioRender.com. (B) Levels of selected inflammation-related genes in the frontal cortex (FC), temporal cortex (TC), and hippocampus (Hpc) measured by Fluidigm in PFF-injected animals when compared to monomer-injected controls (n = 6-8 per group). Multiple two-sample t-tests with Welch correction were performed on the log-transformed data, and the Benjamini-Hochberg method was applied to control for the false discovery rate (FDR(Q) = 1%). Outlines indicate statistically significant differences (p ≤ 0.05).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. PFF-induced pSer129-αSyn pathology and NFL release occur in a time-dependent manner ex vivo. (A) Representative confocal images (scale bars equal 300 μm) and (B) image-based quantification of pSer129-αSyn levels normalized to slice area in F28tg organotypic hippocampal slice cultures (OHSCs) at 2-28 days post-seeding (dps) with PFFs. Data from 3 independent experiments with n = 3-6 OHSCs per time point is shown. Bars indicate mean ± SEM. (C) NFL levels in OHSCconditioned media. Bars show mean ± SEM of data from 3 independent experiments with n = 3-5 wells (each containing 3 OHSCs) per condition. Statistical analysis was performed on the log-transformed 0-28 dps data with a repeated-measures two-way ANOVA followed by Šídák's multiplecomparisons test. ns, p &gt; 0.05; * p ≤ 0.05; *** p ≤ 0.001.</figDesc><graphic coords="13,99.56,90.05,394.93,180.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. PFF-induced pSer129-αSyn pathology and NFL release occur in a time-dependent manner ex vivo. (A) Representative confocal images (scale bars equal 300 µm) and (B) image-based quantification of pSer129-αSyn levels normalized to slice area in F28tg organotypic hippocampal slice cultures (OHSCs) at 2-28 days post-seeding (dps) with PFFs. Data from 3 independent experiments with n = 3-6 OHSCs per time point is shown. Bars indicate mean ± SEM. (C) NFL levels in OHSCconditioned media. Bars show mean ± SEM of data from 3 independent experiments with n = 3-5 wells (each containing 3 OHSCs) per condition. Statistical analysis was performed on the logtransformed 0-28 dps data with a repeated-measures two-way ANOVA followed by Šídák's multiplecomparisons test. ns, p &gt; 0.05; * p ≤ 0.05; *** p ≤ 0.001.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Cells 2024 , 22 Figure 5 .</head><label>2024225</label><figDesc>Figure 5. PFF treatment induces different levels of pSer129-αSyn pathology and NFL release in Snca KO, WT, and F28tg primary hippocampal cultures. (A) Representative Cellomics images (scale bars equal 100 µm) of pSer129-αSyn immunostainings in Snca KO, WT, and F28tg cultures exposed to PFFs (29 nM) and (B) the corresponding quantifications of pSer129-αSyn pathology per well normalized to the number of NeuN + nuclei and presented as % of the pSer129-αSyn signal in WT cultures that received the highest concentration of PFF. Data are shown as mean ± SEM of 3-5 independent experiments with n = 3-6 replicates per condition each. (C) Immunoblot showing that pSer129-αSyn and αSyn are enriched in the triton-insoluble/SDS-extractable fractions of F28tg and WT cultures upon PFF treatment (representative of 3-4 independent n = 2 replicates per experiment). (D) NFL levels in conditioned media from wells corresponding to the cultures in (B). Data are shown as mean ± SEM of 3-5 experiments, each with 3-6 replicates. In each experiment and for each mouse strain, the mean level of NFL in untreated cultures (baseline) was subtracted from the data points. (E) Immunoblots showing the levels of human αSyn (hu-αSyn), mouse αSyn (ms-αSyn), total αSyn, vinculin (vinc., loading control), and NFL in the triton-soluble fraction of lysates from untreated (untr.) Snca KO, WT, and F28tg cultures (representative of 3-4 independent experiments with n = 2 replicates). (F) Quantifications of ms-αSyn and total αSyn levels assessed by immunoblo ing. Band intensities were normalized to vinculin and plo ed as mean fold change ± SEM relative to WT (N = 4 experiments, n = 2 replicates per experiment). Data points originating from the same experiment have the same shape. Statistics in (B,D,F) were obtained by fi ing a linear mixed-effects model including all technical and biological replicates with the experiment number as a random effect, followed by Šídák's post hoc adjustment (B) or Dunne 's post hoc test (D). ns, p &gt; 0.05; * p ≤ 0.05; ** p ≤ 0.01; *** p ≤ 0.001.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. PFF treatment induces different levels of pSer129-αSyn pathology and NFL release in Snca KO, WT, and F28tg primary hippocampal cultures. (A) Representative Cellomics images (scale bars equal 100 µm) of pSer129-αSyn immunostainings in Snca KO, WT, and F28tg cultures exposed to PFFs (29 nM) and (B) the corresponding quantifications of pSer129-αSyn pathology per well normalized to the number of NeuN + nuclei and presented as % of the pSer129-αSyn signal in WT cultures that received the highest concentration of PFF. Data are shown as mean ± SEM of 3-5 independent experiments with n = 3-6 replicates per condition each. (C) Immunoblot showing that pSer129-αSyn and αSyn are enriched in the triton-insoluble/SDS-extractable fractions of F28tg and WT cultures upon PFF treatment (representative of 3-4 independent experiments, n = 2 replicates per experiment). (D) NFL levels in conditioned media from wells corresponding to the cultures in (B). Data are shown as mean ± SEM of 3-5 experiments, each with 3-6 replicates. In each experiment and for each mouse strain, the mean level of NFL in untreated cultures (baseline) was subtracted from the data points. (E) Immunoblots showing the levels of human αSyn (hu-αSyn), mouse αSyn (ms-αSyn), total αSyn, vinculin (vinc., loading control), and NFL in the triton-soluble fraction of lysates from untreated (untr.) Snca KO, WT, and F28tg cultures (representative of 3-4 independent experiments with n = 2 replicates). (F) Quantifications of ms-αSyn and total αSyn levels assessed by immunoblotting. Band</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>24 , 22 Figure 6 .</head><label>24226</label><figDesc>Figure 6. Hlu-3 inhibits seeding and NFL release in PFF-treated F28tg primary hippocampal cultures. (A) Quantification of pSer129-αSyn + aggregates by high-content imaging in cultures treated with no antibody, Hlu-3, or an isotype control antibody. pSer129-αSyn levels were normalized to the number of NeuN + nuclei prior to normalization to the "no antibody/PFF only" group in each experiment. The bars show mean ± SEM of data from 3 independent experiments, each with n = 3-6 replicates per condition. (B) Representative Cellomics images from the cultures treated with isotype control or Hlu-3 antibody in combination with PFF. Scale bar is 100 um. (C) Measurement of NFL levels in conditioned media from the cultures in (A). The bars show mean ± SEM of data from 3 independent experiments, each with n = 3 replicates per condition. Data points originating from the same experiment have the same shape. Statistical analysis in (A,C) was applied to data from PFF-treated wells using a linear mixed-effects model including all technical and biological replicates accounting for experiment number as a random effect. Before statistical analysis, data in (C) were</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. Hlu-3 inhibits seeding and NFL release in PFF-treated F28tg primary hippocampal cultures. (A) Quantification of pSer129-αSyn + aggregates by high-content imaging in cultures treated with no antibody, Hlu-3, or an isotype control antibody. pSer129-αSyn levels were normalized to the number of NeuN + nuclei prior to normalization to the "no antibody/PFF only" group in each experiment. The bars show mean ± SEM of data from 3 independent experiments, each with n = 3-6 replicates per condition. (B) Representative Cellomics images from the cultures treated with isotype control or Hlu-3</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments:</head><p>We would like to thank <rs type="person">Morten Blaabjerg</rs> and <rs type="person">Morten Meyer</rs> from the <rs type="funder">University of Southern Denmark</rs> for sharing their experience with the preparation and cultivation of OHSCs. We would also like to thank our colleague <rs type="person">Evin Turan</rs> for collecting the CSF, performing all intracerebral PFF injections, and harvesting the brains for in vivo experiments and our colleague <rs type="person">Charlotte Fredsøe Hundahl</rs>, who extracted the RNA for the Fluidigm assay.</p></div>
+			</div>
+			<listOrg type="funding">
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement:</head><p>The dataset is available from the corresponding author upon reasonable request.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Materials:</head><p>The following supporting information can be downloaded at https: //www.mdpi.com/article/10.3390/cells13030253/s1: Figure <ref type="figure">S1</ref>: Exemplary data from PFF characterization by DLS. Figure <ref type="figure">S2</ref>: Seeded αSyn aggregation requires endogenous αSyn expression. Figure <ref type="figure">S3</ref>: PFF-induced cell death measured by different methods. Figure <ref type="figure">S4</ref>: Dose-dependent PFF-induced αSyn aggregation in F28tg primary hippocampal cultures. The following reference is cited in the Supplementary Material: <ref type="bibr" target="#b57">[58]</ref>. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Aggregation of alpha-synuclein in Lewy bodies of sporadic Parkinson&apos;s disease and dementia with Lewy bodies</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Baba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nakajo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tomita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nakaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Trojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Iwatsubo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am. J. Pathol</title>
+		<imprint>
+			<biblScope unit="volume">152</biblScope>
+			<biblScope unit="page" from="879" to="884" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Alpha-synuclein in Lewy bodies</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kågedal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Halliday</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">388</biblScope>
+			<biblScope unit="page" from="839" to="840" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Parkinson&apos;s disease</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">V</forename><surname>Kalia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Lang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">386</biblScope>
+			<biblScope unit="page" from="896" to="912" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Lewy bodies in grafted neurons in subjects with Parkinson&apos;s disease suggest host-to-graft disease propagation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Englund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Holton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Soulet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hagell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Lees</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lashley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Quinn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rehncrona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Björklund</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nm1746</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Med</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="501" to="503" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Inclusion formation and neuronal cell death through neuron-to-neuron transmission of alpha-synuclein</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Desplats</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Bae</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Patrick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Rockenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Crews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Spencer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Masliah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Natl. Acad. Sci</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="page" from="13010" to="13015" />
+			<date type="published" when="2009">2009</date>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Like prions: The propagation of aggregated tau and α-synuclein in neurodegeneration</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Goedert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Masuda-Suzukake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Falcon</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/brain/aww230</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="page" from="266" to="278" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Alzheimer&apos;s and Parkinson&apos;s diseases: The prion concept in relation to assembled Aβ, tau, and α-synuclein</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Goedert</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Neurodegeneration</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1255555</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">349</biblScope>
+			<date type="published" when="2015">2015. 1255555</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Self-propagation of pathogenic protein aggregates in neurodegenerative diseases</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jucker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">C</forename><surname>Walker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">501</biblScope>
+			<biblScope unit="page" from="45" to="51" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Prying into the Prion Hypothesis for Parkinson&apos;s Disease</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Brundin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Melki</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/JNEUROSCI.1788-16.2017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="9808" to="9818" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Exogenous α-synuclein fibrils induce Lewy body pathology leading to synaptic dysfunction and neuron death</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Volpicelli-Daley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Tanik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Riddle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Stieber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">F</forename><surname>Meaney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Trojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuron.2011.08.033</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuron</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="page" from="57" to="71" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Pathological α-synuclein transmission initiates Parkinson-like neurodegeneration in nontransgenic mice</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kehm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Carroll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>O'brien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Trojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1227157</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">338</biblScope>
+			<biblScope unit="page" from="949" to="953" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Selective imaging of internalized proteopathic α-synuclein seeds in primary neurons reveals mechanistic insight into transmission of synucleinopathies</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Karpowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Haney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Mihaila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Sandler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Petersson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M Y</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1074/jbc.M117.780296</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Biol. Chem</title>
+		<imprint>
+			<biblScope unit="volume">292</biblScope>
+			<biblScope unit="page" from="13482" to="13497" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">α-Synuclein is phosphorylated in synucleinopathy lesions</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fujiwara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hasegawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Dohmae</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kawashima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Masliah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Goldberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Takio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Iwatsubo</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ncb748</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Cell Biol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="160" to="164" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The process of Lewy body formation, rather than simply α-synuclein fibrillization, is one of the major drivers of neurodegeneration</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Mahul-Mellier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Burtscher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Maharjan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Weerens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Croisier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Kuttler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Leleu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Knott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Lashuel</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1913904117</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Natl. Acad. Sci</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="page" from="4971" to="4982" />
+			<date type="published" when="2020">2020</date>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Differentially targeted seeding reveals unique pathological alpha-synuclein propagation patterns</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rahayel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mišić</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Q</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z.-Q</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Abdelgawad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Abbasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Caputo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kehm</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/brain/awab440</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<imprint>
+			<biblScope unit="volume">145</biblScope>
+			<biblScope unit="page" from="1743" to="1756" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">PET imaging reveals early and progressive dopaminergic deficits after intra-striatal injection of preformed alpha-synuclein fibrils in rats</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Thomsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Ferreira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Schacht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jacobsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Simonsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Betzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H</forename><surname>Jensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Brooks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Landau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Romero-Ramos</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.nbd.2020.105229</idno>
+		<imprint/>
+	</monogr>
+	<note>Neurobiol. Dis. 2021, 149, 105229. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Preformed Fibrils Induce Endogenous αSyn Aggregation, Compromise Synaptic Activity and Enhance Synapse Loss in Cultured Excitatory Hippocampal Neurons</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Takano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Riddle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Trojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Coulter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Α-Synuclein</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/JNEUROSCI.0060-19.2019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="5080" to="5094" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Exposure of α-Synuclein Aggregates to Organotypic Slice Cultures Recapitulates Key Molecular Features of Parkinson&apos;s Disease</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Moudio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Rodin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">J</forename><surname>Albargothy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Karlsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Reyes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hallbeck</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fneur.2022.826102</idno>
+		<imprint/>
+	</monogr>
+	<note>Front. Neurol. 2022, 13, 826102. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Alphasynuclein aggregates activate calcium pump SERCA leading to calcium dysregulation</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Betzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">B</forename><surname>Lassen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Olsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">H</forename><surname>Kofoed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Reimer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Gregersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Calì</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">P</forename><surname>Gai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.15252/embr.201744617</idno>
+	</analytic>
+	<monogr>
+		<title level="j">EMBO Rep</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Formation of α-synuclein Lewy neurite-like aggregates in axons impedes the transport of distinct endosomes</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Volpicelli-Daley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Gamble</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Schultheiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Riddle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>West</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1091/mbc.e14-02-0741</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mol. Biol. Cell</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="4010" to="4023" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Impact of α-Synuclein Fibrillar Strains and β-Amyloid Assemblies on Mouse Cortical Neurons Endo-Lysosomal Logistics</title>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">L</forename><surname>Chou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Marquier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Melki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Treussart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Simonneau</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/ENEURO.0227-21.2022</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Lewy body-like α-synuclein aggregates resist degradation and impair macroautophagy</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Tanik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Schultheiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Volpicelli-Daley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Brunden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1074/jbc.M113.457408</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Biol. Chem</title>
+		<imprint>
+			<biblScope unit="volume">288</biblScope>
+			<biblScope unit="page" from="15194" to="15210" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Extracellular aggregated alpha synuclein primarily triggers lysosomal dysfunction in neural cells prevented by trehalose</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Hoffmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Minakaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Menges</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Salvi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Savitskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kazman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Vicente Miranda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mielenz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Klucken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Winkler</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-018-35811-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">In vivo imaging of microglial activation with [11C](R)-PK11195 PET in idiopathic Parkinson&apos;s disease</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gerhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Pavese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hotton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Turkheimer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Es</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hammers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Eggert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Oertel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Banati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Brooks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neurobiol. Dis</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="404" to="412" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Inflammasome inhibition prevents α-synuclein pathology and dopaminergic neurodegeneration in mice</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Albornoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Christie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Langley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mantovani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A B</forename><surname>Robertson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Butler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Rowe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>O'neill</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/scitranslmed.aah4066</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Transl. Med</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Triggering of inflammasome by aggregated α-synuclein, an inflammatory response in synucleinopathies</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Codolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Plotegher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pozzobon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brucale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Tessari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bubacco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>De Bernard</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0055375</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>e55375. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Veerhuis, R. α-Synuclein evokes NLRP3 inflammasome-mediated IL-1β secretion from primary human microglia</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Pike</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Varanita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A C</forename><surname>Herrebout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Plug</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J P</forename><surname>Musters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Teunissen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J M</forename><surname>Hoozemans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bubacco</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/glia.23970</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Glia</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="1413" to="1428" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Block of A1 astrocyte conversion by microglia is neuroprotective in models of Parkinson&apos;s disease</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Yun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">I</forename><surname>Kam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Panicker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Kwon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">J</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Karuppagounder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Park</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-018-0051-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Med</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="931" to="938" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Leveraging the preformed fibril model to distinguish between alpha-synuclein inclusion-and nigrostriatal degeneration-associated immunogenicity</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Stoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Sortwell</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.nbd.2022.105804</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurobiol. Dis</title>
+		<imprint>
+			<biblScope unit="volume">171</biblScope>
+			<date type="published" when="2022">2022. 105804</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Lewy body-like alpha-synuclein inclusions trigger reactive microgliosis prior to nigral degeneration</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Duffy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Collier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Patterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Kemp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Tansey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Paumier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">M</forename><surname>Kanaan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">K</forename><surname>Polinski</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12974-018-1171-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neuroinflamm</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Aging exacerbates the brain inflammatory micro-environment contributing to α-synuclein pathology and functional deficits in a mouse model of DLB/PD</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Iba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Mcdevitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sarantopoulou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Tommer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Siegars</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sallin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kwon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Sen</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13024-022-00564-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mol. Neurodegener</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">A-synuclein immunotherapy blocks uptake and templated propagation of misfolded α-synuclein and neurodegeneration</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">T</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">H</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Iba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Trojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.celrep.2014.05.033</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Rep</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="2054" to="2065" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Solid-state NMR structure of a pathogenic fibril of full-length human α-synuclein</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Tuttle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Comellas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Nieuwkoop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Covell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Berthold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Kloepper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Courtney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Barclay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kendall</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nsmb.3194</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Struct. Mol. Biol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="409" to="415" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Molecular and Biological Compatibility with Host Alpha-Synuclein Influences Fibril Pathogenicity</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Covell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M</forename><surname>Kehm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Byrne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Pitkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Decker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Trojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M Y</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.celrep.2016.08.053</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Rep</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="3373" to="3387" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Validation of Plasma and CSF Neurofilament Light Chain as an Early Marker for Sporadic Creutzfeldt-Jakob Disease</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schmitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Canaslan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Espinosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fernández-Borges</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Villar-Piqué</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Llorens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Varges</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Maass</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Torres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hermann</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12035-022-02891-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mol. Neurobiol</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Neurofilament light protein in CSF and blood is associated with neurodegeneration and disease severity in Huntington&apos;s disease R6/2 mice</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Soylu-Kucharz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Å</forename><surname>Sandelius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sjögren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Blennow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Wild</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zetterberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Björkqvist</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-017-14179-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci</title>
+		<imprint/>
+	</monogr>
+	<note>Rep. 2017, 7, 14114. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Cerebrospinal fluid neurofilament light chain as a biomarker of neurodegeneration in the Tg4510 and MitoPark mouse models</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Clement</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mitchelmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Andersson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Asuni</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuroscience.2017.04.030</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroscience</title>
+		<imprint>
+			<biblScope unit="volume">354</biblScope>
+			<biblScope unit="page" from="101" to="109" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Neurofilament Light Chain in Blood and CSF as Marker of Disease Progression in Mouse Models and in Neurodegenerative Diseases</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bacioglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Maia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Preische</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Apel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Kaeser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schweighauser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Eninger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lambert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pilotto</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neuron.2016.05.018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuron</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page" from="56" to="66" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Deletion of the alpha-synuclein locus in a subpopulation of C57BL/6J inbred mice</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">G</forename><surname>Specht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schoepfer</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/1471-2202-2-11</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Lrrk2 and α-synuclein are co-regulated in rodent striatum</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Westerlund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Borgkvist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">H</forename><surname>Sterky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lindqvist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lundströmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Pernold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Brené</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kallunki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fisone</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.mcn.2008.08.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mol. Cell. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="586" to="591" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Best Practices for Generating and Using Alpha-Synuclein Pre-Formed Fibrils to Model Parkinson&apos;s Disease in Rodents</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">K</forename><surname>Polinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Volpicelli-Daley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Sortwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Cremades</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Gottler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Froula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Duffy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">M Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">N</forename><surname>Martinez</surname></persName>
+		</author>
+		<idno type="DOI">10.3233/JPD-171248</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Park. Dis</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="303" to="322" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Apolipoprotein E does not cross the blood-cerebrospinal fluid barrier, as revealed by an improved technique for sampling CSF from mice</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Kuhel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Y</forename><surname>Hui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Woods</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am. J. Physiol. Regul. Integr. Comp. Physiol</title>
+		<imprint>
+			<biblScope unit="volume">303</biblScope>
+			<biblScope unit="page" from="903" to="R908" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zurhellen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<publisher>NeuroScience Associates, Inc</publisher>
+			<pubPlace>Knoxville, TN, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Personal communication</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Staining protocol for organotypic hippocampal slice cultures</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Gogolla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Galimberti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Depaola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Caroni</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nprot.2006.180</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Protoc</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="2452" to="2456" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Microglial inclusions and neurofilament light chain release follow neuronal α-synuclein lesions in long-term brain slice cultures</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Barth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bacioglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Novotny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Brandes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Welzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mazzitelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Häsler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schweighauser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">V</forename><surname>Wuttke</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13024-021-00471-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mol. Neurodegener</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The Ultimate qPCR Experiment: Producing Publication Quality, Reproducible Data the First Time</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nadeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Abbasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lachance</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Fenrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.tibtech.2018.12.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Trends Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="761" to="774" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Role of Ser129 phosphorylation of α-synuclein in melanoma cells</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Matsuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Cashikar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kamitani</surname></persName>
+		</author>
+		<idno type="DOI">10.1242/jcs.122093</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Cell Sci</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="page" from="696" to="704" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Microglia jointly degrade fibrillar alpha-synuclein cargo by distribution through tunneling nanotubes</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Scheiblich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dansokho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mercan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">V</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bousset</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wischhof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Eikens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Odainic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Spitzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Griep</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2021.09.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<imprint>
+			<biblScope unit="volume">184</biblScope>
+			<biblScope unit="page" from="5089" to="5106" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note>e5021. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Crosstalk between astrocytes and microglia results in increased degradation of α-synuclein and amyloid-β aggregates</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rostami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mothes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kolahdouzan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Eriksson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Moslem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bergström</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ingelsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>O'callaghan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Healy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Falk</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12974-021-02158-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neuroinflamm</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<monogr>
+		<title level="m" type="main">Astrocytes and microglia play orchestrated roles and respect phagocytic territories during neuronal corpse removal in vivo</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">C</forename><surname>Damisah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">V</forename><surname>Rothlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Grutzendler</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/sciadv.aba3239</idno>
+		<imprint/>
+	</monogr>
+	<note>Sci. Adv. 2020, 6, eaba3239. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">A Unique Microglia Type Associated with Restricting Development of Alzheimer&apos;s Disease</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Keren-Shaul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Spinrad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Weiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Matcovitch-Natan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Dvir-Szternfeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">K</forename><surname>Ulland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Baruch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lara-Astaiso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Toth</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2017.05.018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<imprint>
+			<biblScope unit="volume">169</biblScope>
+			<biblScope unit="page" from="1276" to="1290" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">An early proinflammatory transcriptional response to tau pathology is age-specific and foreshadows reduced tau burden</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rasmussen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Ewing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">G</forename><surname>Bodea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">O</forename><surname>Bodea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gearing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">J</forename><surname>Faulkner</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/bpa.13018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Pathol</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<date type="published" when="2022">2022. 13018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Protective Microglial Subset in Development</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Benmamar-Badel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Owens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wlodarczyk</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fimmu.2020.00430</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Aging, and Disease: Lessons From Transcriptomic Studies. Front. Immunol</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">430</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Identification of Clec7a as the therapeutic target of rTMS in alleviating Parkinson&apos;s disease: Targeting neuroinflammation</title>
+		<author>
+			<persName><forename type="first">X.-Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-N</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-X</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ba</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bbadis.2023.166814</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biochim. Biophys. Acta (BBA)-Mol</title>
+		<imprint/>
+	</monogr>
+	<note>Basis Dis. 2023, 1869, 166814. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Human Primary Astrocytes Differently Respond to Pro-and Anti-Inflammatory Stimuli</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szpakowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ksiazek-Winiarek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Turniak-Kusy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Pacan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Glabinski</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/biomedicines10081769</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedicines</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<date type="published" when="1769">2022. 1769</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Neurotoxic reactive astrocytes are induced by activated microglia</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Liddelow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Guttenplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">E</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">C</forename><surname>Bennett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Bohlen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Schirmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Bennett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Münch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W.-S</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">C</forename><surname>Peterson</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature21029</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">541</biblScope>
+			<biblScope unit="page" from="481" to="487" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Neurofilament light chain as a biomarker in neurological disorders</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gaetani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Blennow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Calabresi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Di Filippo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Parnetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zetterberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/jnnp-2018-320106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurol. Neurosurg. Psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="870" to="881" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Reciprocal signals between microglia and neurons regulate α-synuclein secretion by exophagy through a neuronal cJUN-N-terminal kinase-signaling axis</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Christensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ejlerskov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Rasmussen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Vilhardt</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12974-016-0519-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neuroinflamm</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods</title>
+		<imprint>
+			<publisher>Disclaimer/Publisher&apos;s Note</publisher>
+		</imprint>
+	</monogr>
+	<note>instructions or products referred to in the content</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

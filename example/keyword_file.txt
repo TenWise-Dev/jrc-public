@@ -1,0 +1,5 @@
+organoid	organoid
+organoid	organ-on-a-chip
+cells		ipsc
+vitro		in-vitro
+vitro		ELISA

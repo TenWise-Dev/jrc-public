@@ -40,11 +40,7 @@ args <- parser$parse_args()
 
 # Read data from stdin
 doi_source <- readLines(con = "stdin")
-#print(doi_source)
 
-# Split doi and source and keep second column
-#dois <- lapply(strsplit(doi_source, "\t"), function(x) x[[1]]) %>% unlist()
-#print(dois)
 # Check if email argument is given
 if (is.null(args$email)){
   stop("Please provide an email address for OpenAlex")

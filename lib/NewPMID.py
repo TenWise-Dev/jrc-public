@@ -184,7 +184,7 @@ if __name__ == "__main__":
     # Get all the PMIDs from the txt pmid file
     with open(args.pmid_file) as file:
         pmids = file.read().splitlines()
-    
+       
     # Get the records from the NCBI database
     get_records(pmids=pmids, outfile=args.records_file, entrez_email=args.entrez_email)
     

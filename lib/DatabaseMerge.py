@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 '''
 This script is used to update the PMID JSON file with additional information from a tab-delimited txt file.
-The script has two required arguments. ::
+The script has three required arguments. ::
 
     Required:
     

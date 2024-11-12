@@ -14,16 +14,23 @@ This workflow describes the update of the JSON formatted database with new PMIDs
 Executing the query
 -------------------
 
-This steps reads one or more queries from an Exel file and executes the query at real time on the MEDLINE database. This is done with the :ref:`my-query2pmid-label` script. ::
+This steps reads one or more queries from an Exel file. The format of the file is shown in the figure below. 
+
+.. image:: /images/query_file.png
+
+The  :ref:`my-query2pmid-label` script executes the queries at real time on the MEDLINE database. ::
     
    workdir=/tmp/examplejrc/
    mkdir $workdir
+
    ./Query2PMID.py -q ../example/example_query.xlsx -o $workdir  -e youremail@email.com
+ 
+   ls -ltrh $workdir
 
 This results in pmid files in the workdir ::
 
-    ls -trh $workdir
-    example_query_predict_pmids.txt  organoid_query_predict_pmids.txt
+    example_query_predict_pmids.txt  
+    organoid_query_predict_pmids.txt
 
 
 Retrieving the abstracts
@@ -33,9 +40,11 @@ In the next steps, the abstracts for the PMIDs are retrieved using the :ref:`my-
 
     head -10 $workdir/organoid_query_predict_pmids.txt > $workdir/tmp_pmids.txt
 
-    ./PMID2Database.py -p $workdir/tmp_pmids.txt -j $workdir/tmp_json.txt -r $workdir/tmp_rec.txt -e wynand.alkema@gmail.com
+    ./PMID2Database.py -p $workdir/tmp_pmids.txt -j $workdir/tmp_json.txt -r $workdir/tmp_rec.txt -e  youremail@email.com
 
     more $workdir/tmp_json.txt
+
+which yields ::
 
     [
     {
@@ -72,7 +81,10 @@ OpenAlex
 This is an R script, because we make use of an open source code library that is only available in R (to our knowledge) ::
 
     ./PMID2Openalex.R -p $workdir/tmp_pmids.txt -o $workdir/openalex.json -e your_email@email.com
+
     more $workdir/openalex.json
+
+which yields ::
 
     {
     "39462675": {
@@ -127,12 +139,9 @@ The created JSON files can now be added together ::
     -u $workdir/tagged_abstracts_json.txt \
     -o $workdir/new_database_complete.json
 
-
-Finally this yields ::
-
-
     more $workdir/new_database_complete.json
 
+Which yields ::
 
        {
         "pmid": "39464086",
@@ -191,10 +200,10 @@ This database can be merged with an existing JSON formatted database. The typica
 Suppose the first database is created like this ::
 
     head -10 $workdir/organoid_query_predict_pmids.txt > $workdir/tmp_pmids.txt 
-    ./PMID2Database.py -p $workdir/tmp_pmids.txt -j $workdir/first_json.txt -r $workdir/tmp_rec.txt -e wynand.alkema@gmail.com
+    ./PMID2Database.py -p $workdir/tmp_pmids.txt -j $workdir/first_json.txt -r $workdir/tmp_rec.txt -e  youremail@email.com
 
     tail -10 $workdir/organoid_query_predict_pmids.txt > $workdir/tmp_pmids.txt 
-    ./PMID2Database.py -p $workdir/tmp_pmids.txt -j $workdir/second_json.txt -r $workdir/tmp_rec.txt -e wynand.alkema@gmail.com
+    ./PMID2Database.py -p $workdir/tmp_pmids.txt -j $workdir/second_json.txt -r $workdir/tmp_rec.txt -e  youremail@email.com
 
 The merging can now easily be achieved by invoking the jq command ::
 
@@ -203,9 +212,7 @@ The merging can now easily be achieved by invoking the jq command ::
      grep "pmid" $workdir/full_db.json 
 
 This should give 20 pmids::
-
-    grep pmid $workdir/full_db.json
-    
+  
     "pmid": "39468757",
     "pmid": "39468028",
     "pmid": "39465429",

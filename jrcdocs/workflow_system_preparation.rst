@@ -10,6 +10,29 @@ Operating system
 All scripts were developed and tested on a standard Ubuntu 22.04 system. The core of the system is formed by a set of Python scripts, but also helper utilities were written in R and bash shell scripts. These scripts are covered in more detail below, and individal scripts are extensively documented and can be accessed in the Scripts section of this documentation.
 
 
+Getting the code
+----------------
+
+The code can be obtained from our public git repository by running ::
+
+    git clone https://github.com/TenWise-Dev/jrc-public
+    cd jrc-public/
+
+    # And the additional embedding files
+    wget https://ironman.tenwisedev.nl/public/jrc_downloads/embedding_models.tar.gz
+    tar -xvf embedding_models.tar.gz
+
+    # And the additional classifier files
+    wget https://ironman.tenwisedev.nl/public/jrc_downloads/classifier_models.tar.gz
+    tar -xvf classifier_models.tar.gz
+
+Setting up the virtual environment ::
+
+    python3.12 -m venv .jrc-public
+    source .jrc-public/bin/activate
+    pip install -r requirements.txt
+
+
 File system set-up
 ------------------
 
@@ -29,7 +52,11 @@ The framework is build with a number of scripts and a number of supporting data 
 classifier_models
 #################
 
-This directory contains the final models that are used for clasification.
+This directory contains the final models that are used for clasification. These files are too large to add to the git repository, it can be downloaded here (57 MB):
+
+`classifier_models.tar.gz <../jrc_downloads/classifier_models.tar.gz>`_
+
+The contents should, after unpacking, be placed in this directory.
 
 data
 ####
@@ -39,7 +66,11 @@ This directory contains a number of data files that can be used to build the dat
 embedding_models
 ################
 
-This directory contains the embedding files that are needed for embedding new abstracts and subsequently running the predictions.
+This directory contains the embedding files that are needed for embedding new abstracts and subsequently running the predictions. These files are too large to add to the git repository. They can be downloaded here (257 MB).
+
+`embedding_models.tar.gz <../jrc_downloads/embedding_models.tar.gz>`_
+
+The contents should, after unpacking, be placed in this directory.
 
 example
 #######
@@ -65,7 +96,8 @@ A set of emtpy directories that can be copied as a working directory and can be 
 requirements.txt
 #################
 
-A set of Python modules that is needed for this framework. Can typically be installed with ::
+A set of Python modules that is needed for this framework. The best way to do this, is to install this in a virtual enviroment. Can typically be installed with ::
+
 
     pip install -r requirements.txt
 

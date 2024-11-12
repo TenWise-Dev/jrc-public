@@ -10,7 +10,7 @@ An embedding with sentence transformers is done as follows ::
     -d $workdir/tmp_json.txt \
     -o $workdir/embedding.npz 
 
-    # Which produces some diagnostic output
+Which produces some diagnostic output ::
 
     11:54:56 - Getting abstracts from the database...
     11:54:56 - PMIDs with no abstracts: 0
@@ -28,7 +28,10 @@ The embedding can now be used in a prediction script. It is important to do this
     -m ../classifier_models/transformer/randomforest.pkl \
     -o $workdir/predictions.json
 
+    more $workdir/predictions.json
+
 This gives the following output ::
+
 
     {
     "39468757": {

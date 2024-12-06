@@ -10,7 +10,7 @@ The models used for prediction are: randomforest, adaboost, logistic_regression,
 
 USAGE ::
  
-    workflow_predict_new.sh <workdir> <repodir> <pmid_file> <email>
+    workflow_predict.sh <workdir> <repodir> <pmid_file> <email>
  
 '
  

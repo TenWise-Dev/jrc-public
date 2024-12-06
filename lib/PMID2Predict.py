@@ -21,6 +21,7 @@ import argparse
 import json
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 def load_embeddings(embedding_file: str) -> np.ndarray:
     # Make docstring with rst syntax
@@ -37,7 +38,7 @@ def load_embeddings(embedding_file: str) -> np.ndarray:
     embeddings = np.load(embedding_file)
     return embeddings
 
-def predict_embeddings(embeddings: np.ndarray, models_file: str) -> dict:
+def predict_embeddings(embeddings: np.ndarray, models_file: str) -> None:
     # Make docstring with rst syntax
     """
     Predict the class of the embeddings using the provided model.\n
@@ -52,8 +53,7 @@ def predict_embeddings(embeddings: np.ndarray, models_file: str) -> dict:
     # Load the model
     with open(models_file, 'rb') as file:
         model = pickle.load(file)
-        
-    # Predict and return class and probabilities   
+    
     predictions = model.predict(embeddings['embeddings'])
     probabilities = model.predict_proba(embeddings['embeddings'])
     
@@ -73,7 +73,11 @@ def predict_embeddings(embeddings: np.ndarray, models_file: str) -> dict:
     # Convert the dataframe to a dictionary with the pmid as key and the rest as values
     df_results = df_results[["PMID", "Prediction", "Probability", "Model"]].set_index("PMID").T.to_dict()
     
-    return df_results
+    # Save the dictionary to a JSON file
+    with open(args.output_file, 'w') as file:
+        json.dump(df_results, file, indent=4)
+    
+    pass
 
 if __name__ == "__main__":
     
@@ -90,8 +94,6 @@ if __name__ == "__main__":
     embeddings = load_embeddings(embedding_file=args.embedding_file)
     
     # Predict the class of the embeddings using the provided model and save the results to a dictionary
-    results = predict_embeddings(embeddings=embeddings, models_file=args.models_file)
+    predict_embeddings(embeddings=embeddings, models_file=args.models_file)
     
-    # Save the dictionary to a JSON file
-    with open(args.output_file, 'w') as file:
-        json.dump(results, file, indent=4)
+    

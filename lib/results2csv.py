@@ -10,7 +10,7 @@ The script has two required arguments. ::
     
     Usage:
     
-    python3 results2excel.py -r ../example/results/ -i True
+    python3 results2csv.py -r ../example/results/ -d ../example/demo_database.json -i True
 
 '''
 import argparse
@@ -67,7 +67,7 @@ def load_results(resultdir: str, embeddings: list, models: list) -> pd.DataFrame
     
     return df
 
-def process_df(df: pd.DataFrame, resultdir: str) -> tuple:
+def process_df(df: pd.DataFrame, resultdir: str, json_file: str) -> tuple:
     """
     Function to process the DataFrame and calculate the average score\n
     \n
@@ -93,7 +93,7 @@ def process_df(df: pd.DataFrame, resultdir: str) -> tuple:
     df_merge = df_merge.rename_axis("pmid").reset_index()  
     
     # Read JSON file with abstracts into a DataFrame
-    df_abs = pd.read_json(resultdir + 'predict_pmids.json', convert_axes=False)
+    df_abs = pd.read_json(json_file, convert_axes=False)
     
     df_merge['pmid'] = df_merge.pmid.astype(int)
     
@@ -110,6 +110,7 @@ if __name__ == "__main__":
     parser=argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("-r", dest="results_directory", required=True, help="Provide the path to the positive pmid file")
     parser.add_argument("-i", dest="intermed_storage", required=True, help="Provide boolean to indicate if intermediate storage is required")
+    parser.add_argument("-d", dest="json_file", required=True, help="Provide the path to the positive pmid file")
     
     # Read arguments from the command line
     args=parser.parse_args()
@@ -123,7 +124,7 @@ if __name__ == "__main__":
     
     # Merge with the scores and calculate the average score
     # The average score is calculated by multiplying the prediction with the score
-    df_merge, df_abs = process_df(df, args.results_directory)
+    df_merge, df_abs = process_df(df=df, resultdir=args.results_directory, json_file=args.json_file)
 
     if args.intermed_storage:
         df['pmid'] = df.pmid.astype(int)
@@ -135,9 +136,8 @@ if __name__ == "__main__":
         
         # sort by pmid, method, embedding
         df = df.sort_values(by=['pmid', 'method', 'embedding'])
+        df.to_csv(args.results_directory +'/intermediate_storage.csv', index=False)
         
-        df.to_excel(args.results_directory +'/scored_overview.xlsx', index=False)
-
     # Sort on mean score
     df_merge = df_merge.sort_values(by ='mean')
 
@@ -145,5 +145,5 @@ if __name__ == "__main__":
     df_tokeep =  pd.concat([df_merge.head(30), df_merge.tail(30)], ignore_index=True).sample(frac=1).reset_index(drop=True)
     
     # Save the results to an Excel
-    df_merge.to_excel(args.results_directory +'/merged_and_scored.xlsx', index=False)
-    df_tokeep.drop(columns=["mean","std","sum"]).to_excel(args.results_directory +'/for_validation.xlsx', index=False)
+    df_merge.to_csv(args.results_directory +'/merged_and_scored.csv', index=False)
+    df_tokeep.drop(columns=["mean","std","sum"]).to_csv(args.results_directory +'/for_validation.csv', index=False)

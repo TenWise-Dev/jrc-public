@@ -46,11 +46,23 @@ def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
 
     Entrez.email = entrez_email
     
+    # If the output file already exists, check which records are already downloaded
+    try:
+        with open(outfile, 'r') as handle:
+            records = Medline.parse(handle)
+            downloaded_pmids = [rec.get('PMID') for rec in records]
+            pmids = [pmid for pmid in pmids if pmid not in downloaded_pmids]
+            
+            # Print the amount of records that are already downloaded
+            print(f"{len(downloaded_pmids)} records are already downloaded")
+    except:
+        pass
+    
     # Make lists of 10000 PMIDs to prevent overloading the server
     pmid_batches = [pmids[i:i+10000] for i in range(0, len(pmids), 10000)]
     
     # Open the output file for saving the records
-    out_handle = open(outfile, "w", encoding="UTF-8")
+    out_handle = open(outfile, "a", encoding="UTF-8")
     
     for i, pmid_batch in enumerate(pmid_batches):
         # Concatenate the PMIDs to a string

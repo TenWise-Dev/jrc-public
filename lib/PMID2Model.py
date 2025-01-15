@@ -11,10 +11,12 @@ The script has five required arguments. ::
     -n : The path to the negative embeddings file
     -c : The path to the config JSON file
     -m : The path to the models folder
+    -o : The path to the output file
+    -ml : A list of models to load, comma separated
     
     Usage:
     
-    python3 PMID2Model.py -p ../example/demo_pos_embeddings.npz -n ../example/demo_neg_embeddings.npz -c ../example/demo_config.json -m ../YOUR_FOLDER/models/
+    python3 PMID2Model.py -p ../example/demo_pos_embeddings.npz -n ../example/demo_neg_embeddings.npz -c ../example/demo_config.json -m ../YOUR_FOLDER/models/ -o ../YOUR_FOLDER/results.csv -ml randomforest,adaboost
 
 """
 
@@ -37,7 +39,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 from tqdm import tqdm
 
-def load_classifiers(config: dict) -> dict:
+def load_classifiers(config: dict, model_load: list) -> dict:
     # Make docstring with rst syntax
     """
     Load the classifiers from the config file.\n
@@ -50,6 +52,18 @@ def load_classifiers(config: dict) -> dict:
     """
     
     included_classifiers = [model for model, include in config["models_include"].items() if include == True] 
+    
+    model_dict = {
+        "lr": "logistic_regression",
+        "rf": "randomforest",
+        "gb": "gradientboost",
+        "ab": "adaboost"
+    }
+                
+    # Slice the classifiers if model_load argument is provided
+    if args.model_load is not None:
+        model_load = args.model_load.split(',')
+        included_classifiers = [model for model in included_classifiers if model_dict[model] in model_load]
                 
     classifiers = {}
     
@@ -287,7 +301,9 @@ if __name__ == "__main__":
     parser.add_argument("-p", dest="pos_file", required=True, help="Provide the path to the positive embeddings file")
     parser.add_argument("-n", dest="neg_file", required=True, help="Provide the path to the negative embeddings file")
     parser.add_argument("-c", dest="config_file", required=True, help="Provide the path to the config JSON file")
-    parser.add_argument("-m", dest="models_folder", required=False, help="Provide the path to the models folder")
+    parser.add_argument("-m", dest="models_folder", required=True, help="Provide the path to the models folder")
+    parser.add_argument("-o", dest="output_file", required=False, help="Provide the path to the output file for saving the results")
+    parser.add_argument("-ml", dest="model_load", required=False, help="A list of models to load, comma separated")
 
     # Read arguments from the command line
     args=parser.parse_args()
@@ -296,7 +312,7 @@ if __name__ == "__main__":
     with open(args.config_file, 'r') as file:
         config = json.load(file)
     
-    classifiers = load_classifiers(config = config)
+    classifiers = load_classifiers(config = config, model_load = args.model_load)
         
     # Read the embedding set
     pos_embeddings = load_embeddings(embedding_file=args.pos_file)
@@ -327,10 +343,17 @@ if __name__ == "__main__":
     # Convert all scores to one DataFrame
     df_scores = convert_scores(cv_scores = cv_score_dict, test_scores = test_score_dict)  
     
-    # Print the scores
+     
+    # Print or save the scores
     print("---------------------------------------------------")
-    print("Results:")
-    print(df_scores)   
+        
+    # Check if output file argument is provided
+    if args.output_file is not None:
+        df_scores.to_csv(args.output_file, index=True)
+        print(f"Results saved to {args.output_file}")
+    else:
+        print("Results:")
+        print(df_scores)  
         
     # Check if models folder argument is provided
     if args.models_folder is not None:

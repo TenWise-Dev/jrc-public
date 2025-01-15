@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 '''
 This script is used to update the PMID JSON file with additional information from a tab-delimited txt file.
 The script has three required arguments. ::
@@ -21,7 +22,6 @@ import json
 import argparse
 
 def database_merge(json_file: str, update_file: str, output_file: str) -> None:
-    
     # Make docstring with rst syntax
     """
     Update the main database JSON file with the information from another update JSON file. Save it back to a new updated database JSON file.\n

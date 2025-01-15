@@ -28,7 +28,7 @@ import time
 
 
 def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
-
+    # Make docstring with rst syntax
     ''' 
     Takes a set of PMIDs and retrieves the records. Save the results to a temporary file.\n\n
     
@@ -87,7 +87,7 @@ def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
     out_handle.close()
     
 def parse_records(file: str) -> dict:   
-    
+    # Make docstring with rst syntax
     ''' 
     Takes a file with records and parses out the information.\n\n
     
@@ -110,6 +110,7 @@ def parse_records(file: str) -> dict:
     return record_dict
 
 def medline_to_json(records: dict, outfile: str) -> None:
+    # Make docstring with rst syntax
     """
     Parse the record output file to enrich a JSON-structured output file with the information from the NCBI database used to update a main database file.\n
     The file is structured as:\n
@@ -141,28 +142,56 @@ def medline_to_json(records: dict, outfile: str) -> None:
     for pmid in records:
         record = records[pmid]
         
-        # Get the authors if the information is available
+         # Get the authors if the information is available
         if record.get('FAU') is not None:
             authors =" and ".join([au for au in record.get('FAU')])
+            first_author = record.get('FAU')[0]
         else:
             authors = ""
+            first_author = ""
             
+        if record.get('MH') is not None:
+            mesh =";".join([mh for mh in record.get('MH')])
+        else:
+            mesh = ""
+
+        if record.get('RN') is not None:
+            substances =";".join([rn for rn in record.get('RN')])
+        else:
+            substances = ""
+            
+        if record.get('PT') is not None:
+            article_type ="; ".join([pt for pt in record.get('PT')])
+        else:
+            article_type = ""    
+            
+        doi = ""
+
         # Retrieve DOI if available
-        if record.get('AID') is not None:
+        if record.get('AID') is not None and any(aid.startswith('10.') for aid in record.get('AID')):
             # Get the DOI from the list of AID's, slice the first DOI and remove the '[doi]' tag
-            doi = [aid for aid in record.get('AID') if aid.startswith('10.') and aid.endswith('[doi]')][0]
+            doi = [aid for aid in record.get('AID') if aid.startswith('10.') and aid.endswith('[doi]')]
+            if len(doi) > 0:
+                doi = doi[0]
+            else:
+                doi = ""
             
         # Create a dictionary with the information to be added to the JSON file
         output_list[pmid] = {
             "doi":doi,
             "author":authors, 
+            "first_author":first_author,
             "title":record.get('TI'), 
             "year":record.get('DP'), 
             "journal":record.get('JT'), 
             "volume":record.get('VI'), 
             "issue":record.get('IP'), 
+            "article_type":article_type,
             "pages":record.get('PG'), 
-            "abstract":record.get('AB')
+            "abstract":record.get('AB'),
+            "issn":record.get('IS'),
+            "mesh":mesh,
+            "substances":substances
             }
               
     # Write the updated data back to the JSON file  

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 '''
 This script takes a folder with TEI files produced by Grobid and parses Materials and Methods section. ::
 
@@ -19,7 +21,8 @@ import os
 import json
 from bs4 import BeautifulSoup
 
-def parse_tei_file(tei_file):
+def parse_tei_file(tei_file: str):
+    # Make docstring with rst syntax
     ''' 
     Helper function that takes a path to a TEI file as an argument and returns its body.\n\n
     
@@ -34,7 +37,8 @@ def parse_tei_file(tei_file):
         namespaces = {"TEI": "http://www.tei-c.org/ns/1.0"}
         return soup.select_one("TEI|body", namespaces=namespaces)
 
-def extract_materials_methods(body, verbose) -> dict:
+def extract_materials_methods(body, verbose: bool) -> dict:
+    # Make docstring with rst syntax
     ''' 
     Helper function that the BeautifulSoup Tag object with body and returns JSON representation
      of materials and methods sections. .\n\n
@@ -86,7 +90,8 @@ def extract_materials_methods(body, verbose) -> dict:
     return result
 
 
-def process_tei_files(tei_folder, output_folder, verbose) -> None:
+def process_tei_files(tei_folder: str, output_folder: str, verbose: bool) -> None:
+    # Make docstring with rst syntax
     ''' 
     Function that processes all TEI files in a folder and writes the extracted materials and methods sections to JSON files.\n\n
     

@@ -10,6 +10,7 @@ The script has five required and three optional arguments. ::
     -p: The path to the PMIDs file
     -d: The path to the database file
     -o: The name of the output file
+    -e: The type of embedding to use (abstract for only abstracts, title for only titles, title_abstract for abstracts and titles)
 
     Optional:
     --save-model: Name for the saved model
@@ -19,13 +20,13 @@ The script has five required and three optional arguments. ::
     
     Usage:
     
-    python3 PMID2Doc2Vec.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_doc2vec_embeddings.npz
+    python3 PMID2Doc2Vec.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_doc2vec_embeddings.npz -e 1
 
     If you want to save the trained model:
-    python3 PMID2Doc2Vec.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_doc2vec_embeddings.npz --save-model doc2vec.model --epochs 50 --workers 8
+    python3 PMID2Doc2Vec.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_doc2vec_embeddings.npz --save-model doc2vec.model --epochs 50 --workers 8 -e 1
 
     If you want to use a pre-trained model:
-    python3 PMID2Doc2Vec.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_doc2vec_embeddings.npz --load-model model_name.model
+    python3 PMID2Doc2Vec.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_doc2vec_embeddings.npz --load-model model_name.model -e 1
     
 '''
 
@@ -79,54 +80,59 @@ def fit_model(abstracts, n_epochs, n_workers) ->  Doc2Vec:
     
     return model
 
-def embed_abstracts(model, abstracts) -> list[str]:
+def embed_texts(model, texts) -> list[str]:
     # Make docstring with rst syntax
     '''
-    Embed the abstracts using densim Doc2Vec model.\n
+    Embed the texts using densim Doc2Vec model.\n
     \n
     Parameters:\n
     - model: The Doc2Vec model\n
-    - abstracts: Dict of PMID keys and abstracts\n
+    - texts: Dict of PMID keys and texts\n
     \n
     Returns:\n
-    - document_embeddings: The embeddings of the abstracts as np array
+    - document_embeddings: The embeddings of the texts as np array
     - np_pmids: The PMIDs as a numpy array
     '''
     
-    pmids = list(abstracts.keys())
-    abstract_embeddings = []
+    pmids = list(texts.keys())
+    embeddings = []
     for pmid in pmids:
         if pmid in model.dv: # If we are embedding abstract that was used in the training
-            abstract_embeddings.append(model.dv[pmid]) # we can read it directly from the model
+            embeddings.append(model.dv[pmid]) # we can read it directly from the model
         else:
             # otherwise we need to embed it:
-            ab = remove_stopwords(abstracts[pmid])
-            tokens = simple_preprocess(ab)
-            abstract_embeddings.append(model.infer_vector(tokens))
+            text = remove_stopwords(texts[pmid])
+            tokens = simple_preprocess(text)
+            embeddings.append(model.infer_vector(tokens))
 
     # Make np array out of the pmids
-    np_pmids = np.array(list(abstracts.keys()))
+    np_pmids = np.array(list(texts.keys()))
+    
+    document_embeddings = np.array(embeddings)
 
-    return np.array(abstract_embeddings), np_pmids
+    return document_embeddings, np_pmids
 
 
 
-def get_abstracts(pmids: list, database_file: str) -> dict:
+def get_texts(pmids: list, database_file: str, embedding_type: str) -> dict:
     # Make docstring with rst syntax
     '''
-    Get the abstracts from the JSON database file for a list of PMIDs.\n
+    Get the texts from the JSON database file for a list of PMIDs.\n
     \n
     Parameters:\n
     - pmids: A list of PMIDs\n
     - database_file: The path to the JSON database file\n
+    - embedding_type: The type of embedding to use (1 for only abstracts, 2 for abstracts and titles)\n
     \n
     Returns:\n
-    - pmid_abstracts: A dictionary with PMIDs as keys and abstracts as values
-    - none_abstracts: The number of PMIDs with no abstracts
+    - pmid_texts: A dictionary with PMIDs as keys and texts as values\n
+    - none_abstracts: The number of PMIDs with no abstracts\n
+    - none_titles: The number of PMIDs with no titles\n
     '''
     
-    pmid_abstracts = dict()
+    pmid_texts = dict()
     none_abstracts = 0
+    none_titles = 0
     
     # Stream over the JSON file
     with open(database_file, 'rb') as file:
@@ -135,12 +141,30 @@ def get_abstracts(pmids: list, database_file: str) -> dict:
         
         # Iterate over the JSON objects
         for item in parser:
-            if item['pmid'] in pmids and item['abstract'] is not None:
-                pmid_abstracts[item['pmid']] = item['abstract']
-            if item['abstract'] is None:
-                none_abstracts += 1
+            if item['pmid'] in pmids:
+                text = ''
+                store = False
+                if embedding_type not in ["abstract", "title", "title_abstract"]:
+                    raise ValueError("Invalid embedding type. Please use abstract, title or title_abstract")
+                
+                if embedding_type == "title_abstract" or embedding_type == "title":
+                    if item['title'] is not None:
+                        text += item['title']
+                        store = True
+                    else:
+                        none_titles += 1
+                        
+                if embedding_type == "title_abstract" or embedding_type == "abstract":
+                    if item['abstract'] is not None:
+                        text += item['abstract']
+                        store = True
+                    else:
+                        none_abstracts += 1
+                    
+                if store: 
+                    pmid_texts[item['pmid']] = text                       
     
-    return pmid_abstracts, none_abstracts
+    return pmid_texts, none_abstracts, none_titles
 
 
 
@@ -151,6 +175,8 @@ if __name__ == "__main__":
     parser.add_argument("-p", dest="pmid_file", required=True, help="Provide the path to the positive pmid file")
     parser.add_argument("-d", dest="pmid_database", required=True, help="Provide the path to the datafolder")
     parser.add_argument("-o", dest="output_file", required=True, help="Provide the name of the output CSV file")
+    parser.add_argument("-e", dest="embedding_type", required=True, default="abstract", help="Mode for embedding: abstract for only abstracts, title for only titles, or title_abstract for abstracts and titles")
+    
     parser.add_argument("--save-model", dest="save_model", required=False, default=None, help="Provide the path to save the model")
     parser.add_argument("--load-model", dest="load_model", required=False, default=None, help="Provide the path to load the model from")
     parser.add_argument("--epochs", dest="epochs", required=False, type=int, default=40, help="Number of epochs for training the model")
@@ -166,9 +192,20 @@ if __name__ == "__main__":
     print_time(f"PMIDs read from file: {len(pmids)}" )  
     
     # Read the database JSON file
-    pmid_abstracts, abs_none = get_abstracts(pmids=pmids, database_file=args.pmid_database)
+    pmid_texts, abs_none, title_none = get_texts(
+        pmids=pmids, 
+        database_file=args.pmid_database, 
+        embedding_type=args.embedding_type
+        )
     
-    print_time(f"PMIDs with no abstracts: {abs_none}" )
+    if args.embedding_type == "title_abstract":
+        print_time(f"PMIDs with no titles: {title_none}")
+        print_time(f"PMIDs with no abstracts: {abs_none}")
+    elif args.embedding_type == "title":
+        print_time(f"PMIDs with no titles: {title_none}")
+    else:
+        print_time(f"PMIDs with no abstracts: {abs_none}")
+    
     print_time(f"Loading model..." )
 
     print(f"{datetime.now().time().strftime('%H:%M:%S')} - Loading model...")
@@ -180,7 +217,7 @@ if __name__ == "__main__":
 
     # Train the model if it is not provided
     else:
-        model = fit_model(pmid_abstracts, n_epochs=args.epochs, n_workers=args.workers)
+        model = fit_model(pmid_texts, n_epochs=args.epochs, n_workers=args.workers)
         print_time(f"Done training model")
     
     print("-----------------------------")
@@ -193,9 +230,9 @@ if __name__ == "__main__":
     print_time("Embedding abstracts...")
     
     # Call the embed function
-    abstracts_embedded, np_pmids = embed_abstracts(model=model, abstracts=pmid_abstracts)
+    texts_embedded, np_pmids = embed_texts(model=model, texts=pmid_texts)
     
     print_time("Done, saving results to output file")
     print("----------------------------------------------")
 
-    np.savez_compressed(args.output_file, embeddings=abstracts_embedded, keys=np_pmids)
+    np.savez_compressed(args.output_file, embeddings=texts_embedded, keys=np_pmids)

@@ -26,6 +26,17 @@ import json
 from tqdm import tqdm
 
 def read_keyword_file(file_path: str) -> list:
+    # Make docstring with rst syntax
+    """
+    This function is used to read the keywords from a file\n\n
+    
+    Parameters:\n
+    - file_path: The path to the file\n
+    \n
+    Returns:\n
+    - list: The list of keywords\n
+    """
+    
     keywords = []
 
     with open(file_path, 'r') as file:
@@ -42,6 +53,18 @@ def read_keyword_file(file_path: str) -> list:
 
 
 def process_text(text: str, keyword_list: list) -> dict:
+    # Make docstring with rst syntax
+    """
+    This function is used to flag the title of the records with a set of negative keywords (if at least one keyword is found in the title, the pmid is flagged)\n\n
+    
+    Parameters:\n
+    - text: The text to be processed\n
+    - keyword_list: The list of keywords\n
+    \n
+    Returns:\n
+    - dict: The result dictionary\n
+    """
+    
     result_dict = {}
     if text is None:
         return result_dict

@@ -28,7 +28,7 @@ import time
 
 
 def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
-
+    # Make docstring with rst syntax
     ''' 
     Takes a set of PMIDs and retrieves the records. Save the results to a temporary file.\n\n
     
@@ -108,6 +108,7 @@ def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
     out_handle.close()
     
 def parse_records(file: str) -> dict:   
+    # Make docstring with rst syntax
     ''' 
     Takes a file with records and parses out the information.\n\n
     
@@ -130,6 +131,7 @@ def parse_records(file: str) -> dict:
     return record_dict
 
 def medline_to_json(records: dict, outfile: str) -> None:
+    # Make docstring with rst syntax
     """
     Parse the record output file to enrich a JSON-structured output file with the information from the NCBI database to act as a main database file.\n
     The main database output file is structured as:\n

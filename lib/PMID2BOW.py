@@ -9,11 +9,12 @@ The script has three required arguments. ::
     -j : The path to the json database
     -k : The path to keyword file
     -o : The path to the output file
-    
+    -e: The type of embedding to use (abstract for only abstracts, title_abstract for abstracts and titles)
+
     
     Usage:
     
-    python3 PMID2BOW.py -j ../example/demo_pmids.json -k ../example/keyword_file.txt -o ../YOUR_FOLDER/demo_test_bow.npz
+    python3 PMID2BOW.py -j ../example/demo_pmids.json -k ../example/keyword_file.txt -o ../YOUR_FOLDER/demo_test_bow.npz -e 1
     
 '''
 
@@ -25,6 +26,17 @@ import pandas as pd
 import numpy as np
 
 def read_keyword_file(file_path: str) -> dict:
+    # Make docstring with rst syntax
+    """
+    This function is used to read the keywords from a file\n\n
+    
+    Parameters:\n
+    - file_path: The path to the file\n
+    \n
+    Returns:\n
+    - dict: The dictionary of keywords\n
+    """
+    
     bow = []
     with open(file_path, 'r') as file:
         for line in file:
@@ -35,6 +47,18 @@ def read_keyword_file(file_path: str) -> dict:
 
 
 def process_text(text: str, bow: list) -> dict:
+    # Make docstring with rst syntax
+    """
+    This function is used to count keyword hits in a given text\n\n
+    
+    Parameters:\n
+    - text: The text to process\n
+    - bow: The list of keywords\n
+    \n
+    Returns:\n
+    - dict: The dictionary of keywords and their counts\n
+    """
+    
     result_dict = {}
   
     for instance in bow:
@@ -67,6 +91,7 @@ if __name__ == "__main__":
     parser.add_argument("-j", dest = "json_file",    required = True,  help = "Provide the path to the datafolder")
     parser.add_argument("-o", dest = "output_file",  required = True,  help = "Provide the name of the output file")
     parser.add_argument("-k", dest = "keyword_file", required = True,  help = "Provide the name of the keyword_file")
+    parser.add_argument("-e", dest="embedding_type", required=True, default="abstract", help="Mode for embedding: abstract for only abstracts, title_abstract for abstracts and titles")
 
     args=parser.parse_args()
 
@@ -80,7 +105,12 @@ if __name__ == "__main__":
         # Iterate over the JSON objects
         for item in parser:
             counter = counter + 1
-            result[item['pmid']] =process_text(text = item['abstract'], bow = category_dict)
+            if args.embedding_type == 1:
+                text = item['abstract']
+            else:
+                text = item['title'] + item['abstract']
+            
+            result[item['pmid']] =process_text(text = text, bow = category_dict)
   
     mypd = pd.DataFrame.from_dict(result).transpose() 
   

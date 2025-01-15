@@ -38,7 +38,7 @@ def load_embeddings(embedding_file: str) -> np.ndarray:
     embeddings = np.load(embedding_file)
     return embeddings
 
-def predict_embeddings(embeddings: np.ndarray, models_file: str) -> None:
+def predict_embeddings(embeddings: np.ndarray, models_file: str, output_file: str) -> None:
     # Make docstring with rst syntax
     """
     Predict the class of the embeddings using the provided model.\n
@@ -74,7 +74,7 @@ def predict_embeddings(embeddings: np.ndarray, models_file: str) -> None:
     df_results = df_results[["PMID", "Prediction", "Probability", "Model"]].set_index("PMID").T.to_dict()
     
     # Save the dictionary to a JSON file
-    with open(args.output_file, 'w') as file:
+    with open(output_file, 'w') as file:
         json.dump(df_results, file, indent=4)
     
     pass
@@ -94,6 +94,6 @@ if __name__ == "__main__":
     embeddings = load_embeddings(embedding_file=args.embedding_file)
     
     # Predict the class of the embeddings using the provided model and save the results to a dictionary
-    predict_embeddings(embeddings=embeddings, models_file=args.models_file)
+    predict_embeddings(embeddings=embeddings, models_file=args.models_file, output_file=args.output_file)
     
     

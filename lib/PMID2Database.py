@@ -59,7 +59,10 @@ def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
         pass
     
     # Make lists of 10000 PMIDs to prevent overloading the server
-    pmid_batches = [pmids[i:i+10000] for i in range(0, len(pmids), 10000)]
+    pmid_batch_size = min(10000, len(pmids))
+    pmid_batches = [pmids[i:i+pmid_batch_size] for i in range(0, len(pmids), pmid_batch_size)]
+    
+    print(f"Going to download {len(pmids)} records")
     
     # Open the output file for saving the records
     out_handle = open(outfile, "a", encoding="UTF-8")
@@ -81,7 +84,7 @@ def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
         # Loop over the records in batches
         for start in range(0, count, batch_size):
             end = min(count, start+batch_size)
-            print("Going to download record %i to %i" % (start+1+(i*10000), end+(i*10000)))
+            print("Going to download record %i to %i" % (start+1+(i*pmid_batch_size), end+(i*pmid_batch_size)))
             
             try:
                 # Fetch the records

@@ -23,6 +23,7 @@ import ijson
 import argparse
 import re
 import json
+from tqdm import tqdm
 
 def read_keyword_file(file_path: str) -> dict:
     # Make docstring with rst syntax
@@ -120,7 +121,7 @@ if __name__ == "__main__":
         parser = ijson.items(file, 'item')
         result = {}
         # Iterate over the JSON objects
-        for item in parser:
+        for item in tqdm(parser):
         # Process each JSON object as needed
             result[item['pmid']] = {
                 "tagging_scores": process_text(

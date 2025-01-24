@@ -39,6 +39,8 @@ if __name__ == "__main__":
         # Iterate over the JSON objects
         for item in tqdm(parser):
             if 'is_oa' in item and 'pdf_url' in item:
+                if item["pdf_url"] == None:
+                    continue
                 if item['is_oa'] and item['pdf_url'] != "NA":
                     output_dict[item['pmid']] = item['pdf_url']
                     

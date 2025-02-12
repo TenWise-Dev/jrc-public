@@ -19,12 +19,13 @@ Version: |version|
    :maxdepth: 1
    :caption: Workflow docs
 
+   intro_workflows.rst
    workflow_system_preparation.rst
    workflow_database_expansion.rst
    workflow_model_building.rst
    workflow_abstract_prediction.rst
    tei_extraction.rst
-   
+      
 
 .. toctree::
    :maxdepth: 1
@@ -38,10 +39,6 @@ Version: |version|
 
    downloads.rst
    
-
-
-
-
 Indices and tables
 ==================
 

@@ -1,7 +1,7 @@
-Predicting abstracts
+Classifying articles
 ====================
 
-This workflow describes the usage of the existing models to run a prediction on the abstracts. Here we describe a prediction with a single embedding. A shell script wrapper for all embedding methods is available in the repository.
+This workflow describes the usage of the existing models to run a prediction on the PubMed articles. Here we describe a prediction with a **single embedding**. A shell script wrapper for all embedding methods is available in the repository (*workflow_predict.sh*). This shell script serves as a template, you might need to refactor and change parts of this shell script to match your specific system set-up (memory, disk permission etc) or use case. For example, depending on your systems memory and the number of articles you want to do the predictions on, you may need to run parts of the scripts in parallel.
 
 An embedding with sentence transformers is done as follows ::
 
@@ -30,7 +30,7 @@ The embedding can now be used in a prediction script. It is important to do this
 
     more $workdir/predictions.json
 
-This gives the following output ::
+This gives the following output. Please note that we only show the output for the combination of RandomForest with the  ::
 
 
     {
@@ -68,14 +68,6 @@ This yields additional fields in the JSON database like ::
         "Model": "RandomForestClassifier"
     },
 
-However, since we have multiple models and multiple embeddings, this approach should be done in a looped way in a shell script. These are available in the lib directory. 
+However, since we have multiple models and multiple embeddings, this approach should be done in a looped way in a shell script. These are available in the lib directory. Make sure to read the docucment **Usage of the workflows** first. 
 
-.. warning::
-    Since we are still working on the models, these shell scripts are work in progress! Als we may find that the original scripts on which the shell scripts are build need to be addopted as the project progresses. So do not build production type workflows yet, but only use these scripts for inspiration. The shell scripts that we currently have are ::
-
-        workflow_process_results.sh
-        workflow_modelling.sh
-        workflow_predict.sh
-        workflow_predict_new.sh
-        workflow_pdf2text.sh
 

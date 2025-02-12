@@ -23,7 +23,12 @@ The  :ref:`my-query2pmid-label` script executes the queries at real time on the 
    workdir=/tmp/examplejrc/
    mkdir $workdir
 
-   ./Query2PMID.py -q ../example/example_query.xlsx -o $workdir  -e youremail@email.com
+   
+    ./Query2PMID.py \
+    -q ../example/example_query.xlsx \
+    -o $workdir \
+    -r 100  \
+    -e youremail@email.com
  
    ls -ltrh $workdir
 
@@ -40,7 +45,11 @@ In the next steps, the abstracts for the PMIDs are retrieved using the :ref:`my-
 
     head -10 $workdir/organoid_query_predict_pmids.txt > $workdir/tmp_pmids.txt
 
-    ./PMID2Database.py -p $workdir/tmp_pmids.txt -j $workdir/tmp_json.txt -r $workdir/tmp_rec.txt -e  youremail@email.com
+    ./PMID2Database.py \
+    -p $workdir/tmp_pmids.txt \
+    -j $workdir/tmp_json.txt \
+    -r $workdir/tmp_rec.txt \
+    -e youremail@email.com
 
     more $workdir/tmp_json.txt
 
@@ -80,7 +89,10 @@ OpenAlex
 
 This is an R script, because we make use of an open source code library that is only available in R (to our knowledge) ::
 
-    ./PMID2Openalex.R -p $workdir/tmp_pmids.txt -o $workdir/openalex.json -e your_email@email.com
+    ./PMID2Openalex.R \
+    -p $workdir/tmp_pmids.txt \
+    -o $workdir/openalex.json \
+    -e your_email@email.com
 
     more $workdir/openalex.json
 
@@ -117,7 +129,7 @@ The next source of meta information is tagging with the keywords that denote the
 
     ./PMID2Tags.py \
     -j $workdir/tmp_json.txt \
-    -k ../data/all_keywords_new_format.txt \
+    -k ../data/keywords_for_tagging_2024_12_15.txt \
     -o $workdir/tagged_abstracts_json.txt
 
 

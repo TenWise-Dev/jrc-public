@@ -14,22 +14,27 @@ As a first step we need a positive and a negative data set. The positive set in 
 Feature generation
 ------------------
 
-There are a number of scripts that can be used for the conversion of the articles into feature tables, which can subsequently be used for classification. They are described in detail in the Scripts/Modelling section. Typicaaly the uasge is
+There are a number of scripts that can be used for the conversion of the articles into feature tables, which can subsequently be used for classification. They are described in detail in the Scripts/Modelling section. Typically the usage is
 
 
 Run the script ::
 
+    # Use same wokring dir as in th eother example
+    workdir=/tmp/examplejrc/
+
     ./PMID2Embed.py \
-    -p ../data/POS_PMID_List_Feb_2024.txt \
-    -d ../data/POS_Database_Feb_2024.json \
-    -o /tmp/pos.npz
+    -p ../data/POS_PMID_List_2024_03_17.txt \
+    -d ../data/POS_Database_2024_03_17.json \
+    -e abstract \
+    -o $workdir/pos.npz
 
 The resulting file is an npz data object that serves as input file for the model building script. In a similar way we can create a file for the negatve data set by running ::
 
-    python3 PMID2Embed.py \
-    -p ../data/NEG_PMID_List_Feb_2024.txt \
-    -d ../data/NEG_Database_Feb_2024.json \
-    -o /tmp/neg.npz
+    ./PMID2Embed.py \
+    -p ../data/NEG_PMID_List_2024_02_21.txt \
+    -d ../data/NEG_Database_2024_02_21.json \
+    -e abstract \
+    -o $workdir/neg.npz
 
  
 Create the model
@@ -37,11 +42,11 @@ Create the model
 
 Next we use the embeddings for the positive and negative articles as input for the modelling script, using the following call ::
 
-   python3 PMID2Model.py \
-   -p /tmp/pos.npz \
-   -n /tmp/neg.npz \
+   ./PMID2Model.py \
+   -p $workdir/pos.npz \
+   -n $workdir/neg.npz \
    -c ../example/demo_config.json \
-   -m /tmp/
+   -m $workdir/
 
 
 This yields 2 types of output. The first is a table with the overview statistics ::

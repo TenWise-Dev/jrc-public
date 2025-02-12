@@ -22,7 +22,7 @@ copyright = '2024, JRC'
 author = 'NAM consortium'
 
 # The full version, including alpha/beta/rc tags
-version = 'November 2024'
+version = 'January 2025'
 
 
 # -- General configuration ---------------------------------------------------

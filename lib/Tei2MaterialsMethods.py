@@ -53,7 +53,6 @@ def extract_materials_methods(body, verbose: bool) -> dict:
     if verbose:
         print("Extracting 'Materials and Methods' section")
     
-    materials_methods_level = None
     found_materials_methods = False
     result = {'Materials and Methods': []}
     
@@ -66,26 +65,36 @@ def extract_materials_methods(body, verbose: bool) -> dict:
             continue
 
         head_text = head.get_text().lower()
-        current_level = None
 
         # Check if we're starting or continuing the 'Materials and Methods' section
-        if 'materials' in head_text or 'methods' in head_text or found_materials_methods:
-            if head_text == 'materials and methods': # First time in the section
-                found_materials_methods = True
-                materials_methods_level = current_level
-            elif materials_methods_level is not None and current_level is not None and current_level <= materials_methods_level:
-                break  # End of section by level comparison
-            elif head_text in ['results', 'discussion', 'acknowledgements']:
-                break  # End of section based on section name
 
-            # Extract content of the div
+        if found_materials_methods: #this means that we did not find contents in M&M and are taking the divs below
+            if head_text in ['results', 'discussion', 'acknowledgements']:
+                break  # End of section based on section name
             div_contents = [
                 {child.name: child.get_text(strip=True)}
                 for child in div.find_all(recursive=False) if child.name != 'head'
             ]
-            
-            section_header = f"h{current_level}" if current_level else "h"
+            section_header = "h"
             result['Materials and Methods'].append({"header": section_header, "title": head.get_text(), "content": div_contents})
+            continue # take the divs below
+
+        if 'materials' in head_text or 'methods' in head_text:
+            found_materials_methods = True
+            non_head_divs = [child for child in div.find_all(recursive=False) if child.name != 'head']
+            if len(non_head_divs) == 0:
+                continue
+
+            else: # there is content in M&M
+                div_contents = [
+                    {child.name: child.get_text(strip=True)}
+                    for child in div.find_all(recursive=False) if child.name != 'head'
+                ]
+                section_header = "h"
+                result['Materials and Methods'].append({"header": section_header, "title": head.get_text(), "content": div_contents})
+                break
+
+
 
     return result
 

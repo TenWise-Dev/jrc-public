@@ -5,7 +5,7 @@ Workflow for creating models
 *****************************
  
 This script is used to create the models using the embeddings.
-The embedding types are: transformer, doc2vec, tfid, bag of words (positive keywords), bag of words (negative keywords)
+The embedding types are: transformer, doc2vec, tfidf, bag of words (positive keywords)
 The models used for prediction are: randomforest, adaboost, logistic_regression, gradientboost
 
 The embedding_type argument is used to specify the data type for the embeddings. 
@@ -13,7 +13,7 @@ The options are title, abstract, title_abstract
 
 Optional are the model_indices and postfix_indices arguments.
 The model_indices argument is used to specify the comma-separated indices of the models to be used. Options are 0: randomforest, 1: adaboost, 2: logistic_regression, 3: gradientboost.
-The postfix_indices argument is used to specify the comma-separated indices of the embedding methods to be used. Options are 0: transformer, 1: doc2vec, 2: tfid.
+The postfix_indices argument is used to specify the comma-separated indices of the embedding methods to be used. Options are 0: transformer, 1: doc2vec, 2: tfidf.
 
 USAGE ::
  
@@ -85,7 +85,7 @@ if [ ! -d "$workdir/models" ]; then
 fi
 
 # Create subdirectories for each model postfix
-for model_postfix in "transformer" "doc2vec" "tfid"; do
+for model_postfix in "transformer" "doc2vec" "tfidf"; do
     if [ ! -d "$workdir/models/$model_postfix" ]; then
         mkdir -p $workdir/models/$model_postfix
     fi
@@ -106,7 +106,7 @@ echo "================================="
 
 # Create list of models and embeddings and their corresponding postfixes and scripts
 mymodels=("randomforest" "adaboost" "logistic_regression" "gradientboost")
-model_postfixes=("transformer" "doc2vec" "tfid")
+model_postfixes=("transformer" "doc2vec" "tfidf")
 postfix_scripts=("PMID2Embed.py" "PMID2Doc2Vec.py" "PMID2Tfidf.py")
 
 # Get indices from arguments $8 and $9
@@ -201,7 +201,7 @@ for i in "${!selected_postfixes[@]}"; do
         fi
 
     # TFIDF
-    elif [ $model_postfix == "tfid" ]; then
+    elif [ $model_postfix == "tfidf" ]; then
         if [ -f "$workdir/embeddings/pos_embedding_$model_postfix.npz" ]; then
             echo "Skipping positive embedding for $model_postfix"
         else

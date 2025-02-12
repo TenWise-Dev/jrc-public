@@ -19,6 +19,12 @@ import ijson
 import argparse
 from tqdm import tqdm
 
+
+def show_source():
+    # Just an empty function to trigger Sphinx in showing the source documentation
+    pass
+
+
 if __name__ == "__main__":
     
     # Create a parser object and add arguments

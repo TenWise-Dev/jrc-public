@@ -63,7 +63,7 @@ def get_records(pmids: list, outfile: str, entrez_email: str) -> None:
     pmid_batches = [pmids[i:i+pmid_batch_size] for i in range(0, len(pmids), pmid_batch_size)]
     
     print(f"Going to download {len(pmids)} records")
-    
+        
     # Open the output file for saving the records
     out_handle = open(outfile, "a", encoding="UTF-8")
     
@@ -204,21 +204,21 @@ def medline_to_json(records: dict, outfile: str) -> None:
             
         # Create a dictionary with the information to be added to the JSON file
         output_list.append({
-            "pmid":pmid,
-            "doi":doi,
-            "author":authors, 
-            "first_author":first_author,
-            "title":record.get('TI'), 
-            "year":record.get('DP'), 
-            "journal":record.get('JT'), 
-            "volume":record.get('VI'), 
-            "issue":record.get('IP'), 
-            "article_type":article_type,
-            "pages":record.get('PG'), 
-            "abstract":record.get('AB'),
-            "issn":record.get('IS'),
-            "mesh":mesh,
-            "substances":substances
+            "pmid"          : pmid,
+            "doi"           : doi,
+            "author"        : authors, 
+            "first_author"  : first_author,
+            "title"         : record.get('TI'), 
+            "year"          : record.get('DP'), 
+            "journal"       : record.get('JT'), 
+            "volume"        : record.get('VI'), 
+            "issue"         : record.get('IP'), 
+            "article_type"  : article_type,
+            "pages"         : record.get('PG'), 
+            "abstract"      : record.get('AB'),
+            "issn"          : record.get('IS'),
+            "mesh"          : mesh,
+            "substances"    : substances
             })
               
     # Write the updated data back to the JSON file  

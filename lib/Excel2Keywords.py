@@ -36,9 +36,11 @@ def process_excel(excel_file: str) -> pd.DataFrame:
     # Read the Excel file sheetnames
     sheetnames = pd.ExcelFile(excel_file).sheet_names
     
-    # Extract the relevant sheets (Human anatomy, Models, Omics, Diseases)
+    # Extract the relevant sheets (Human anatomy, Models, Omics, Diseases, Cell Lines, Pathiophysiological)
+    relevant_sheetnames = ["HUMAN ANATOMY", "MODELS", "OMICS", "DISEASES", "CELL LINES", "PATHOPHYSIOLOGICAL"]    
+    
     # Regex on the sheet names should be used to extract the columns (since version numbers are also present)
-    relevant_sheets = [sheet for sheet in sheetnames if "HUMAN ANATOMY" in sheet.upper() or "MODELS" in sheet.upper() or "OMICS" in sheet.upper() or "DISEASES" in sheet.upper()]
+    relevant_sheets = [sheet for sheet in sheetnames if any(relevant_sheet in sheet.upper() for relevant_sheet in relevant_sheetnames)]
     
     # Read the relevant sheets
     df_dict = pd.read_excel(excel_file, sheet_name=relevant_sheets)

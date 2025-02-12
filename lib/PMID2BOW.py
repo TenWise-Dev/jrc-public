@@ -105,12 +105,22 @@ if __name__ == "__main__":
         # Iterate over the JSON objects
         for item in parser:
             counter = counter + 1
-            if args.embedding_type == 1:
-                text = item['abstract']
-            else:
-                text = item['title'] + item['abstract']
+            text = ''
             
-            result[item['pmid']] =process_text(text = text, bow = category_dict)
+            if args.embedding_type not in ["abstract", "title", "title_abstract"]:
+                raise ValueError("Invalid embedding type. Please use abstract, title or title_abstract")
+            
+            if args.embedding_type == "title_abstract" or args.embedding_type == "title":
+                if item['title'] is not None:
+                    text += item['title']
+                    store = True
+                    
+            if args.embedding_type == "title_abstract" or args.embedding_type == "abstract":
+                if item['abstract'] is not None:
+                    text += item['abstract']
+                    store = True
+            
+            result[item['pmid']] = process_text(text = text, bow = category_dict)
   
     mypd = pd.DataFrame.from_dict(result).transpose() 
   

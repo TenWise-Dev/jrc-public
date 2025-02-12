@@ -5,7 +5,7 @@ Workflow for predicting pmids
 *****************************
  
 This script is used to predict the pmids using the models trained on the embeddings.
-The embedding types are: transformer, doc2vec, tfid, bag of words (positive keywords), bag of words (negative keywords)
+The embedding types are: transformer, doc2vec, tfidf, bag of words (positive keywords)
 The models used for prediction are: randomforest, adaboost, logistic_regression, gradientboost
 
 USAGE ::
@@ -29,14 +29,13 @@ email=$5
 # Directories
 scriptdir=$repodir"/lib/"
 embed_modeldir=$repodir"/embedding_models/"
-classifierdir=$repodir"/classifier_models/"
+classifierdir=$repodir"/classifier_models/May_set007/"
 
 # Keywords file
 pos_keyword_file=$embed_modeldir/pos_keywords.txt
-neg_keyword_file=$embed_modeldir/neg_keywords.txt
 
 # Check if all the required files exist
-for file in $pmid_file $pos_keyword_file $neg_keyword_file; do
+for file in $pmid_file $pos_keyword_file; do
     if [ ! -f "$file" ]; then
         echo "Could not find file: $file"
         exit 1
@@ -82,8 +81,8 @@ echo "================================="
 
 # Create list of models and their corresponding postfixes and scripts
 mymodels=("randomforest" "adaboost" "logistic_regression" "gradientboost")
-model_postfixes=("transformer" "doc2vec" "tfid" "bow_pos" "bow_neg")
-postfix_scripts=("PMID2Embed.py" "PMID2Doc2Vec.py" "PMID2Tfidf.py" "PMID2BOW.py" "PMID2BOW.py")
+model_postfixes=("transformer" "doc2vec" "tfidf") # Can add "bow_pos"
+postfix_scripts=("PMID2Embed.py" "PMID2Doc2Vec.py" "PMID2Tfidf.py") # Can add "PMID2BOW.py"
 
 # Loop through the postfixes to create embeddings and predict
 for i in "${!model_postfixes[@]}"; do
@@ -102,14 +101,16 @@ for i in "${!model_postfixes[@]}"; do
                 -p $pmid_file \
                 -d $json_file \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz" \
+                -e abstract \
                 --load-model $embed_modeldir"doc2vec.model"
         # TFIDF
-        elif [ $model_postfix == "tfid" ]; then
+        elif [ $model_postfix == "tfidf" ]; then
             echo "Creating $workdir/embeddings/embedding_$model_postfix.npz"
             python3 "$scriptdir$postfix_script" \
                 -p $pmid_file \
                 -d $json_file \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz" \
+                -e abstract \
                 --load-model $embed_modeldir"tfidf-3.joblib"
         # BOW (POSITIVE KEYWORDS)
         elif [ $model_postfix == "bow_pos" ]; then
@@ -117,13 +118,7 @@ for i in "${!model_postfixes[@]}"; do
             python3 "$scriptdir$postfix_script" \
                 -j $json_file \
                 -k $pos_keyword_file \
-                -o "$workdir/embeddings/embedding_$model_postfix.npz"
-        # BOW (NEGATIVE KEYWORDS)
-        elif [ $model_postfix == "bow_neg" ]; then
-            echo "Creating $workdir/embeddings/embedding_$model_postfix.npz"
-            python3 "$scriptdir$postfix_script" \
-                -j $json_file \
-                -k $neg_keyword_file \
+                -e abstract \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz"
         # TRANSFORMER
         else
@@ -131,6 +126,7 @@ for i in "${!model_postfixes[@]}"; do
             python3 "$scriptdir$postfix_script" \
                 -p $pmid_file \
                 -d $json_file \
+                -e abstract \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz"
         fi
     fi

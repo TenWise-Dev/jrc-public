@@ -17,7 +17,7 @@ The postfix_indices argument is used to specify the comma-separated indices of t
 
 USAGE ::
  
-    workflow_modelling.sh <workdir> <repodir> <pos_pmid_file> <pos_dbjs_file> <neg_pmid_file> <neg_dbjs_file> <embedding_type> <model_indices> <postfix_indices>
+    workflow_modelling.sh <workdir> <repodir> <pos_pmid_file> <pos_dbjs_file> <neg_pmid_file> <neg_dbjs_file> <embedding_type> <model_indices> <postfix_indices> <embed_model>
  
 '
  
@@ -40,8 +40,13 @@ scriptdir=$repodir"/lib/"
 embed_modeldir=$repodir"/embedding_models/"
 
 # Embedding model options from fastest to slowest
-# minilml6 (default) / minilml12 / roberta / mpnetv2
-embed_model="minilml6"
+# minilml6 (default) / minilml12 / roberta / mpnetv2 / biobert / pubmedbert
+embed_model=${10}
+
+# If the embedding model is not specified, use the default
+if [ -z "$embed_model" ]; then
+    embed_model="minilml6"
+fi
 
 echo ""
 echo " MODELLING SETUP"
@@ -266,7 +271,7 @@ for i in "${!selected_postfixes[@]}"; do
     python3 "$scriptdir"PMID2Model.py \
     -p "$workdir/embeddings/pos_embedding_$model_postfix.npz" \
     -n "$workdir/embeddings/neg_embedding_$model_postfix.npz" \
-    -c $scriptdir/config_modeling.json \
+    -c $scriptdir/config_modelling_iteration1.json \
     -m $workdir/models/$model_postfix/ \
     -o $workdir/results/$model_postfix.csv \
     -ml $selected_models_str

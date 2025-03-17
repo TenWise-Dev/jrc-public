@@ -233,6 +233,8 @@ if __name__ == "__main__":
     texts_embedded, np_pmids = embed_texts(model=model, texts=pmid_texts)
     
     print_time("Done, saving results to output file")
-    print("----------------------------------------------")
 
     np.savez_compressed(args.output_file, embeddings=texts_embedded, keys=np_pmids)
+    
+    print_time(f"Embeddings saved to {args.output_file}")
+    print("----------------------------------------------")

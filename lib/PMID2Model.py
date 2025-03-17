@@ -329,6 +329,10 @@ if __name__ == "__main__":
     X = np.concatenate([X_train, X_val])
     y = np.concatenate([y_train, y_val])
     
+    print("X_train shape:", X_train.shape)
+    print("X_val shape:", X_val.shape)
+    print("X_test shape:", X_test.shape)
+    
     # Get cross validation scores
     cv_score_dict = cv_score(X, y, classifiers)
     

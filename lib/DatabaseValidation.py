@@ -34,7 +34,6 @@ def process_database(database_file: str) -> pd.DataFrame:
     Returns:\n
     - df: A DataFrame with the following columns: pmid, doi, title, author, abstract, year, first_author, mesh, is_oa
     """
-
     df_metadata = pd.DataFrame(columns=['pmid', 'doi', 'pmcid', 'title', 'author', 'abstract', 'year', 'first_author', 'mesh', 'is_oa'])
 
     # Stream over the JSON file
@@ -55,7 +54,7 @@ def process_database(database_file: str) -> pd.DataFrame:
             
     return df_metadata
         
-def assess_database(df: pd.DataFrame) -> dict:
+def assess_database(df: pd.DataFrame, pmid_file: str | None) -> dict:
     # Make docstring with rst syntax
     """
     This function assesses a pandas dataframe to summarize quality of the data.\n
@@ -67,6 +66,11 @@ def assess_database(df: pd.DataFrame) -> dict:
     Returns:\n
     - dict_assess: A dictionary with the following general keys: column, missing_values, unique_values, duplicates. Each column also has unique keys for specific information.
     """
+    
+    if pmid_file:
+        # Load the PMID file
+        with open(pmid_file, 'r') as file:
+            pmids_tocheck = file.read().splitlines()
     
     # Create a DataFrame to store the assessment
     df_assessed = {column: {'missing_values': None, 'unique_values': None, 'duplicates': None} for column in df.columns}
@@ -98,6 +102,14 @@ def assess_database(df: pd.DataFrame) -> dict:
                 
                 # Provide the missing pmids
                 metadata['missing_pmids'] = df[df[column].isnull()]['pmid'].tolist()
+                
+                # Check if pmids are missing in the database based on the PMID file
+                if pmid_file:
+                    metadata['pmids_missing_database'] = list(set(pmids_tocheck) - set(df['pmid'].tolist()))
+                    
+                # Check if pmids in the database are missing in the PMID file
+                if pmid_file:
+                    metadata['pmids_extra_database'] = list(set(df['pmid'].tolist()) - set(pmids_tocheck))
             
             # Abstract checks
             if column == 'abstract':
@@ -150,6 +162,7 @@ if __name__ == "__main__":
     # Create a parser object and add arguments
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("-j", dest="json_file", required=True, help="Provide the path to the Database JSON file")
+    parser.add_argument("-p", dest="pmid_file", required=False, help="Provide the path to the PMID file")
     parser.add_argument("-o", dest="output_file", required=True, help="Provide the path to the Output CSV file")
 
     # Read arguments from the command line
@@ -173,7 +186,7 @@ if __name__ == "__main__":
     print("Assessing the DataFrame...")
     
     # Assess the DataFrame
-    df_assessed = assess_database(df_processed)
+    df_assessed = assess_database(df_processed, args.pmid_file)
     
     # Save the DataFrame to a JSON file
     with open(args.output_file, 'w') as file:

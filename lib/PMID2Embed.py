@@ -40,6 +40,13 @@ def load_model(model_name: str = 'all-MiniLM-L6-v2') -> SentenceTransformer:
     # Make docstring with rst syntax
     '''
     Load the SentenceTransformer model.\n
+    Model options are:\n
+    - all-MiniLM-L6-v2\n
+    - all-MiniLM-L12-v2\n
+    - all-mpnet-base-v2\n
+    - all-distilroberta-v1\n
+    - dmis-lab/biobert-v1.1\n
+    - NeuML/pubmedbert-base-embeddings\n
     \n
     Parameters:\n
     - model_name: The name of the model to load\n
@@ -146,7 +153,9 @@ if __name__ == "__main__":
         "minilml6": "all-MiniLM-L6-v2",
         "minilml12": "all-MiniLM-L12-v2",
         "mpnetv2": "all-mpnet-base-v2",
-        "roberta": "all-distilroberta-v1"
+        "roberta": "all-distilroberta-v1",
+        "biobert": "dmis-lab/biobert-v1.1",
+        "pubmedbert": "NeuML/pubmedbert-base-embeddings"
     }
 
     # Read the PMIDs from the txt files
@@ -186,11 +195,15 @@ if __name__ == "__main__":
 
     print_time("Embedding abstracts...")
     
+    print_time(f"Total number of texts: {len(pmid_texts)}")
+    
     # Call the function
     np_embedded, np_pmids = embed_texts(model=model, texts=pmid_texts)
     
     print_time("Done, saving results to output file")
-    print("----------------------------------------------")
     
     # Save the embeddings to a numpy file
     np.savez_compressed(args.output_file, embeddings=np_embedded, keys=np_pmids)
+    
+    print_time(f"Embeddings saved to {args.output_file}")
+    print("----------------------------------------------")

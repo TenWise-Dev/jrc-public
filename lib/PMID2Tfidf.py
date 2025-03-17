@@ -210,7 +210,9 @@ if __name__ == "__main__":
     np_matrix, np_pmids = embed_texts(model=model, texts=pmid_texts)
     
     print_time("Done, saving results to output file")
-    print("----------------------------------------------")
 
     # Save the embeddings and pmids to a numpy file
     np.savez_compressed(args.output_file, embeddings=np_matrix, keys=np_pmids)
+    
+    print_time(f"Embeddings saved to {args.output_file}")
+    print("----------------------------------------------")

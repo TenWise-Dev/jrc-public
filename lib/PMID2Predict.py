@@ -21,7 +21,18 @@ import argparse
 import json
 import numpy as np
 import pandas as pd
-from tqdm import tqdm
+from datetime import datetime
+
+def print_time(message: str) -> None:
+    # Make docstring with rst syntax
+    '''
+    Print the current time and a message.\n
+    \n
+    Parameters:\n
+    - message: The message to print\n
+    '''
+    
+    print(f"{datetime.now().time().strftime('%H:%M:%S')} - {message}")
 
 def load_embeddings(embedding_file: str) -> np.ndarray:
     # Make docstring with rst syntax
@@ -83,17 +94,23 @@ if __name__ == "__main__":
     
     # Create a parser object and add arguments
     parser=argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("-e", dest="embedding_file", required=True, help="Provide the path to the embedding set .npy file")
+    parser.add_argument("-e", dest="embedding_file", required=True, help="Provide the path to the embedding set .npz file")
     parser.add_argument("-m", dest="models_file", required=True, help="Provide the path to the model")
     parser.add_argument("-o", dest="output_file", required=True, help="Provide the name of the output JSON file")
 
     # Read arguments from the command line
     args=parser.parse_args()
     
+    print_time("Start with loading embeddings")
+        
     # Retrieve embeddings from the CSV file
     embeddings = load_embeddings(embedding_file=args.embedding_file)
     
+    print_time("Finished loading embeddings")
+    
     # Predict the class of the embeddings using the provided model and save the results to a dictionary
+    print_time("Start with predicting embeddings")    
     predict_embeddings(embeddings=embeddings, models_file=args.models_file, output_file=args.output_file)
+    print_time("Finished predicting embeddings")
     
     

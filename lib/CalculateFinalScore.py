@@ -33,7 +33,7 @@ def load_results(result_file: str) -> pd.DataFrame:
     
     return df
 
-def process_df(df: pd.DataFrame) -> tuple:
+def process_df(df: pd.DataFrame, max_scores: pd.DataFrame) -> tuple:
     """
     Function to process the DataFrame and calculate the normalized mean percentile score\n
     \n
@@ -46,18 +46,25 @@ def process_df(df: pd.DataFrame) -> tuple:
     
     # Group by embedding and method
     # Calculate max score to normalize with mean percentile method
-    df['max_score'] = df.groupby(['embedding', 'method'])['normscore'].transform('max')
+    df = pd.merge(df, max_scores, on=['embedding', 'method'])
+    
+    # Normalize the score with the max score
     df['percentile_score'] = df['normscore'] / df['max_score']
+    
+    # Ensure the percentiles are at least 0 and at most 1
+    df['percentile_score'] = df['percentile_score'].clip(lower=0, upper=1)
     
     merged_df = df.copy()
     
     # Calculate the mean percentile score for each pmid (method, embedding)
     merged_df['model_score'] = df.groupby(['pmid'])['percentile_score'].transform('mean')
     
-    print(merged_df[merged_df['pmid'] == 25818417])
     
-    # Remove score columns and duplicates
-    # merged_df = merged_df.drop(columns=['score', 'normscore', 'max_score', 'percentile_score'])
+    # Remove prediction, method, embedding columns
+    merged_df = merged_df.drop(columns=['prediction', 'method', 'embedding'])
+    
+    # Remove score columns
+    merged_df = merged_df.drop(columns=['score', 'normscore', 'max_score', 'percentile_score'])
     merged_df = merged_df.drop_duplicates()
     
     nr_pos = df.groupby(['pmid'])['prediction'].agg(['sum'])
@@ -82,8 +89,11 @@ if __name__ == "__main__":
     # Load the results
     df = load_results(result_file=args.results_file)
     
+    # Read precomputed max_scores.csv to get the max scores for each method and embedding
+    max_scores = pd.read_csv('max_scores.csv')
+    
     # The model score is calculated by taking the mean of the percentile scores
-    df_merge = process_df(df=df)
+    df_merge = process_df(df=df, max_scores=max_scores)
         
     # Sort on model score
     df_merge = df_merge.sort_values(by ='model_score', ascending=False)

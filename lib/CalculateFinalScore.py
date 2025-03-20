@@ -90,7 +90,7 @@ if __name__ == "__main__":
     df = load_results(result_file=args.results_file)
     
     # Read precomputed max_scores.csv to get the max scores for each method and embedding
-    max_scores = pd.read_csv('max_scores.csv')
+    max_scores = pd.read_csv('lib/max_scores_iteration1.csv')
     
     # The model score is calculated by taking the mean of the percentile scores
     df_merge = process_df(df=df, max_scores=max_scores)

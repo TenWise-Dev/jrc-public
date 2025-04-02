@@ -3,7 +3,7 @@
 '''
 This script takes a set of PMIDs and retrieves the abstracts from the NCBI database.
 These abstracts are then embedded using the TF-IDF model and saved to a CSV file where the first column is the PMID and the rest of the columns are the embeddings.
-The script has five required and three optional arguments. ::
+The script has four required and three optional arguments. ::
 
     Required:
     

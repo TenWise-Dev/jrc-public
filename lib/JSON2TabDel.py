@@ -88,7 +88,7 @@ if __name__ == "__main__":
     args=parser.parse_args()
 
     # First we read in all the json formatted results
-    embeddings = ['transformer' ,'doc2vec','tfidf'] # Can add , 'bow_pos', 'bow_neg' if needed
+    embeddings = ['transformer' ,'doc2vec','tfidf'] 
     models = ['adaboost','gradientboost','logistic_regression','randomforest']
     
     # Load the results

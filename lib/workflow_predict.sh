@@ -28,8 +28,8 @@ email=$5
 
 # Directories
 scriptdir=$repodir"/lib/"
-embed_modeldir=$repodir"/embedding_models/"
-classifierdir=$repodir"/classifier_models/May_set007/"
+embed_modeldir=$repodir"embedding_models/2025/March_set010_v1/"
+classifierdir=$repodir"classifier_models/2025/March_set010_v1/title_abstract/"
 
 # Keywords file
 pos_keyword_file=$embed_modeldir/pos_keywords.txt
@@ -101,7 +101,7 @@ for i in "${!model_postfixes[@]}"; do
                 -p $pmid_file \
                 -d $json_file \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz" \
-                -e abstract \
+                -e title_abstract \
                 --load-model $embed_modeldir"doc2vec.model"
         # TFIDF
         elif [ $model_postfix == "tfidf" ]; then
@@ -110,15 +110,15 @@ for i in "${!model_postfixes[@]}"; do
                 -p $pmid_file \
                 -d $json_file \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz" \
-                -e abstract \
-                --load-model $embed_modeldir"tfidf-3.joblib"
+                -e title_abstract \
+                --load-model $embed_modeldir"tfidf_40k.joblib"
         # BOW (POSITIVE KEYWORDS)
         elif [ $model_postfix == "bow_pos" ]; then
             echo "Creating $workdir/embeddings/embedding_$model_postfix.npz"
             python3 "$scriptdir$postfix_script" \
                 -j $json_file \
                 -k $pos_keyword_file \
-                -e abstract \
+                -e title_abstract \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz"
         # TRANSFORMER
         else
@@ -126,7 +126,7 @@ for i in "${!model_postfixes[@]}"; do
             python3 "$scriptdir$postfix_script" \
                 -p $pmid_file \
                 -d $json_file \
-                -e abstract \
+                -e title_abstract \
                 -o "$workdir/embeddings/embedding_$model_postfix.npz"
         fi
     fi

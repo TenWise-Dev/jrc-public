@@ -3,7 +3,7 @@
 '''
 This script takes a set of PMIDs and retrieves the abstracts from the NCBI database.
 These abstracts are then embedded using the SentenceTransformer model and saved to a Numpy file where the first column is the PMID and the rest of the columns are the embeddings.
-The script has three required arguments. ::
+The script has five required arguments. ::
 
     Required:
     
@@ -11,10 +11,11 @@ The script has three required arguments. ::
     -d: The path to the database file
     -o: The name of the output file
     -e: The type of embedding to use (abstract for only abstracts, title for only titles, title_abstract for abstracts and titles)
+    -m: The key of the SentenceTransformer model to use. Options are minilml6, minilml12, mpnetv2, roberta, biobert, pubmedbert
     
     Usage:
     
-    python3 PMID2Embed.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_test_embeddings.npz -e 1
+    python3 PMID2Embed.py -p ../example/demo_pmids.txt -d ../example/demo_database.json -o ../YOUR_FOLDER/demo_test_embeddings.npz -e title_abstract -m minilml6
     
 '''
 
@@ -144,7 +145,7 @@ if __name__ == "__main__":
     parser.add_argument("-d", dest="pmid_database", required=True, help="Provide the path to the datafolder")
     parser.add_argument("-o", dest="output_file", required=True, help="Provide the name of the output .npy file")
     parser.add_argument("-e", dest="embedding_type", required=True, default="abstract", help="Mode for embedding: abstract for only abstracts, title for only titles, or title_abstract for abstracts and titles")
-    parser.add_argument("-m", dest="model_name", required=False, default="minilml6", help="The key of the SentenceTransformer model to use. Options are minilm, minibert, minielectra")
+    parser.add_argument("-m", dest="model_name", required=False, default="minilml6", help="The key of the SentenceTransformer model to use. Options are minilml6, minilml12, mpnetv2, roberta, biobert, pubmedbert")
     
     # Read arguments from the command line
     args=parser.parse_args()

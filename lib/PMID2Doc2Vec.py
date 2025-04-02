@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 '''
-This script a set of PMIDs and retrieves the abstracts from the NCBI database.
+This script takes a set of PMIDs and retrieves the abstracts from the NCBI database.
 These abstracts are then embedded using the Doc2Vec model and saved to a CSV file where the first column is the PMID and the rest of the columns are the embeddings.
-The script has five required and three optional arguments. ::
+The script has four required and four optional arguments. ::
 
     Required:
     

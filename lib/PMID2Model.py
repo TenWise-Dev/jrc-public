@@ -3,7 +3,7 @@
 """
 This script loads a set of embeddings and uses the positive and negative PMIDs to create a dataset for training and validation.
 This dataset is then used to train a set of classifiers and score them using cross validation and a test set.
-The script has five required arguments. ::
+The script has six required arguments. ::
 
     Required:
     

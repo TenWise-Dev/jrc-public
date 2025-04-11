@@ -14,3 +14,5 @@ classifier_models/
 embedding_models/doc2vec.model
 embedding_models/tfidf-3.joblib
 embedding_models/pmids.txt
+
+backup/

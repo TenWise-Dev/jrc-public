@@ -102,7 +102,7 @@ if __name__ == "__main__":
         )
     
     # Save as txt files
-    np.savetxt(args.output_folder + "POS_PMIDS_train.txt", pos_train, fmt='%s')
-    np.savetxt(args.output_folder + "POS_PMIDS_test.txt", pos_test, fmt='%s')
-    np.savetxt(args.output_folder + "NEG_PMIDS_train.txt", neg_train, fmt='%s')
-    np.savetxt(args.output_folder + "NEG_PMIDS_test.txt", neg_test, fmt='%s')
+    np.savetxt(args.output_folder + "train_pos_80.txt", pos_train, fmt='%s')
+    np.savetxt(args.output_folder + "test_pos_20.txt", pos_test, fmt='%s')
+    np.savetxt(args.output_folder + "train_neg_80.txt", neg_train, fmt='%s')
+    np.savetxt(args.output_folder + "test_neg_20.txt", neg_test, fmt='%s')

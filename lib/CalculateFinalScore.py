@@ -89,7 +89,7 @@ if __name__ == "__main__":
     # Load the results
     df = load_results(result_file=args.results_file)
     
-    iteration_id = "iteration2"
+    iteration_id = "iteration3"
     
     # Read precomputed max_scores.csv to get the max scores for each method and embedding
     max_scores = pd.read_csv(f'lib/max_scores_{iteration_id}.csv')

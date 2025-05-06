@@ -1,0 +1,13 @@
+embedding,method,max_score
+doc2vec,AdaBoostClassifier,0.66343699073342
+doc2vec,GradientBoostingClassifier,0.8706789925414191
+doc2vec,LogisticRegression,0.999932690349361
+doc2vec,RandomForestClassifier,0.8290000000000001
+tfidf,AdaBoostClassifier,0.6417326764375051
+tfidf,GradientBoostingClassifier,0.985758541682027
+tfidf,LogisticRegression,0.995582627621184
+tfidf,RandomForestClassifier,0.945
+transformer,AdaBoostClassifier,0.6751420173847521
+transformer,GradientBoostingClassifier,0.989121582851568
+transformer,LogisticRegression,0.99998062311473
+transformer,RandomForestClassifier,0.963

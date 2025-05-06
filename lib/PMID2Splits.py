@@ -106,3 +106,11 @@ if __name__ == "__main__":
     np.savetxt(args.output_folder + "test_pos_20.txt", pos_test, fmt='%s')
     np.savetxt(args.output_folder + "train_neg_80.txt", neg_train, fmt='%s')
     np.savetxt(args.output_folder + "test_neg_20.txt", neg_test, fmt='%s')
+    
+    # Print all sizes
+    print("=" * 50)
+    print(f"Positive PMIDs train size: {len(pos_train)}")
+    print(f"Negative PMIDs train size: {len(neg_train)}")
+    print(f"Positive PMIDs test size: {len(pos_test)}")
+    print(f"Negative PMIDs test size: {len(neg_test)}")
+    print("=" * 50)

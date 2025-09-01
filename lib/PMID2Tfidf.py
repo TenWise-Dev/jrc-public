@@ -14,6 +14,7 @@ The script has four required and three optional arguments. ::
 
 
     Optional:
+    --custom_vocab: Path to a custom vocabulary txt file
     --save-model: Name for the saved model
     --load-model: Name of the model to load
     --ngrams: How many ngrams to use (default 3)
@@ -36,6 +37,7 @@ import ijson
 from joblib import load, dump
 import numpy as np
 from scipy.sparse import sparray
+from tqdm import tqdm
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 def print_time(message: str) -> None:
@@ -49,14 +51,15 @@ def print_time(message: str) -> None:
     
     print(f"{datetime.now().time().strftime('%H:%M:%S')} - {message}")
 
-def fit_model(abstracts, n_ngrams) -> TfidfVectorizer:
+def fit_model(abstracts, n_ngrams, selected_terms = None) -> TfidfVectorizer:
     # Make docstring with rst syntax
     '''
     Fit the TfidfVectorizer model.\n
     \n
     Parameters:\n
     - abstracts: abstracts to use for the fitting\n
-    - n_ngrams: number of ngrams to use for the model
+    - n_ngrams: number of ngrams to use for the model\n
+    - selected_terms: optional list of selected terms to use as vocabulary
     \n
     Returns:\n
     - model: The TfidfVectorizer model
@@ -66,7 +69,21 @@ def fit_model(abstracts, n_ngrams) -> TfidfVectorizer:
 
     abstract_list = list(abstracts.values())
 
-    model = TfidfVectorizer(stop_words='english', ngram_range=(1, n_ngrams), min_df=0.0001, max_df=0.95) 
+    if selected_terms:
+        model = TfidfVectorizer(
+            stop_words='english',
+            ngram_range=(1, n_ngrams),
+            vocabulary=selected_terms
+        )
+    else:
+        model = TfidfVectorizer(
+            stop_words='english', 
+            ngram_range=(1, 3), 
+            min_df=0.0001, 
+            max_df=0.95, 
+            max_features=40000
+        )
+        
     model.fit(abstract_list)
 
     return model
@@ -124,7 +141,7 @@ def get_texts(pmids: list, database_file: str, embedding_type: str) -> dict:
         parser = ijson.items(file, 'item')
         
         # Iterate over the JSON objects
-        for item in parser:
+        for item in tqdm(parser):
             if item['pmid'] in pmids:
                 text = ''
                 store = False
@@ -158,8 +175,8 @@ if __name__ == "__main__":
     parser.add_argument("-d", dest="pmid_database", required=True, help="Provide the path to the datafolder")
     parser.add_argument("-o", dest="output_file", required=True, help="Provide the name of the output NPZ file")
     parser.add_argument("-e", dest="embedding_type", required=True, default="abstract", help="Mode for embedding: abstract for only abstracts, title for only titles, or title_abstract for abstracts and titles")
-
     
+    parser.add_argument("--custom_vocab", dest="custom_vocab", required=False, default=None, help="Provide a custom vocabulary file")
     parser.add_argument("--save-model", dest="save_model", required=False, default=None, help="Provide the path to save the model")
     parser.add_argument("--load-model", dest="load_model", required=False, default=None, help="Provide the path to load the model from")
     parser.add_argument("--ngrams", dest="ngrams", required=False, type=int, default=3, help="Number of ngrams to use")
@@ -167,10 +184,14 @@ if __name__ == "__main__":
     # Read arguments from the command line
     args=parser.parse_args()
 
+    print_time("Reading PMIDs...")
+
     # Read the positive and negative PMIDs from the txt files
     with open(args.pmid_file) as file:
         pmids = file.read().splitlines()
-        
+
+    print_time("Retrieving texts from database...")
+
     # Read the positive and negative database JSON files
     pmid_texts, abs_none, title_none = get_texts(
         pmids=pmids, 
@@ -195,7 +216,13 @@ if __name__ == "__main__":
 
     # Train the model if it is not provided
     else:
-        model = fit_model(pmid_texts, n_ngrams=args.ngrams)
+        if args.custom_vocab:
+            with open(args.custom_vocab, 'r') as vocab_file:
+                selected_terms = [line.strip() for line in vocab_file if line.strip()]
+        else:
+            selected_terms = None
+
+        model = fit_model(pmid_texts, n_ngrams=args.ngrams, selected_terms=selected_terms)
         print_time("Done training model")
     
     print("-----------------------------")
@@ -208,6 +235,7 @@ if __name__ == "__main__":
     
     # Call the function
     np_matrix, np_pmids = embed_texts(model=model, texts=pmid_texts)
+    
     
     print_time("Done, saving results to output file")
 

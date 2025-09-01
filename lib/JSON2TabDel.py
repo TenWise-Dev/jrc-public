@@ -17,6 +17,7 @@ The script has two required arguments. ::
 '''
 import argparse
 import pandas as pd
+import os
 
 def load_results(resultdir: str, embeddings: list, models: list) -> pd.DataFrame:
     """
@@ -39,6 +40,10 @@ def load_results(resultdir: str, embeddings: list, models: list) -> pd.DataFrame
         for mod in models:
             # Create the filename
             filename = resultdir + "/scores_" + mod + "_" + embed +".json"
+            
+            if not os.path.exists(filename):
+                print(f"File {filename} does not exist. Skipping...")
+                continue
             
             # Load the data into a DataFrame
             df = pd.read_json(filename, convert_axes=False).transpose().rename_axis("PMID").reset_index()

@@ -46,7 +46,7 @@ def load_embeddings(embedding_file: str) -> np.ndarray:
     - embeddings: The embeddings as a numpy array with the pmids and embeddings
     """
     # Load the embeddings
-    embeddings = np.load(embedding_file)
+    embeddings = np.load(embedding_file, allow_pickle=True)
     return embeddings
 
 def predict_embeddings(embeddings: np.ndarray, models_file: str, output_file: str) -> None:
@@ -67,7 +67,7 @@ def predict_embeddings(embeddings: np.ndarray, models_file: str, output_file: st
     
     predictions = model.predict(embeddings['embeddings'])
     probabilities = model.predict_proba(embeddings['embeddings'])
-    
+
     # Make a dataframe for results, first column of embeddings is PMID
     df_results = pd.DataFrame(embeddings['keys'], columns=["PMID"])
     
